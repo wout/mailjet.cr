@@ -7,10 +7,19 @@ Spec.after_each do
   WebMock.reset
 
   # Reset to defaults
-  Mailjet::Config.api_key = nil
-  Mailjet::Config.api_version = "v3"
-  Mailjet::Config.default_from = nil
-  Mailjet::Config.end_point = "https://api.mailjet.com"
-  Mailjet::Config.sandbox_mode = false
-  Mailjet::Config.secret_key = nil
+  Mailjet.configure do |config|
+    config.api_key = nil
+    config.api_version = "v3"
+    config.default_from = nil
+    config.end_point = "https://api.mailjet.com"
+    config.sandbox_mode = false
+    config.secret_key = nil
+  end
+end
+
+def configure_global_api_credentials
+  Mailjet.configure do |config|
+    config.api_key = "global_key"
+    config.secret_key = "global_secret"
+  end
 end

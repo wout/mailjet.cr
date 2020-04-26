@@ -46,15 +46,27 @@ describe Mailjet::Config do
       Mailjet::Config.default_from.should be_nil
     end
 
-    it "memorizes the default from email address" do
+    it "memorizes the default sender email address" do
       Mailjet::Config.default_from = "me@mailjet.com"
       Mailjet::Config.default_from.should eq("me@mailjet.com")
     end
 
     it "does a very basic validation of the given email address" do
       expect_raises(Mailjet::InvalidEmailAddressException) do
-        Mailjet::Config.default_from = "not an email address"
+        Mailjet::Config.default_from = "a@b"
       end
+    end
+  end
+
+  describe ".open_timeout" do
+    it "has a default value" do
+      Mailjet::Config.open_timeout.should eq(60)
+    end
+  end
+
+  describe ".read_timeout" do
+    it "has a default value" do
+      Mailjet::Config.read_timeout.should eq(60)
     end
   end
 end

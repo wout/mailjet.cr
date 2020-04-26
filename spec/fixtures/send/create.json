@@ -1,0 +1,14 @@
+{
+  "Messages": [
+    {
+      "Status": "success",
+      "To": [
+        {
+          "Email": "passenger@mailjet.com",
+          "MessageID": "1234567890987654321",
+          "MessageHref": "https://api.mailjet.com/v3/message/1234567890987654321"
+        }
+      ]
+    }
+  ]
+}
