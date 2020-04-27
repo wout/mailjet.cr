@@ -32,6 +32,7 @@ describe Mailjet::Client do
     it "fetches a resource" do
       configure_global_api_credentials
       WebMock.stub(:get, "https://api.mailjet.com/send")
+        .with(headers: headers_with_basic_auth)
         .to_return(status: 200, body: "{}")
 
       test_client.get
@@ -42,6 +43,7 @@ describe Mailjet::Client do
     it "creates a resource" do
       configure_global_api_credentials
       WebMock.stub(:post, "https://api.mailjet.com/send")
+        .with(headers: headers_with_basic_auth)
         .to_return(status: 200, body: "{}")
 
       test_client.post({id: "65423"})
@@ -52,6 +54,7 @@ describe Mailjet::Client do
     it "updates a resource" do
       configure_global_api_credentials
       WebMock.stub(:put, "https://api.mailjet.com/send")
+        .with(headers: headers_with_basic_auth)
         .to_return(status: 200, body: "{}")
 
       test_client.put({id: "65423"})
@@ -62,6 +65,7 @@ describe Mailjet::Client do
     it "deletes a resource" do
       configure_global_api_credentials
       WebMock.stub(:delete, "https://api.mailjet.com/send")
+        .with(headers: headers_with_basic_auth)
         .to_return(status: 200, body: "{}")
 
       test_client.delete({id: "65423"})
@@ -71,4 +75,15 @@ end
 
 private def test_client
   Mailjet::Client.new("send", %w[GET POST PUT DELETE])
+end
+
+private def headers_with_basic_auth
+  {
+    "Accept"          => "application/json",
+    "Content-Type"    => "application/json",
+    "Accept-Encoding" => "deflate",
+    "Host"            => "api.mailjet.com",
+    "Authorization"   => "Basic Z2xvYmFsX2tleTpnbG9iYWxfc2VjcmV0",
+    "User-Agent"      => "mailjet-api-v3-crystal/#{Mailjet::VERSION}",
+  }
 end

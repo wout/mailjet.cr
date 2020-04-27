@@ -9,13 +9,13 @@ struct Mailjet
     # Initialize with credentials
     #
     # ```crystal
-    # client = Mailjet::Client.new("my_key", "my_secret")
+    # client = Mailjet::Client.new("send", "my_key", "my_secret")
     # ```
     #
     # Or without, if credentials are configured globally:
     #
     # ```crystal
-    # client = Mailjet::Client.new
+    # client = Mailjet::Client.new("send")
     # ```
     def initialize(
       @path,
@@ -87,8 +87,10 @@ struct Mailjet
 
     private def http_headers
       HTTP::Headers{
-        "Accept"       => "application/json",
-        "Content-Type" => "application/json",
+        "Accept"          => "application/json",
+        "Content-Type"    => "application/json",
+        "Accept-Encoding" => "deflate",
+        "User-Agent"      => "mailjet-api-v3-crystal/#{VERSION}",
       }
     end
 
@@ -96,6 +98,7 @@ struct Mailjet
       client = HTTP::Client.new(uri)
       client.read_timeout = Config.read_timeout
       client.connect_timeout = Config.open_timeout
+      client.basic_auth(@api_key, @secret_key)
       client
     end
 
