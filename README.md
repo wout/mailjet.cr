@@ -1,4 +1,4 @@
-# Mailject API client for Crystal
+# Mailjet API client for Crystal
 
 Mailjet is an email platform for teams to send transactional & marketing emails.
 It is a GDPR compliant and ISO 27001 certified Email Service Provider.
