@@ -37,7 +37,7 @@ struct Mailjet
 
     private def self.create_action_attributes(attributes : Hash)
       if resource_path == "send/" && (from = Mailjet::Config.default_from)
-        address = Mail::AddressList.new(from).addresses.first
+        address = AddressList.new(from).first
         attributes = attributes.merge({
           :from_email => address.address,
           :from_name  => address.display_name,
