@@ -19,7 +19,7 @@ struct Mailjet
       attributes : Hash = Alias::HS2.new,
       options : Hash = Alias::HS2.new
     )
-      ensure_correct_resource_path(attributes)
+      # ensure_correct_resource_path(attributes)
       # attributes = create_action_attributes(attributes)
       # options = define_options(options)
 
@@ -27,6 +27,7 @@ struct Mailjet
       #   resource.save!(options)
       #   resource.persisted = true
       # end
+
     end
 
     private def self.ensure_correct_resource_path(attributes : Hash)
@@ -68,6 +69,10 @@ struct Mailjet
         "url"     => Mailjet.config.end_point,
       }
       defaults.merge(options.transform_keys(&.to_s).slice(*ALLOWED_OPTIONS))
+    end
+
+    private def self.client
+      Client.new(self.resource_path)
     end
   end
 end
