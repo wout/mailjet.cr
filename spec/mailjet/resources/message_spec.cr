@@ -46,7 +46,8 @@ describe Mailjet::Message do
     end
 
     it "filters messages with query parameters" do
-      WebMock.stub(:get, "https://api.mailjet.com/v3/REST/message?ContactAlt=some%40one.com")
+      WebMock.stub(:get,
+        "https://api.mailjet.com/v3/REST/message?ContactAlt=some%40one.com")
         .to_return(status: 200, body: read_fixture("message/all"))
 
       response = Mailjet::Message.all(query: {

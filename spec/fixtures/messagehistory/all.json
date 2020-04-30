@@ -1,0 +1,22 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "Comment" : "",
+      "EventAt" : 1588188885,
+      "EventType" : "sent",
+      "State" : "",
+      "Useragent" : "",
+      "UseragentID" : 0
+    },
+    {
+      "Comment" : "",
+      "EventAt" : 1588189049,
+      "EventType" : "opened",
+      "State" : "",
+      "Useragent" : "",
+      "UseragentID" : 329
+    }
+  ],
+  "Total" : 2
+}

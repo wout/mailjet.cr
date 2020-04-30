@@ -30,7 +30,7 @@ struct Mailjet
     # ```
     #
     def self.find(
-      message_id : Int64,
+      message_id : Int64 | String,
       query : Hash | NamedTuple = Hash(String, String).new,
       client : Client = Client.new
     )
