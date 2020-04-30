@@ -36,7 +36,7 @@ struct Mailjet
       request_headers = http_headers
       headers.each { |key, value| request_headers[key.to_s] = value }
 
-      path += "?#{HTTP::Params.encode(query)}" unless query.empty?
+      path += "?#{Utilities.query_parameterize(query)}" unless query.empty?
 
       begin
         if {"GET", "DELETE"}.includes?(method)

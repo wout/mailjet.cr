@@ -37,7 +37,7 @@ describe Mailjet::Client do
     end
 
     it "performs a request with query params" do
-      WebMock.stub(:get, "https://api.mailjet.com/some/path/with?special=needs")
+      WebMock.stub(:get, "https://api.mailjet.com/some/path/with?Special=needs")
         .to_return(status: 200, body: "{}")
 
       test_client.handle_api_call("GET", "/some/path/with", query: {

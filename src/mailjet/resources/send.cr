@@ -36,7 +36,7 @@ struct Mailjet
       JSON.mapping({
         email: {key: "Email", type: String},
         href:  {key: "MessageHref", type: String},
-        id:    {key: "MessageID", type: BigInt},
+        id:    {key: "MessageID", type: Int64},
         uuid:  {key: "MessageUUID", type: String},
       })
     end

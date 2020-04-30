@@ -9,7 +9,7 @@ struct Mailjet
     # Optionally with query params
     #
     # ```crystal
-    # messages = Mailjet::Message.all(query: {"ContactAlt": "some@one.com"})
+    # messages = Mailjet::Message.all(query: {contact_alt: "some@one.com"})
     # ```
     #
     can_list("REST/message", {
@@ -30,10 +30,11 @@ struct Mailjet
     # ```
     #
     def self.find(
-      message_id : Int32,
+      message_id : Int64,
+      query : Hash | NamedTuple = Hash(String, String).new,
       client : Client = Client.new
     )
-      find({message_id: message_id}, client: client).data.first
+      find({message_id: message_id}, query: query, client: client).data.first
     end
 
     struct ResponseMessage
@@ -48,7 +49,7 @@ struct Mailjet
         destination_id:      {key: "DestinationID", type: Int32},
         filter_time:         {key: "FilterTime", type: Int32},
         html_part_included?: {key: "IsHTMLPartIncluded", type: Bool},
-        id:                  {key: "ID", type: BigInt},
+        id:                  {key: "ID", type: Int64},
         message_size:        {key: "MessageSize", type: Int32},
         open_tracked?:       {key: "IsOpenTracked", type: Bool},
         sender_id:           {key: "SenderID", type: Int32},

@@ -31,10 +31,11 @@ struct Mailjet
     macro can_find(pattern, mapping = nil)
       def self.find(
         params : Hash | NamedTuple = Hash(String, String).new,
+        query : Hash | NamedTuple = Hash(String, String).new,
         client : Client = Client.new
       )
         path = FindPath.new(params).to_s
-        response = client.handle_api_call("GET", path)
+        response = client.handle_api_call("GET", path, query: query)
         {% if mapping %}
           FindResponse.from_json(response)
         {% else %}

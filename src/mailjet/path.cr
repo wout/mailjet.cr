@@ -5,7 +5,7 @@ struct Mailjet
     abstract def pattern
 
     def initialize(params : Hash | NamedTuple = Hash(String, String).new)
-      @params = Utilities.normalize_hash(params).transform_values(&.to_s)
+      @params = Utilities.to_stringified_hash(params)
     end
 
     def to_s : String
