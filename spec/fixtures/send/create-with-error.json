@@ -1,0 +1,36 @@
+{
+  "Messages" : [
+    {
+      "Status" : "success",
+      "CustomID" : "",
+      "To" : [
+        {
+          "Email" : "some@one.com",
+          "MessageUUID" : "60fe9f5e-d7a1-460b-b0dc-53b0d021f1c8",
+          "MessageID" : 576464555653964483,
+          "MessageHref" : "https://api.mailjet.com/v3/REST/message/576464555653964483"
+        }
+      ],
+      "Cc" : [
+      ],
+      "Bcc" : [
+      ]
+    },
+    {
+      "Status" : "error",
+      "Errors" : [
+        {
+          "ErrorIdentifier" : "5518f12b-351d-465d-87ad-4888f5f498e6",
+          "ErrorCode" : "send-0003",
+          "StatusCode" : 400,
+          "ErrorMessage" : "At least \"HTMLPart\", \"TextPart\" or \"TemplateID\" must be provided.",
+          "ErrorRelatedTo" : [
+            "TextPart",
+            "HTMLPart",
+            "TemplateID"
+          ]
+        }
+      ]
+    }
+  ]
+}

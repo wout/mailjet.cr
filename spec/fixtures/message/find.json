@@ -1,0 +1,30 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "ArrivedAt" : "2020-04-29T19:34:45Z",
+      "AttachmentCount" : 0,
+      "AttemptCount" : 0,
+      "ContactAlt" : "",
+      "ContactID" : 52592753,
+      "Delay" : 0,
+      "DestinationID" : 11668846,
+      "FilterTime" : 0,
+      "ID" : 576460755655154659,
+      "IsClickTracked" : true,
+      "IsHTMLPartIncluded" : true,
+      "IsOpenTracked" : true,
+      "IsTextPartIncluded" : true,
+      "IsUnsubTracked" : false,
+      "MessageSize" : 365,
+      "SenderID" : 26998,
+      "SpamassassinScore" : 0,
+      "SpamassRules" : "",
+      "StatePermanent" : false,
+      "Status" : "opened",
+      "Subject" : "",
+      "UUID" : "a8774fb0-393a-45e1-ae9a-b0d7c1fe672b"
+    }
+  ],
+  "Total" : 1
+}

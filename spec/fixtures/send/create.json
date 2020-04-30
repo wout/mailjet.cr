@@ -1,13 +1,19 @@
 {
   "Messages": [
     {
-      "Status": "success",
-      "To": [
+      "Status" : "success",
+      "CustomID" : "",
+      "To" : [
         {
-          "Email": "passenger@mailjet.com",
-          "MessageID": "1234567890987654321",
-          "MessageHref": "https://api.mailjet.com/v3/message/1234567890987654321"
+          "Email" : "some@one.com",
+          "MessageUUID" : "60fe9f5e-d7a1-460b-b0dc-53b0d021f1c8",
+          "MessageID" : 576464555653964483,
+          "MessageHref" : "https://api.mailjet.com/v3/REST/message/576464555653964483"
         }
+      ],
+      "Cc" : [
+      ],
+      "Bcc" : [
       ]
     }
   ]

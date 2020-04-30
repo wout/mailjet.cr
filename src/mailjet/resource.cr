@@ -2,77 +2,81 @@ struct Mailjet
   abstract struct Resource
     include JSON::Serializable
 
-    class_getter action : String? = nil
-    property persisted = false
-
-    ALLOWED_OPTIONS = %w[
-      api_key
-      open_timeout
-      perform_api_call
-      read_timeout
-      secret_key
-      url
-      version
-    ]
-
-    def self.create(
-      attributes : Hash = Alias::HS2.new,
-      options : Hash = Alias::HS2.new
-    )
-      # ensure_correct_resource_path(attributes)
-      # attributes = create_action_attributes(attributes)
-      # options = define_options(options)
-
-      # new(attributes).tap do |resource|
-      #   resource.save!(options)
-      #   resource.persisted = true
-      # end
-
-    end
-
-    private def self.ensure_correct_resource_path(attributes : Hash)
-      # if action && attributes["id"]?
-      #   self.resource_path = create_action_resource_path(attributes["id"])
-      # end
-    end
-
-    private def self.create_action_attributes(attributes : Hash)
-      if resource_path == "send/" && (from = Mailjet::Config.default_from)
-        address = AddressList.new(from).first
-        attributes = attributes.merge({
-          :from_email => address.address,
-          :from_name  => address.display_name,
-        })
+    macro can_list(pattern, mapping = nil)
+      def self.all(
+        params : Hash | NamedTuple = Hash(String, String).new,
+        query : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        path = ListPath.new(params).to_s
+        response = client.handle_api_call("GET", path, query: query)
+        {% if mapping %}
+          ListResponse.from_json(response)
+        {% else %}
+          true
+        {% end %}
       end
 
-      attributes.transform_keys(&.to_s).tap(&.delete("id"))
+      {% if mapping %}
+        struct ListResponse
+          JSON.mapping({{mapping}})
+        end
+      {% end %}
+
+      struct ListPath < Mailjet::Path
+        getter pattern = {{pattern}}
+      end
     end
 
-    private def self.create_action_resource_path(
-      id : Int32,
-      job_id : Int32? = nil
-    )
-      parts = resource_path.split("/")
-      parts.delete_at(parts.length - 1) if parts.last.to_i > 0
-
-      if !(parts[1] == "contacts" && self.action == "managemanycontacts")
-        parts[2] = id.to_s
+    macro can_find(pattern, mapping = nil)
+      def self.find(
+        params : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        path = FindPath.new(params).to_s
+        response = client.handle_api_call("GET", path)
+        {% if mapping %}
+          FindResponse.from_json(response)
+        {% else %}
+          true
+        {% end %}
       end
 
-      parts << job_id.to_s if job_id
-      parts.join("/")
+      {% if mapping %}
+        struct FindResponse
+          JSON.mapping({{mapping}})
+        end
+      {% end %}
+
+      struct FindPath < Mailjet::Path
+        getter pattern = {{pattern}}
+      end
     end
 
-    private def self.define_options(options : Hash = Alias::HS2.new)
-      defaults = {
-        "version" => Mailjet.config.api_version,
-        "url"     => Mailjet.config.end_point,
-      }
-      defaults.merge(options.transform_keys(&.to_s).slice(*ALLOWED_OPTIONS))
-    end
+    macro can_create(pattern, mapping = nil)
+      def self.create(
+        payload : Hash | NamedTuple,
+        params : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        path = CreatePath.new(params).to_s
+        response = client.handle_api_call("POST", path, payload: payload)
+        {% if mapping %}
+          CreateResponse.from_json(response)
+        {% else %}
+          true
+        {% end %}
+      end
 
-    private def self.client
-      Client.new(self.resource_path)
+      {% if mapping %}
+        struct CreateResponse
+          JSON.mapping({{mapping}})
+        end
+      {% end %}
+
+      struct CreatePath < Mailjet::Path
+        getter pattern = {{ pattern }}
+      end
     end
   end
 end
