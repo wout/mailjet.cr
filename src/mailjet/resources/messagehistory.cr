@@ -23,7 +23,7 @@ struct Mailjet
     struct Event
       JSON.mapping({
         comment:      {key: "Comment", type: String},
-        event_at:     {key: "EventAt", type: Int32},
+        event_at:     {key: "EventAt", type: Time, converter: Time::EpochConverter},
         event_type:   {key: "EventType", type: String},
         state:        {key: "State", type: String},
         useragent:    {key: "Useragent", type: String},

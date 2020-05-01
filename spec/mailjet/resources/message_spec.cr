@@ -12,7 +12,7 @@ describe Mailjet::Message do
         .to_return(status: 200, body: read_fixture("message/find"))
 
       response = Mailjet::Message.find({message_id: 576460754655154659})
-      response.data.first.should be_a(Mailjet::Message::ResponseMessage)
+      response.data.first.should be_a(Mailjet::Message::Details)
     end
 
     it "finds a message for the given message id" do
@@ -21,7 +21,7 @@ describe Mailjet::Message do
         .to_return(status: 200, body: read_fixture("message/find"))
 
       Mailjet::Message.find(576460754655154659)
-        .should be_a(Mailjet::Message::ResponseMessage)
+        .should be_a(Mailjet::Message::Details)
     end
 
     it "accepts query parameters" do
@@ -30,7 +30,7 @@ describe Mailjet::Message do
         .to_return(status: 200, body: read_fixture("message/find"))
 
       Mailjet::Message.find(576460754655154659, {show_subject: true})
-        .should be_a(Mailjet::Message::ResponseMessage)
+        .should be_a(Mailjet::Message::Details)
     end
   end
 
@@ -40,7 +40,7 @@ describe Mailjet::Message do
         .to_return(status: 200, body: read_fixture("message/all"))
 
       response = Mailjet::Message.all
-      response.data.first.should be_a(Mailjet::Message::ResponseMessage)
+      response.data.first.should be_a(Mailjet::Message::Details)
       response.count.should eq(2)
       response.total.should eq(2)
     end
@@ -53,14 +53,14 @@ describe Mailjet::Message do
       response = Mailjet::Message.all(query: {
         contact_alt: "some@one.com",
       })
-      response.data.first.should be_a(Mailjet::Message::ResponseMessage)
+      response.data.first.should be_a(Mailjet::Message::Details)
       response.count.should eq(2)
       response.total.should eq(2)
     end
   end
 end
 
-describe Mailjet::Message::ResponseMessage do
+describe Mailjet::Message::Details do
   it "parses message details" do
     response = Mailjet::Message::FindResponse.from_json(
       read_fixture("message/find"))

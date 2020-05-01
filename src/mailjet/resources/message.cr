@@ -14,13 +14,13 @@ struct Mailjet
     #
     can_list("REST/message", {
       count: {key: "Count", type: Int32},
-      data:  {key: "Data", type: Array(ResponseMessage)},
+      data:  {key: "Data", type: Array(Details)},
       total: {key: "Total", type: Int32},
     })
 
     # :nodoc:
     can_find("REST/message/:message_id", {
-      data: {key: "Data", type: Array(ResponseMessage)},
+      data: {key: "Data", type: Array(Details)},
     })
 
     # Fetches a message for the given id
@@ -37,7 +37,7 @@ struct Mailjet
       find({message_id: message_id}, query: query, client: client).data.first
     end
 
-    struct ResponseMessage
+    struct Details
       JSON.mapping({
         arrived_at:          {key: "ArrivedAt", type: Time},
         attachment_count:    {key: "AttachmentCount", type: Int32},

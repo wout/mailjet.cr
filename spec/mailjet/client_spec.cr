@@ -55,6 +55,9 @@ describe Mailjet::Client do
       end
     end
 
+    it "performs an unauthorized request" do
+    end
+
     it "catches any other error" do
       expect_raises(Mailjet::RequestException) do
         WebMock.stub(:get, "https://api.mailjet.com/non-existant")
