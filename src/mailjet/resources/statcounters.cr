@@ -3,7 +3,7 @@ struct Mailjet
     # Raw statcounter endpoint, requiring a series of parameters
     #
     # ```crystal
-    # response = Mailjet::Statcounters.all(query: {
+    # response = Mailjet::Statcounters.all({
     #   counter_source:     "apikey",
     #   counter_timing:     "message",
     #   counter_resolution: "lifetime",

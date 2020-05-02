@@ -9,7 +9,7 @@ struct Mailjet
     # Optionally with query params
     #
     # ```crystal
-    # messages = Mailjet::Message.all(query: {contact_alt: "some@one.com"})
+    # messages = Mailjet::Message.all({contact_alt: "some@one.com"})
     # ```
     #
     can_list("REST/message", {
@@ -34,7 +34,7 @@ struct Mailjet
       query : Hash | NamedTuple = Hash(String, String).new,
       client : Client = Client.new
     )
-      find({message_id: message_id}, query: query, client: client).data.first
+      find({message_id: message_id}, query: query, client: client)
     end
 
     struct Details

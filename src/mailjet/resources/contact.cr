@@ -1,9 +1,7 @@
 struct Mailjet
   struct Contact < Resource
     can_create("REST/contact", {
-      "Count": Int32,
-      "Data":  Array(Details),
-      "Total": Int32,
+      "Data": Array(Details),
     })
 
     struct Details

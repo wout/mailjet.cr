@@ -1,0 +1,40 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "CampaignID" : 0,
+      "ClickTrackedCount" : 0,
+      "ContactID" : 50559566,
+      "CreatedAt" : "2020-04-19T07:35:47Z",
+      "ID" : 1150221507885605625,
+      "MessageSize" : 396,
+      "OpenTrackedCount" : 153381810,
+      "QueuedCount" : 0,
+      "SendEndAt" : "2020-04-19T07:35:47Z",
+      "SentCount" : 155581793,
+      "SpamAssassinRules" : {
+        "ALT" : "",
+        "ID" : -1
+      },
+      "SpamAssassinScore" : 0
+    },
+    {
+      "CampaignID" : 0,
+      "ClickTrackedCount" : 0,
+      "ContactID" : 52987753,
+      "CreatedAt" : "2020-04-29T19:34:45Z",
+      "ID" : 576460758985154659,
+      "MessageSize" : 365,
+      "OpenTrackedCount" : 1522189049,
+      "QueuedCount" : 0,
+      "SendEndAt" : "2020-04-29T19:34:45Z",
+      "SentCount" : 1511188932,
+      "SpamAssassinRules" : {
+        "ALT" : "",
+        "ID" : -1
+      },
+      "SpamAssassinScore" : 0
+    }
+  ],
+  "Total" : 2
+}

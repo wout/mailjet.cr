@@ -15,6 +15,7 @@ describe Mailjet::Contact do
         email:                      "user@example.com",
         is_excluded_from_campaigns: false,
       })
+      response.should be_a(Mailjet::Contact::Details)
     end
   end
 end

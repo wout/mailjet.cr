@@ -5,6 +5,31 @@ describe Mailjet::Message do
     configure_global_api_credentials
   end
 
+  describe ".all" do
+    it "fetches all messages" do
+      WebMock.stub(:get, "https://api.mailjet.com/v3/REST/message")
+        .to_return(status: 200, body: read_fixture("message/all"))
+
+      response = Mailjet::Message.all
+      response.data.first.should be_a(Mailjet::Message::Details)
+      response.count.should eq(2)
+      response.total.should eq(2)
+    end
+
+    it "filters messages with query parameters" do
+      WebMock.stub(:get,
+        "https://api.mailjet.com/v3/REST/message?ContactAlt=some%40one.com")
+        .to_return(status: 200, body: read_fixture("message/all"))
+
+      response = Mailjet::Message.all({
+        contact_alt: "some@one.com",
+      })
+      response.data.first.should be_a(Mailjet::Message::Details)
+      response.count.should eq(2)
+      response.total.should eq(2)
+    end
+  end
+
   describe ".find" do
     it "returns the found message in an array" do
       WebMock.stub(:get,
@@ -12,7 +37,7 @@ describe Mailjet::Message do
         .to_return(status: 200, body: read_fixture("message/find"))
 
       response = Mailjet::Message.find({message_id: 576460754655154659})
-      response.data.first.should be_a(Mailjet::Message::Details)
+      response.should be_a(Mailjet::Message::Details)
     end
 
     it "finds a message for the given message id" do
@@ -31,31 +56,6 @@ describe Mailjet::Message do
 
       Mailjet::Message.find(576460754655154659, {show_subject: true})
         .should be_a(Mailjet::Message::Details)
-    end
-  end
-
-  describe ".all" do
-    it "fetches all messages" do
-      WebMock.stub(:get, "https://api.mailjet.com/v3/REST/message")
-        .to_return(status: 200, body: read_fixture("message/all"))
-
-      response = Mailjet::Message.all
-      response.data.first.should be_a(Mailjet::Message::Details)
-      response.count.should eq(2)
-      response.total.should eq(2)
-    end
-
-    it "filters messages with query parameters" do
-      WebMock.stub(:get,
-        "https://api.mailjet.com/v3/REST/message?ContactAlt=some%40one.com")
-        .to_return(status: 200, body: read_fixture("message/all"))
-
-      response = Mailjet::Message.all(query: {
-        contact_alt: "some@one.com",
-      })
-      response.data.first.should be_a(Mailjet::Message::Details)
-      response.count.should eq(2)
-      response.total.should eq(2)
     end
   end
 end

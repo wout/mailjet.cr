@@ -11,7 +11,7 @@ describe Mailjet::Statcounters do
         "https://api.mailjet.com/v3/REST/statcounters?CounterSource=apikey&CounterTiming=message&CounterResolution=lifetime")
         .to_return(status: 200, body: read_fixture("statcounters/all"))
 
-      response = Mailjet::Statcounters.all(query: {
+      response = Mailjet::Statcounters.all({
         counter_source:     "apikey",
         counter_timing:     "message",
         counter_resolution: "lifetime",

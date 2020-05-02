@@ -2,8 +2,8 @@ struct Mailjet
   abstract struct Resource
     macro can_list(pattern, mapping = nil)
       def self.all(
-        params : Hash | NamedTuple = Hash(String, String).new,
         query : Hash | NamedTuple = Hash(String, String).new,
+        params : Hash | NamedTuple = Hash(String, String).new,
         client : Client = Client.new
       )
         path = ListPath.new(params).to_s
@@ -36,8 +36,10 @@ struct Mailjet
       )
         path = FindPath.new(params).to_s
         response = client.handle_api_call("GET", path, query: query)
+
         {% if mapping %}
           FindResponse.from_json(response)
+            {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
         {% else %}
           true
         {% end %}
@@ -65,8 +67,10 @@ struct Mailjet
         path = CreatePath.new(params).to_s
         response = client.handle_api_call("POST", path,
           payload: Utilities.to_camelcased_hash(payload))
+
         {% if mapping %}
           CreateResponse.from_json(response)
+            {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
         {% else %}
           true
         {% end %}

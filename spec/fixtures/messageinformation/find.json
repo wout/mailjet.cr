@@ -1,0 +1,23 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "CampaignID" : 0,
+      "ClickTrackedCount" : 0,
+      "ContactID" : 52501753,
+      "CreatedAt" : "2020-04-29T19:34:45Z",
+      "ID" : 576460756581154659,
+      "MessageSize" : 365,
+      "OpenTrackedCount" : 1599189049,
+      "QueuedCount" : 0,
+      "SendEndAt" : "2020-04-29T19:34:45Z",
+      "SentCount" : 1588188932,
+      "SpamAssassinRules" : {
+        "ALT" : "",
+        "ID" : -1
+      },
+      "SpamAssassinScore" : 0
+    }
+  ],
+  "Total" : 1
+}

@@ -1,23 +1,33 @@
 struct Mailjet
   struct Messagehistory < Resource
-    # :nodoc:
-    can_find("REST/messagehistory/:message_id", {
+    # Fetches the history of a message
+    #
+    # ```crystal
+    # response = Mailjet::Messagehistory.all(params: {message_id: 576460754655154659})
+    # response.data.first.event_type
+    # # => "opened"
+    # ```
+    #
+    can_list("REST/messagehistory/:message_id", {
       "Count": Int32,
       "Data":  Array(Event),
       "Total": Int32,
     })
 
-    # Fetches the history of a message
+    # Convenience method allowing to pass the message id and returning the array
+    # of events directly
     #
     # ```crystal
-    # messages = Mailjet::Messagehistory.find(576460754655154659)
+    # events = Mailjet::Messagehistory.all(576460754655154659)
+    # events.first.event_type
+    # # => "opened"
     # ```
     #
-    def self.find(
+    def self.all(
       message_id : Int64 | String,
       client : Client = Client.new
     )
-      find({message_id: message_id}, client: client)
+      all(params: {message_id: message_id}, client: client).data
     end
 
     struct Event
