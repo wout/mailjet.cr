@@ -12,9 +12,9 @@ struct Mailjet
     # ```
     #
     can_list("REST/statcounters", {
-      count: {key: "Count", type: Int32},
-      data:  {key: "Data", type: Array(Counters)},
-      total: {key: "Total", type: Int32},
+      "Count": Int32,
+      "Data":  Array(Counters),
+      "Total": Int32,
     })
 
     # Convenience method to retrieve statistics at current API key level
@@ -102,29 +102,31 @@ struct Mailjet
     end
 
     struct Counters
-      JSON.mapping({
-        api_key_id:                     {key: "APIKeyID", type: Int32},
-        event_click_delay:              {key: "EventClickDelay", type: Int32},
-        event_clicked_count:            {key: "EventClickedCount", type: Int32},
-        event_open_delay:               {key: "EventOpenDelay", type: Int32},
-        event_opened_count:             {key: "EventOpenedCount", type: Int32},
-        event_spam_count:               {key: "EventSpamCount", type: Int32},
-        event_unsubscribed_count:       {key: "EventUnsubscribedCount", type: Int32},
-        event_workflow_exited_count:    {key: "EventWorkflowExitedCount", type: Int32},
-        message_blocked_count:          {key: "MessageBlockedCount", type: Int32},
-        message_clicked_count:          {key: "MessageClickedCount", type: Int32},
-        message_deferred_count:         {key: "MessageDeferredCount", type: Int32},
-        message_hard_bounced_count:     {key: "MessageHardBouncedCount", type: Int32},
-        message_opened_count:           {key: "MessageOpenedCount", type: Int32},
-        message_queued_count:           {key: "MessageQueuedCount", type: Int32},
-        message_sent_count:             {key: "MessageSentCount", type: Int32},
-        message_soft_bounced_count:     {key: "MessageSoftBouncedCount", type: Int32},
-        message_spam_count:             {key: "MessageSpamCount", type: Int32},
-        message_unsubscribed_count:     {key: "MessageUnsubscribedCount", type: Int32},
-        message_work_flow_exited_count: {key: "MessageWorkFlowExitedCount", type: Int32},
-        source_id:                      {key: "SourceID", type: Int32},
-        timeslice:                      {key: "Timeslice", type: String},
-        total:                          {key: "Total", type: Int32},
+      include Json::Fields
+
+      json_fields({
+        "APIKeyID":                   Int32,
+        "EventClickDelay":            Int32,
+        "EventClickedCount":          Int32,
+        "EventOpenDelay":             Int32,
+        "EventOpenedCount":           Int32,
+        "EventSpamCount":             Int32,
+        "EventUnsubscribedCount":     Int32,
+        "EventWorkflowExitedCount":   Int32,
+        "MessageBlockedCount":        Int32,
+        "MessageClickedCount":        Int32,
+        "MessageDeferredCount":       Int32,
+        "MessageHardBouncedCount":    Int32,
+        "MessageOpenedCount":         Int32,
+        "MessageQueuedCount":         Int32,
+        "MessageSentCount":           Int32,
+        "MessageSoftBouncedCount":    Int32,
+        "MessageSpamCount":           Int32,
+        "MessageUnsubscribedCount":   Int32,
+        "MessageWorkFlowExitedCount": Int32,
+        "SourceID":                   Int32,
+        "Timeslice":                  String,
+        "Total":                      Int32,
       })
     end
   end

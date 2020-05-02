@@ -2,9 +2,9 @@ struct Mailjet
   struct Messagehistory < Resource
     # :nodoc:
     can_find("REST/messagehistory/:message_id", {
-      count: {key: "Count", type: Int32},
-      data:  {key: "Data", type: Array(Event)},
-      total: {key: "Total", type: Int32},
+      "Count": Int32,
+      "Data":  Array(Event),
+      "Total": Int32,
     })
 
     # Fetches the history of a message
@@ -21,13 +21,15 @@ struct Mailjet
     end
 
     struct Event
-      JSON.mapping({
-        comment:      {key: "Comment", type: String},
-        event_at:     {key: "EventAt", type: Time, converter: Time::EpochConverter},
-        event_type:   {key: "EventType", type: String},
-        state:        {key: "State", type: String},
-        useragent:    {key: "Useragent", type: String},
-        useragent_id: {key: "UseragentID", type: Int32},
+      include Json::Fields
+
+      json_fields({
+        "Comment":     String,
+        "EventAt":     {type: Time, converter: Time::EpochConverter},
+        "EventType":   String,
+        "State":       String,
+        "Useragent":   String,
+        "UseragentID": Int32,
       })
     end
   end

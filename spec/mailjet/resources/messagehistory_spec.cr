@@ -25,7 +25,7 @@ describe Mailjet::Messagehistory::Event do
       read_fixture("messagehistory/find"))
     message = response.data.first
     message.comment.should eq("")
-    message.event_at.should be_a(Time)
+    message.event_at.should eq(Time.unix(1588188885))
     message.event_type.should eq("sent")
     message.state.should eq("")
     message.useragent.should eq("")

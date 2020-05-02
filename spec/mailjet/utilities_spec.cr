@@ -14,6 +14,15 @@ describe Mailjet::Utilities do
     end
   end
 
+  describe ".to_camelcased_hash" do
+    it "converts keys in named tuples and hashes to camelcase" do
+      hash = Mailjet::Utilities.to_camelcased_hash({too_bad_it_is: true})
+      hash["TooBasItIs"] = true
+      hash = Mailjet::Utilities.to_camelcased_hash({:too_bad_it => true})
+      hash["TooBasIt"] = true
+    end
+  end
+
   describe ".query_parameterize" do
     it "converts named tuples and hashes to query params" do
       q = Mailjet::Utilities.query_parameterize({test: 123, cool: true})

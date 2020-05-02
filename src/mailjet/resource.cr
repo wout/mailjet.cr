@@ -1,7 +1,5 @@
 struct Mailjet
   abstract struct Resource
-    include JSON::Serializable
-
     macro can_list(pattern, mapping = nil)
       def self.all(
         params : Hash | NamedTuple = Hash(String, String).new,
@@ -19,7 +17,9 @@ struct Mailjet
 
       {% if mapping %}
         struct ListResponse
-          JSON.mapping({{mapping}})
+          include Json::Fields
+
+          json_fields({{mapping}})
         end
       {% end %}
 
@@ -45,7 +45,9 @@ struct Mailjet
 
       {% if mapping %}
         struct FindResponse
-          JSON.mapping({{mapping}})
+          include Json::Fields
+
+          json_fields({{mapping}})
         end
       {% end %}
 
@@ -61,7 +63,8 @@ struct Mailjet
         client : Client = Client.new
       )
         path = CreatePath.new(params).to_s
-        response = client.handle_api_call("POST", path, payload: payload)
+        response = client.handle_api_call("POST", path,
+          payload: Utilities.to_camelcased_hash(payload))
         {% if mapping %}
           CreateResponse.from_json(response)
         {% else %}
@@ -71,7 +74,9 @@ struct Mailjet
 
       {% if mapping %}
         struct CreateResponse
-          JSON.mapping({{mapping}})
+          include Json::Fields
+
+          json_fields({{mapping}})
         end
       {% end %}
 

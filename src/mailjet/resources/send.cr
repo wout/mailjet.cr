@@ -2,7 +2,7 @@ struct Mailjet
   struct Send < Resource
     # Explicitly using version 3.1 of the send api
     can_create("v3.1/send", {
-      messages: {key: "Messages", type: Array(ResponseMessage)},
+      "Messages": Array(ResponseMessage),
     })
 
     # Deliver an array of messages
@@ -22,32 +22,38 @@ struct Mailjet
     end
 
     struct ResponseMessage
-      JSON.mapping({
-        bcc:       {key: "Bcc", type: Array(DeliveryReceipt)?},
-        cc:        {key: "Cc", type: Array(DeliveryReceipt)?},
-        custom_id: {key: "CustomID", type: String?},
-        errors:    {key: "Errors", type: Array(DeliveryError)?},
-        status:    {key: "Status", type: String},
-        to:        {key: "To", type: Array(DeliveryReceipt)?},
+      include Json::Fields
+
+      json_fields({
+        "Bcc":      Array(DeliveryReceipt)?,
+        "Cc":       Array(DeliveryReceipt)?,
+        "CustomID": String?,
+        "Errors":   Array(DeliveryError)?,
+        "Status":   String,
+        "To":       Array(DeliveryReceipt)?,
       })
     end
 
     struct DeliveryReceipt
-      JSON.mapping({
-        email: {key: "Email", type: String},
-        href:  {key: "MessageHref", type: String},
-        id:    {key: "MessageID", type: Int64},
-        uuid:  {key: "MessageUUID", type: String},
+      include Json::Fields
+
+      json_fields({
+        "Email":       String,
+        "MessageHref": String,
+        "MessageID":   Int64,
+        "MessageUUID": String,
       })
     end
 
     struct DeliveryError
-      JSON.mapping({
-        error_code:  {key: "ErrorCode", type: String},
-        identifier:  {key: "ErrorIdentifier", type: String},
-        message:     {key: "ErrorMessage", type: String},
-        related_to:  {key: "ErrorRelatedTo", type: Array(String)},
-        status_code: {key: "StatusCode", type: Int32},
+      include Json::Fields
+
+      json_fields({
+        "ErrorCode":       String,
+        "ErrorIdentifier": String,
+        "ErrorMessage":    String,
+        "ErrorRelatedTo":  Array(String),
+        "StatusCode":      Int32,
       })
     end
   end

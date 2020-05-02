@@ -47,8 +47,9 @@ describe Mailjet::Send::DeliveryReceipt do
     message = response.messages.first
     receipt = message.to.as(Array(Mailjet::Send::DeliveryReceipt)).first
     receipt.email.should eq("some@one.com")
-    receipt.uuid.should eq("60fe9f5e-d7a1-460b-b0dc-53b0d021f1c8")
-    receipt.href.should contain("https://api.mailjet.com/v3/REST/message")
+    receipt.message_id.should eq(576464555653964483)
+    receipt.message_uuid.should eq("60fe9f5e-d7a1-460b-b0dc-53b0d021f1c8")
+    receipt.message_href.should eq("https://api.mailjet.com/v3/REST/message/576464555653964483")
   end
 end
 
@@ -58,11 +59,11 @@ describe Mailjet::Send::DeliveryReceipt do
       read_fixture("send/create-all-errors"))
     message = response.messages.last
     error = message.errors.as(Array(Mailjet::Send::DeliveryError)).first
-    error.identifier.should eq("6ceb8d18-3367-4fc9-869e-533e93f87c6e")
+    error.error_identifier.should eq("6ceb8d18-3367-4fc9-869e-533e93f87c6e")
     error.error_code.should eq("send-0003")
     error.status_code.should eq(400)
-    error.message.should contain("At least")
-    error.related_to.should eq(%w[TextPart HTMLPart TemplateID])
+    error.error_message.should contain("At least")
+    error.error_related_to.should eq(%w[TextPart HTMLPart TemplateID])
   end
 end
 
