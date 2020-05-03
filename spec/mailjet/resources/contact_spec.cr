@@ -1,5 +1,3 @@
-require "../../spec_helper.cr"
-
 describe Mailjet::Contact do
   before_each do
     configure_global_api_credentials

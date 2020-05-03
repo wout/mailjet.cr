@@ -1,4 +1,3 @@
 struct Mailjet
-  struct Alias
-  end
+  alias ResourceId = Int32 | Int64 | String
 end

@@ -1,7 +1,5 @@
 struct Mailjet
   abstract struct Resource
-    alias ResourceId = Int32 | Int64 | String
-
     macro can_list(pattern, mapping)
       {% unless mapping.id.stringify.starts_with?('{') %}
         {% mapping = {"Count": Int32, "Data": mapping, "Total": Int32} %}

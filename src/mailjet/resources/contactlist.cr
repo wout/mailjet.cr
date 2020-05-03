@@ -2,7 +2,7 @@ struct Mailjet
   struct Contactlist < Resource
     alias ResponseData = Array(Details)
 
-    # Create a contactlist
+    # Find all contact lists
     #
     # ```crystal
     # response = Mailjet::Contactlist.all
