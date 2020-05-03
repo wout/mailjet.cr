@@ -1,0 +1,26 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "ContactID" : 53339566,
+      "ID" : 43877792,
+      "IsActive" : true,
+      "IsUnsubscribed" : false,
+      "ListID" : 26667,
+      "ListName" : "MyFirstTest",
+      "SubscribedAt" : "",
+      "UnsubscribedAt" : "2020-04-19T07:32:09Z"
+    },
+    {
+      "ContactID" : 53337753,
+      "ID" : 46566035,
+      "IsActive" : true,
+      "IsUnsubscribed" : false,
+      "ListID" : 26647,
+      "ListName" : "MyFirstTest",
+      "SubscribedAt" : "2020-05-03T14:07:27Z",
+      "UnsubscribedAt" : ""
+    }
+  ],
+  "Total" : 2
+}

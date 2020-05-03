@@ -24,6 +24,7 @@ struct Mailjet
     #
     # ```crystal
     # contactlist = Mailjet::Contactlist.create({
+    #   name: "New name",
     # })
     # ```
     #
