@@ -76,8 +76,8 @@ struct Mailjet
     private def render(response : HTTP::Client::Response)
       case response.status_code
       when 200, 201
-        response.body.empty? ? "{}" : response.body
-      when 204
+        response.body
+      when 204, 304
         ""
       when 404
         raise ResourceNotFoundException.from_json(response.body)

@@ -1,0 +1,22 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "Address" : "t8if2pl9z",
+      "CreatedAt" : "2020-04-19T07:32:09Z",
+      "ID" : 24447,
+      "IsDeleted" : false,
+      "Name" : "MyFirstTest",
+      "SubscriberCount" : 101
+    },
+    {
+      "Address" : "nrxbzx1u4",
+      "CreatedAt" : "2020-04-23T08:06:03Z",
+      "ID" : 25539,
+      "IsDeleted" : false,
+      "Name" : "MySecondList",
+      "SubscriberCount" : 35
+    }
+  ],
+  "Total" : 2
+}
