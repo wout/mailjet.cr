@@ -1,0 +1,14 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "Active":    true,
+      "CreatedAt": "2020-04-23T08:06:03Z",
+      "ID":        123456789,
+      "Name":      "Something something",
+      "NerdAt":    1588501358,
+      "UpdatedAt": ""
+    }
+  ],
+  "Total" : 1
+}

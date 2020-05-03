@@ -1,5 +1,7 @@
 struct Mailjet
   struct Messagehistory < Resource
+    alias ResponseData = Array(Event)
+
     # Fetches the history of a message
     #
     # ```crystal
@@ -8,11 +10,7 @@ struct Mailjet
     # # => "opened"
     # ```
     #
-    can_list("REST/messagehistory/:id", {
-      "Count": Int32,
-      "Data":  Array(Event),
-      "Total": Int32,
-    })
+    can_list("REST/messagehistory/:id", ResponseData)
 
     # Convenience method allowing to pass the message id and returning the array
     # of events directly

@@ -1,5 +1,7 @@
 struct Mailjet
   struct Message < Resource
+    alias ResponseData = Array(Details)
+
     # Fetch all messages
     #
     # ```crystal
@@ -12,11 +14,7 @@ struct Mailjet
     # messages = Mailjet::Message.all({contact_alt: "some@one.com"})
     # ```
     #
-    can_list("REST/message", {
-      "Count": Int32,
-      "Data":  Array(Details),
-      "Total": Int32,
-    })
+    can_list("REST/message", ResponseData)
 
     # Fetch a message for the given id
     #
@@ -24,9 +22,7 @@ struct Mailjet
     # message = Mailjet::Message.find(123456789)
     # ```
     #
-    can_find("REST/message/:id", {
-      "Data": Array(Details),
-    })
+    can_find("REST/message/:id", ResponseData)
 
     struct Details
       include Json::Fields

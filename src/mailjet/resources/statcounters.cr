@@ -1,5 +1,7 @@
 struct Mailjet
   struct Statcounters < Resource
+    alias ResponseData = Array(Counters)
+
     # Raw statcounter endpoint, requiring a series of parameters
     #
     # ```crystal
@@ -11,11 +13,7 @@ struct Mailjet
     # stats = response.data.first
     # ```
     #
-    can_list("REST/statcounters", {
-      "Count": Int32,
-      "Data":  Array(Counters),
-      "Total": Int32,
-    })
+    can_list("REST/statcounters", ResponseData)
 
     # Convenience method to retrieve statistics at current API key level
     #

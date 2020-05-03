@@ -44,10 +44,28 @@ describe Mailjet::Contactlist do
       WebMock.stub(:put, "https://api.mailjet.com/v3/REST/contactlist/13245")
         .to_return(status: 200, body: read_fixture("contactlist/one"))
 
-      response = Mailjet::Contactlist.update({id: 13245}, {
+      response = Mailjet::Contactlist.update(13245, {
         name: "Updated name",
       })
       response.should be_a(Mailjet::Contactlist::Details)
+    end
+
+    it "performs an update request without changes" do
+      WebMock.stub(:put, "https://api.mailjet.com/v3/REST/contactlist/13245")
+        .to_return(status: 304, body: "")
+
+      response = Mailjet::Contactlist.update(13245)
+      response.should be_nil
+    end
+  end
+
+  describe ".delete" do
+    it "deletes an existing contactlist" do
+      WebMock.stub(:delete, "https://api.mailjet.com/v3/REST/contactlist/13245")
+        .to_return(status: 204, body: "")
+
+      response = Mailjet::Contactlist.delete(13245)
+      response.should be_nil
     end
   end
 end

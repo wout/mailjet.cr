@@ -1,5 +1,7 @@
 struct Mailjet
   struct Contact < Resource
+    alias ResponseData = Array(Details)
+
     # Create a contact
     #
     # ```crystal
@@ -8,11 +10,7 @@ struct Mailjet
     # email_addresses = response.map(&.email)
     # ```
     #
-    can_list("REST/contact", {
-      "Count": Int32,
-      "Data":  Array(Details),
-      "Total": Int32,
-    })
+    can_list("REST/contact", ResponseData)
 
     # Find a contact
     #
@@ -20,9 +18,7 @@ struct Mailjet
     # contact = Mailjet::Contact.find(123456789)
     # ```
     #
-    can_find("REST/contact/:id", {
-      "Data": Array(Details),
-    })
+    can_find("REST/contact/:id", ResponseData)
 
     # Create a contact
     #
@@ -34,9 +30,7 @@ struct Mailjet
     # })
     # ```
     #
-    can_create("REST/contact", {
-      "Data": Array(Details),
-    })
+    can_create("REST/contact", ResponseData)
 
     # Update a contact
     #
@@ -47,9 +41,7 @@ struct Mailjet
     # })
     # ```
     #
-    can_update("REST/contact/:id", {
-      "Data": Array(Details),
-    })
+    can_update("REST/contact/:id", ResponseData)
 
     struct Details
       include Json::Fields

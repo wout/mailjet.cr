@@ -1,6 +1,12 @@
 struct Mailjet
   abstract struct Resource
-    macro can_list(pattern, mapping = nil)
+    alias ResourceId = Int32 | Int64 | String
+
+    macro can_list(pattern, mapping)
+      {% unless mapping.id.stringify.starts_with?('{') %}
+        {% mapping = {"Count": Int32, "Data": mapping, "Total": Int32} %}
+      {% end %}
+
       def self.all(
         query : Hash | NamedTuple = Hash(String, String).new,
         params : Hash | NamedTuple = Hash(String, String).new,
@@ -8,31 +14,30 @@ struct Mailjet
       )
         path = ListPath.new(params).to_s
         response = client.handle_api_call("GET", path, query: query)
-        {% if mapping %}
-          ListResponse.from_json(response)
-        {% else %}
-          true
-        {% end %}
+
+        ListResponse.from_json(response)
       end
 
-      {% if mapping %}
-        struct ListResponse
-          include Json::Fields
+      struct ListResponse
+        include Mailjet::Json::Fields
 
-          {% if mapping.keys.includes?("Data".id) %}
-            forward_missing_to data
-          {% end %}
+        {% if mapping.keys.includes?("Data".id) %}
+          forward_missing_to data
+        {% end %}
 
-          json_fields({{mapping}})
-        end
-      {% end %}
+        json_fields({{mapping}})
+      end
 
       struct ListPath < Mailjet::Path
         getter pattern = {{pattern}}
       end
     end
 
-    macro can_find(pattern, mapping = nil)
+    macro can_find(pattern, mapping)
+      {% unless mapping.id.stringify.starts_with?('{') %}
+        {% mapping = {"Data": mapping} %}
+      {% end %}
+
       def self.find(
         params : Hash | NamedTuple = Hash(String, String).new,
         query : Hash | NamedTuple = Hash(String, String).new,
@@ -41,36 +46,34 @@ struct Mailjet
         path = FindPath.new(params).to_s
         response = client.handle_api_call("GET", path, query: query)
 
-        {% if mapping %}
-          FindResponse.from_json(response)
-            {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
-        {% else %}
-          true
-        {% end %}
+        FindResponse.from_json(response)
+          {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
       end
 
       def self.find(
-        id : Int32 | Int64 | String,
+        id : ResourceId,
         query : Hash | NamedTuple = Hash(String, String).new,
         client : Client = Client.new
       )
         find({id: id}, query: query, client: client)
       end
 
-      {% if mapping %}
-        struct FindResponse
-          include Json::Fields
+      struct FindResponse
+        include Mailjet::Json::Fields
 
-          json_fields({{mapping}})
-        end
-      {% end %}
+        json_fields({{mapping}})
+      end
 
       struct FindPath < Mailjet::Path
         getter pattern = {{pattern}}
       end
     end
 
-    macro can_create(pattern, mapping = nil)
+    macro can_create(pattern, mapping)
+      {% unless mapping.id.stringify.starts_with?('{') %}
+        {% mapping = {"Data": mapping} %}
+      {% end %}
+
       def self.create(
         payload : Hash | NamedTuple,
         params : Hash | NamedTuple = Hash(String, String).new,
@@ -80,28 +83,26 @@ struct Mailjet
         response = client.handle_api_call("POST", path,
           payload: Utilities.to_camelcased_hash(payload))
 
-        {% if mapping %}
-          CreateResponse.from_json(response)
-            {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
-        {% else %}
-          true
-        {% end %}
+        CreateResponse.from_json(response)
+          {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
       end
 
-      {% if mapping %}
-        struct CreateResponse
-          include Json::Fields
+      struct CreateResponse
+        include Mailjet::Json::Fields
 
-          json_fields({{mapping}})
-        end
-      {% end %}
+        json_fields({{mapping}})
+      end
 
       struct CreatePath < Mailjet::Path
         getter pattern = {{ pattern }}
       end
     end
 
-    macro can_update(pattern, mapping = nil)
+    macro can_update(pattern, mapping)
+      {% unless mapping.id.stringify.starts_with?('{') %}
+        {% mapping = {"Data": mapping} %}
+      {% end %}
+
       def self.update(
         params : Hash | NamedTuple = Hash(String, String).new,
         payload : Hash | NamedTuple = Hash(String, String).new,
@@ -111,31 +112,42 @@ struct Mailjet
         response = client.handle_api_call("PUT", path,
           payload: Utilities.to_camelcased_hash(payload))
 
-        {% if mapping %}
+        unless response.empty?
           UpdateResponse.from_json(response)
             {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
-        {% else %}
-          true
-        {% end %}
+        end
       end
 
       def self.update(
-        id : Int32 | String,
+        id : ResourceId,
         payload : Hash | NamedTuple = Hash(String, String).new,
         client : Client = Client.new
       )
-        update({id: id}, query: query, client: client)
+        update({id: id}, payload: payload, client: client)
       end
 
-      {% if mapping %}
-        struct UpdateResponse
-          include Json::Fields
+      struct UpdateResponse
+        include Mailjet::Json::Fields
 
-          json_fields({{mapping}})
-        end
-      {% end %}
+        json_fields({{mapping}})
+      end
 
       struct UpdatePath < Mailjet::Path
+        getter pattern = {{ pattern }}
+      end
+    end
+
+    macro can_delete(pattern)
+      def self.delete(
+        id : ResourceId,
+        client : Client = Client.new
+      )
+        path = DeletePath.new({id: id}).to_s
+        client.handle_api_call("DELETE", path)
+        nil
+      end
+
+      struct DeletePath < Mailjet::Path
         getter pattern = {{ pattern }}
       end
     end

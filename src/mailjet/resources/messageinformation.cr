@@ -1,5 +1,7 @@
 struct Mailjet
   struct Messageinformation < Resource
+    alias ResponseData = Array(Info)
+
     # Fetches the history of all messages between two dates
     #
     # ```crystal
@@ -11,11 +13,7 @@ struct Mailjet
     # => 0
     # ```
     #
-    can_list("REST/messageinformation", {
-      "Count": Int32,
-      "Data":  Array(Details),
-      "Total": Int32,
-    })
+    can_list("REST/messageinformation", ResponseData)
 
     # Fetches the history for a given message id
     #
@@ -25,11 +23,9 @@ struct Mailjet
     # => 0
     # ```
     #
-    can_find("REST/messageinformation/:id", {
-      "Data": Array(Details),
-    })
+    can_find("REST/messageinformation/:id", ResponseData)
 
-    struct Details
+    struct Info
       include Json::Fields
 
       json_fields({

@@ -15,7 +15,7 @@ describe Mailjet::Messageinformation do
         from_ts: "2020-04-27T16:39:55Z",
         to_ts:   "2020-04-29T16:39:55Z",
       })
-      response.data.first.should be_a(Mailjet::Messageinformation::Details)
+      response.data.first.should be_a(Mailjet::Messageinformation::Info)
       response.count.should eq(2)
       response.total.should eq(2)
     end
@@ -28,7 +28,7 @@ describe Mailjet::Messageinformation do
         .to_return(status: 200, body: read_fixture("messageinformation/find"))
 
       response = Mailjet::Messageinformation.find(576460754655154658)
-      response.should be_a(Mailjet::Messageinformation::Details)
+      response.should be_a(Mailjet::Messageinformation::Info)
     end
   end
 end
