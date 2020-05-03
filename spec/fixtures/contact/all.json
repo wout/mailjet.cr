@@ -1,0 +1,36 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "CreatedAt" : "2020-04-29T16:06:36Z",
+      "DeliveredCount" : 0,
+      "Email" : "some@one.com",
+      "ExclusionFromCampaignsUpdatedAt" : "",
+      "ID" : 53392753,
+      "IsExcludedFromCampaigns" : false,
+      "IsOptInPending" : false,
+      "IsSpamComplaining" : false,
+      "LastActivityAt" : "2020-04-29T16:06:36Z",
+      "LastUpdateAt" : "2020-04-29T16:06:36Z",
+      "Name" : "",
+      "UnsubscribedAt" : "",
+      "UnsubscribedBy" : ""
+    },
+    {
+      "CreatedAt" : "2020-05-01T15:12:53Z",
+      "DeliveredCount" : 0,
+      "Email" : "user@example.com",
+      "ExclusionFromCampaignsUpdatedAt" : "",
+      "ID" : 53356661,
+      "IsExcludedFromCampaigns" : false,
+      "IsOptInPending" : false,
+      "IsSpamComplaining" : false,
+      "LastActivityAt" : "",
+      "LastUpdateAt" : "",
+      "Name" : "Contact 1",
+      "UnsubscribedAt" : "2020-04-29T16:06:36Z",
+      "UnsubscribedBy" : "2020-04-29T16:06:36Z"
+    }
+  ],
+  "Total" : 2
+}

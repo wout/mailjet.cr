@@ -27,7 +27,7 @@ describe Mailjet::Messageinformation do
         "https://api.mailjet.com/v3/REST/messageinformation/576460754655154658")
         .to_return(status: 200, body: read_fixture("messageinformation/find"))
 
-      response = Mailjet::Messageinformation.find({message_id: 576460754655154658})
+      response = Mailjet::Messageinformation.find(576460754655154658)
       response.should be_a(Mailjet::Messageinformation::Details)
     end
   end

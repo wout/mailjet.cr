@@ -1,6 +1,6 @@
 struct Mailjet
   struct Message < Resource
-    # Fetches all messages
+    # Fetch all messages
     #
     # ```crystal
     # messages = Mailjet::Message.all
@@ -18,24 +18,15 @@ struct Mailjet
       "Total": Int32,
     })
 
-    # :nodoc:
-    can_find("REST/message/:message_id", {
-      "Data": Array(Details),
-    })
-
-    # Fetches a message for the given id
+    # Fetch a message for the given id
     #
     # ```crystal
     # message = Mailjet::Message.find(123456789)
     # ```
     #
-    def self.find(
-      message_id : Int64 | String,
-      query : Hash | NamedTuple = Hash(String, String).new,
-      client : Client = Client.new
-    )
-      find({message_id: message_id}, query: query, client: client)
-    end
+    can_find("REST/message/:id", {
+      "Data": Array(Details),
+    })
 
     struct Details
       include Json::Fields

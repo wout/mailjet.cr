@@ -19,6 +19,10 @@ struct Mailjet
         struct ListResponse
           include Json::Fields
 
+          {% if mapping.keys.includes?("Data".id) %}
+            forward_missing_to data
+          {% end %}
+
           json_fields({{mapping}})
         end
       {% end %}
@@ -43,6 +47,14 @@ struct Mailjet
         {% else %}
           true
         {% end %}
+      end
+
+      def self.find(
+        id : Int32 | Int64 | String,
+        query : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        find({id: id}, query: query, client: client)
       end
 
       {% if mapping %}
@@ -85,6 +97,45 @@ struct Mailjet
       {% end %}
 
       struct CreatePath < Mailjet::Path
+        getter pattern = {{ pattern }}
+      end
+    end
+
+    macro can_update(pattern, mapping = nil)
+      def self.update(
+        params : Hash | NamedTuple = Hash(String, String).new,
+        payload : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        path = UpdatePath.new(params).to_s
+        response = client.handle_api_call("PUT", path,
+          payload: Utilities.to_camelcased_hash(payload))
+
+        {% if mapping %}
+          UpdateResponse.from_json(response)
+            {% if mapping.keys.includes?("Data".id) %}.data.first{% end %}
+        {% else %}
+          true
+        {% end %}
+      end
+
+      def self.update(
+        id : Int32 | String,
+        payload : Hash | NamedTuple = Hash(String, String).new,
+        client : Client = Client.new
+      )
+        update({id: id}, query: query, client: client)
+      end
+
+      {% if mapping %}
+        struct UpdateResponse
+          include Json::Fields
+
+          json_fields({{mapping}})
+        end
+      {% end %}
+
+      struct UpdatePath < Mailjet::Path
         getter pattern = {{ pattern }}
       end
     end

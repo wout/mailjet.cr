@@ -1,0 +1,21 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "CreatedAt" : "2020-04-19T07:32:09Z",
+      "DeliveredCount" : 0,
+      "Email" : "mas@sta.ba",
+      "ExclusionFromCampaignsUpdatedAt" : "",
+      "ID" : 50555566,
+      "IsExcludedFromCampaigns" : false,
+      "IsOptInPending" : false,
+      "IsSpamComplaining" : false,
+      "LastActivityAt" : "",
+      "LastUpdateAt" : "2020-04-29T07:32:09Z",
+      "Name" : "",
+      "UnsubscribedAt" : "",
+      "UnsubscribedBy" : ""
+    }
+  ],
+  "Total" : 1
+}

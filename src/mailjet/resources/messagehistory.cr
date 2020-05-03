@@ -3,12 +3,12 @@ struct Mailjet
     # Fetches the history of a message
     #
     # ```crystal
-    # response = Mailjet::Messagehistory.all(params: {message_id: 576460754655154659})
+    # response = Mailjet::Messagehistory.all(params: {id: 576460754655154659})
     # response.data.first.event_type
     # # => "opened"
     # ```
     #
-    can_list("REST/messagehistory/:message_id", {
+    can_list("REST/messagehistory/:id", {
       "Count": Int32,
       "Data":  Array(Event),
       "Total": Int32,
@@ -24,10 +24,10 @@ struct Mailjet
     # ```
     #
     def self.all(
-      message_id : Int64 | String,
+      id : Int64 | String,
       client : Client = Client.new
     )
-      all(params: {message_id: message_id}, client: client).data
+      all(params: {id: id}, client: client).data
     end
 
     struct Event

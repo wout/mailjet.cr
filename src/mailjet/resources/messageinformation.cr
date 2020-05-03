@@ -20,12 +20,12 @@ struct Mailjet
     # Fetches the history for a given message id
     #
     # ```crystal
-    # information = Mailjet::Messageinformation.find({message_id: 576460754655154659})
+    # information = Mailjet::Messageinformation.find(576460754655154659)
     # information.data.first.spam_assassin_score
     # => 0
     # ```
     #
-    can_find("REST/messageinformation/:message_id", {
+    can_find("REST/messageinformation/:id", {
       "Data": Array(Details),
     })
 

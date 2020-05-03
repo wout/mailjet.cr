@@ -36,7 +36,7 @@ describe Mailjet::Message do
         "https://api.mailjet.com/v3/REST/message/576460754655154659")
         .to_return(status: 200, body: read_fixture("message/find"))
 
-      response = Mailjet::Message.find({message_id: 576460754655154659})
+      response = Mailjet::Message.find({id: 576460754655154659})
       response.should be_a(Mailjet::Message::Details)
     end
 

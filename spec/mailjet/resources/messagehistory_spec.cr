@@ -11,7 +11,7 @@ describe Mailjet::Messagehistory do
         "https://api.mailjet.com/v3/REST/messagehistory/576460754655154658")
         .to_return(status: 200, body: read_fixture("messagehistory/all"))
 
-      response = Mailjet::Messagehistory.all(params: {message_id: 576460754655154658})
+      response = Mailjet::Messagehistory.all(params: {id: 576460754655154658})
       response.data.first.should be_a(Mailjet::Messagehistory::Event)
       response.count.should eq(2)
       response.total.should eq(2)
