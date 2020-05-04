@@ -1,5 +1,12 @@
 struct Mailjet
   struct Contact
+    # Retrieve all contact lists for a specific contact. You will receive
+    # information on the status of the contact for each list. Information about
+    # lists deleted within the last 60 days will be returned as well, since
+    # those are soft-deleted and can be reinstated.
+    #
+    # https://dev.mailjet.com/email/reference/contacts/subscriptions#v3_get_contact_contact_ID_getcontactslists
+    #
     struct List < Resource
       alias ResponseData = Array(Details)
 

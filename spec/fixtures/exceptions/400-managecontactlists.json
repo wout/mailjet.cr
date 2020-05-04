@@ -1,0 +1,18 @@
+{
+  "ErrorMessage" : "Object properties invalid",
+  "StatusCode" : 400,
+  "ErrorInfo" : {
+    "ContactsLists" : [
+      {
+        "ListID" : 123456789,
+        "Action" : "addnoforce",
+        "Error" : "List ID 123456789 is invalid or deleted"
+      },
+      {
+        "ListID" : 987654321,
+        "Action" : "addforce",
+        "Error" : "List ID 987654321 is invalid or deleted"
+      }
+    ]
+  }
+}

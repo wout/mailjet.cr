@@ -1,4 +1,9 @@
 struct Mailjet
+  # Get aggregated statistics for a specific campaign, list, API Key or sender
+  # email address. Both message-based and event-based stats can be retrieved.
+  #
+  # https://dev.mailjet.com/email/reference/statistics#v3_get_statcounters
+  #
   struct Statcounters < Resource
     alias ResponseData = Array(Counters)
 

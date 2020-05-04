@@ -1,4 +1,9 @@
 struct Mailjet
+  # Retrieve the event history (sending, open, click etc.) for a specific
+  # message.
+  #
+  # https://dev.mailjet.com/email/reference/messages/#v3_get_messagehistory_message_ID
+  #
   struct Messagehistory < Resource
     alias ResponseData = Array(Event)
 

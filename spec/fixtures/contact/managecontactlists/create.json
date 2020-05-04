@@ -1,0 +1,18 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "ContactsLists" : [
+        {
+          "Action" : "addnoforce",
+          "ListID" : 23847
+        },
+        {
+          "Action" : "addforce",
+          "ListID" : 26484
+        }
+      ]
+    }
+  ],
+  "Total" : 1
+}

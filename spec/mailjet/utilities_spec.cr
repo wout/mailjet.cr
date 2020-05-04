@@ -21,6 +21,16 @@ describe Mailjet::Utilities do
       hash = Mailjet::Utilities.to_camelcased_hash({:too_bad_it => true})
       hash["TooBasIt"] = true
     end
+
+    it "converts keys recursively" do
+      hash = Mailjet::Utilities.to_camelcased_hash(test_nested_named_tuple)
+      hash["TopLevel"]["SubLevel"]["SubSubLevel"].should eq("level")
+    end
+
+    it "converts nested arrays with hashes" do
+      hash = Mailjet::Utilities.to_camelcased_hash(test_nested_with_array)
+      hash["TopLevel"]["SubItems"].first["SubItem"].should eq("item")
+    end
   end
 
   describe ".query_parameterize" do
@@ -36,4 +46,26 @@ describe Mailjet::Utilities do
       q.should eq("SumTingGut=wong")
     end
   end
+end
+
+private def test_nested_named_tuple
+  {
+    top_level: {
+      sub_level: {
+        sub_sub_level: "level",
+      },
+    },
+  }
+end
+
+private def test_nested_with_array
+  {
+    top_level: {
+      sub_items: [
+        {
+          sub_item: "item",
+        },
+      ],
+    },
+  }
 end

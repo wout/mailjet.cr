@@ -1,4 +1,9 @@
 struct Mailjet
+  # Retrieve sending / size / spam information about all messages.
+  #
+  # https://dev.mailjet.com/email/reference/messages#v3_get_messageinformation
+  # https://dev.mailjet.com/email/reference/messages/#v3_get_messageinformation_message_ID
+  #
   struct Messageinformation < Resource
     alias ResponseData = Array(Info)
 

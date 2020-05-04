@@ -1,4 +1,10 @@
 struct Mailjet
+  # Contact List objects help you organize your contacts into lists. Every time
+  # you send a campaign you must select a recipient contact list. Segmentation
+  # can help you target a portion of that list.
+  #
+  # https://dev.mailjet.com/email/reference/contacts/contact-list/
+  #
   struct Contactlist < Resource
     alias ResponseData = Array(Details)
 

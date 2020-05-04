@@ -1,4 +1,10 @@
 struct Mailjet
+  # Every time you send an email via Mailjet, a new message object is created.
+  # The resources below help you retrieve details about these messages - sending
+  # time, delivery and contact engagement info, recipients, message size, etc.
+  #
+  # https://dev.mailjet.com/email/reference/messages/
+  #
   struct Message < Resource
     alias ResponseData = Array(Details)
 

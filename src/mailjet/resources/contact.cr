@@ -1,4 +1,9 @@
 struct Mailjet
+  # Contact objects represent the email addresses you intend to send (or have
+  # already sent) messages to.
+  #
+  # https://dev.mailjet.com/email/reference/contacts/contact/
+  #
   struct Contact < Resource
     alias ResponseData = Array(Details)
 

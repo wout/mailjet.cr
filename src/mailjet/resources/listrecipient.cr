@@ -1,4 +1,15 @@
 struct Mailjet
+  # A list recipient object manages the relationship between a contact and a
+  # contactslist - every instance of a contact being added to a list creates a
+  # new list recipient. Both the contact and the list need to be created
+  # beforehand.
+  #
+  # https://dev.mailjet.com/email/reference/contacts/subscriptions#v3_get_listrecipient
+  # https://dev.mailjet.com/email/reference/contacts/subscriptions#v3_get_listrecipient_listrecipient_ID
+  # https://dev.mailjet.com/email/reference/contacts/subscriptions/#v3_post_listrecipient
+  # https://dev.mailjet.com/email/reference/contacts/subscriptions#v3_put_listrecipient_listrecipient_ID
+  # https://dev.mailjet.com/email/reference/contacts/subscriptions#v3_delete_listrecipient_listrecipient_ID
+  #
   struct Listrecipient < Resource
     alias ResponseData = Array(Join)
 

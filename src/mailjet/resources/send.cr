@@ -1,4 +1,10 @@
 struct Mailjet
+  # Send API v3 and v3.1 are part of Mailjet's transactional messaging suite.
+  # Send API v3.1 gives more detailed feedback information on your sendings,
+  # while Send API v3 gives you a higher sending limit per single API call.
+  #
+  # https://dev.mailjet.com/email/reference/send-emails/
+  #
   struct Send < Resource
     # Explicitly using version 3.1 of the send api
     can_create("v3.1/send", {
