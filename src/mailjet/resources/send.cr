@@ -8,7 +8,8 @@ struct Mailjet
   struct Send < Resource
     # :nodoc:
     can_create("send", {
-      "Messages": Array(ResponseMessage),
+      "Messages": Array(ResponseMessage)?,
+      "Sent":     Array(SentMessage)?,
     })
 
     # Deliver an array of messages
@@ -21,8 +22,9 @@ struct Mailjet
     # Mailjet::Send.messages(messages)
     # ```
     #
-    # By default, the v3.1 send api is used. If you need to use the v3 api,
-    # simply pass in the version number as the second parameter:
+    # By default, the v3.1 send api is used, because it is more elegant and
+    # informative. If you need to use the v3 api instead, simply pass in the
+    # version number as the second parameter:
     #
     # ```crystal
     # Mailjet::Send.messages(messages, "v3")
@@ -33,7 +35,16 @@ struct Mailjet
       version : String = "v3.1",
       client : Client = Client.new
     )
-      create({"Messages": messages}, params: {version: version}, client: client)
+      response = create({"Messages": messages},
+        params: {version: version},
+        client: client)
+
+      case version
+      when "v3"
+        response.sent.as(Array(SentMessage))
+      else
+        response.messages.as(Array(ResponseMessage))
+      end
     end
 
     struct ResponseMessage
@@ -46,6 +57,16 @@ struct Mailjet
         "Errors":   Array(DeliveryError)?,
         "Status":   String,
         "To":       Array(DeliveryReceipt)?,
+      })
+    end
+
+    struct SentMessage
+      include Json::Fields
+
+      json_fields({
+        "Email":       String,
+        "MessageID":   Int64,
+        "MessageUUID": String,
       })
     end
 
