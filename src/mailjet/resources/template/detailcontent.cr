@@ -10,7 +10,7 @@ struct Mailjet
     struct Detailcontent < Resource
       alias ResponseData = Array(JSON::Any)
 
-      # Find a template
+      # Find content details for a template
       #
       # ```crystal
       # template = Mailjet::Template::Detailcontent.find(12345)
@@ -21,7 +21,7 @@ struct Mailjet
       # :nodoc:
       can_create("REST/template/:id/detailcontent", ResponseData)
 
-      # Create a template
+      # Create content details for a template
       #
       # ```crystal
       # template = Mailjet::Template::Detailcontent.create(12345, {
@@ -43,7 +43,7 @@ struct Mailjet
         create(payload, {id: id}, client: client)
       end
 
-      # Update a template
+      # Update content details for a template
       #
       # ```crystal
       # template = Mailjet::Template::Detailcontent.update(12345, {

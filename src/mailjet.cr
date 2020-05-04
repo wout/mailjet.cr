@@ -3,6 +3,7 @@ require "big"
 require "big/json"
 require "http/client"
 require "./mailjet/alias"
+require "./mailjet/resource"
 require "./mailjet/json/**"
 require "./mailjet/**"
 
