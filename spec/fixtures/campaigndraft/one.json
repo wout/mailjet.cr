@@ -1,0 +1,30 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "AXFraction" : 0,
+      "AXFractionName" : "",
+      "ContactsListID" : 23777,
+      "CreatedAt" : "2020-05-04T16:53:06Z",
+      "Current" : 1983364,
+      "DeliveredAt" : "",
+      "EditMode" : "tool2",
+      "ID" : 26220,
+      "IsStarred" : false,
+      "IsTextPartIncluded" : true,
+      "Locale" : "en_US",
+      "ModifiedAt" : "2020-05-04T16:53:50Z",
+      "Preset" : "{}",
+      "Sender" : "26778",
+      "SenderEmail" : "some@one.com",
+      "SenderName" : "SomeOne",
+      "Status" : 1,
+      "Subject" : "First test",
+      "TemplateID" : 1399391,
+      "Title" : "Untitled campaign",
+      "Url" : "",
+      "Used" : false
+    }
+  ],
+  "Total" : 1
+}

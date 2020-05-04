@@ -32,3 +32,23 @@ describe Mailjet::Messageinformation do
     end
   end
 end
+
+describe Mailjet::Messageinformation::Info do
+  it "parses message history events" do
+    response = Mailjet::Messageinformation::ListResponse.from_json(
+      read_fixture("messageinformation/all"))
+    info = response.data.first
+    info.campaign_id.should eq(0)
+    info.click_tracked_count.should eq(0)
+    info.contact_id.should eq(50559566)
+    info.created_at.should eq(Time.parse_rfc3339("2020-04-19T07:35:47Z"))
+    info.id.should eq(1150221507885605625)
+    info.message_size.should eq(396)
+    info.open_tracked_count.should eq(153381810)
+    info.queued_count.should eq(0)
+    info.send_end_at.should eq(Time.parse_rfc3339("2020-04-19T07:35:47Z"))
+    info.sent_count.should eq(155581793)
+    info.spam_assassin_rules.should eq({"ALT" => "", "ID" => -1})
+    info.spam_assassin_score.should eq(0)
+  end
+end

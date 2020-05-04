@@ -78,7 +78,7 @@ describe Mailjet::Contactlist::Details do
     resource.address.should eq("t8if2pl9z")
     resource.created_at.should eq(Time.parse_rfc3339("2020-04-19T07:32:09Z"))
     resource.id.should eq(24447)
-    resource.is_deleted.should eq(false)
+    resource.is_deleted.should be_false
     resource.name.should eq("MyFirstTest")
     resource.subscriber_count.should eq(101)
   end

@@ -15,7 +15,6 @@ struct Mailjet
     # ```crystal
     # response = Mailjet::Contactfilter.all
     # contactfilters = response.data
-    # email_addresses = response.map(&.email)
     # ```
     #
     can_list("REST/contactfilter", ResponseData)

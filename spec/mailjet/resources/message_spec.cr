@@ -74,16 +74,16 @@ describe Mailjet::Message::Details do
     message.destination_id.should eq(11668846)
     message.filter_time.should eq(0)
     message.id.should eq(576460755655154659)
-    message.is_click_tracked.should eq(true)
-    message.is_html_part_included.should eq(true)
-    message.is_open_tracked.should eq(true)
-    message.is_text_part_included.should eq(true)
-    message.is_unsub_tracked.should eq(false)
+    message.is_click_tracked.should be_true
+    message.is_html_part_included.should be_true
+    message.is_open_tracked.should be_true
+    message.is_text_part_included.should be_true
+    message.is_unsub_tracked.should be_false
     message.message_size.should eq(365)
     message.sender_id.should eq(26998)
     message.spamassassin_score.should eq(0)
     message.spamass_rules.should eq("")
-    message.state_permanent.should eq(false)
+    message.state_permanent.should be_false
     message.status.should eq("opened")
     message.subject.should eq("")
     message.uuid.should eq("a8774fb0-393a-45e1-ae9a-b0d7c1fe672b")

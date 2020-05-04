@@ -1,0 +1,52 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "AXFraction" : 0,
+      "AXFractionName" : "",
+      "CreatedAt" : "2020-04-23T08:04:08Z",
+      "Current" : 1747773,
+      "DeliveredAt" : "",
+      "EditMode" : "tool2",
+      "ID" : 24446,
+      "IsStarred" : false,
+      "IsTextPartIncluded" : false,
+      "Locale" : "en_US",
+      "ModifiedAt" : "",
+      "Preset" : "",
+      "Sender" : "",
+      "SenderEmail" : "",
+      "SenderName" : "",
+      "Status" : 0,
+      "Subject" : "(no subject)",
+      "Title" : "Untitled campaign",
+      "Url" : "",
+      "Used" : false
+    },
+    {
+      "AXFraction" : 0,
+      "AXFractionName" : "",
+      "ContactsListID" : 23777,
+      "CreatedAt" : "2020-05-04T16:53:06Z",
+      "Current" : 1983364,
+      "DeliveredAt" : "",
+      "EditMode" : "tool2",
+      "ID" : 26220,
+      "IsStarred" : false,
+      "IsTextPartIncluded" : true,
+      "Locale" : "en_US",
+      "ModifiedAt" : "2020-05-04T16:53:50Z",
+      "Preset" : "{}",
+      "Sender" : "26778",
+      "SenderEmail" : "some@one.com",
+      "SenderName" : "SomeOne",
+      "Status" : 1,
+      "Subject" : "First test",
+      "TemplateID" : 1399391,
+      "Title" : "Untitled campaign",
+      "Url" : "",
+      "Used" : false
+    }
+  ],
+  "Total" : 2
+}
