@@ -75,11 +75,11 @@ describe Mailjet::Contactfilter::Filter do
     response = Mailjet::Contactfilter::CreateResponse.from_json(
       read_fixture("contactfilter/one"))
     resource = response.data.first
-    # resource.address.should eq("t8if2pl9z")
-    # resource.created_at.should eq(Time.parse_rfc3339("2020-04-19T07:32:09Z"))
-    # resource.id.should eq(24447)
-    # resource.is_deleted.should eq(false)
-    # resource.name.should eq("MyFirstTest")
-    # resource.subscriber_count.should eq(101)
+    resource.description
+      .should eq("Users that have not clicked on an email link in the last 7 days")
+    resource.expression.should eq("((not hasclickedsince(7)))")
+    resource.id.should eq(2222)
+    resource.name.should eq("Inactive customers for 14 days")
+    resource.status.should eq("unused")
   end
 end
