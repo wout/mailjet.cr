@@ -7,7 +7,7 @@ struct Mailjet
 
       macro json_fields(mapping)
         {% for name, type in mapping %}
-          {% underscored = name.underscore %}
+          {% underscored = name.gsub(/-/, "_").underscore %}
 
           {% if type.id.starts_with?('{') %}
             @[JSON::Field(key: {{name.id}},

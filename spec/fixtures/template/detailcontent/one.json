@@ -1,0 +1,1002 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "MJMLContent" : {
+        "tagName" : "mjml",
+        "children" : [
+          {
+            "tagName" : "mj-head",
+            "children" : [
+              {
+                "tagName" : "mj-preview",
+                "content" : "",
+                "id" : "Mw5liQegczF"
+              }
+            ],
+            "attributes" : {
+            },
+            "id" : "6lCqUCiWRiQ"
+          },
+          {
+            "tagName" : "mj-body",
+            "children" : [
+              {
+                "tagName" : "mj-section",
+                "attributes" : {
+                  "padding" : "20px 0px 20px 0px",
+                  "background-repeat" : "repeat",
+                  "background-size" : "auto",
+                  "text-align" : "center",
+                  "vertical-align" : "top",
+                  "passport" : {
+                    "id" : "K_j-Cca6Hqy",
+                    "header" : true
+                  }
+                },
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "width" : "67%",
+                      "passport" : {
+                        "id" : "lDd0g003YG"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-text",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "0px 0px 0px 25px",
+                          "passport" : {
+                            "id" : "RC_twwqF6R9",
+                            "oldContentEditor" : "<p style=\"margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\">[[HEADLINE]]</p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"left\",\"padding-bottom\":\"0px\",\"padding\":\"0px 0px 0px 25px\",\"padding-top\":\"0px\",\"font-size\":\"11px\"}"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "content" : "<p style=\"margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\">[[HEADLINE]]</p>",
+                        "id" : "jf6JgFG5WGb"
+                      }
+                    ],
+                    "id" : "JXzOaUzAYav"
+                  },
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "width" : "33%",
+                      "passport" : {
+                        "id" : "EHWYZvPYsT"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-text",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "0px 25px 0px 0px",
+                          "passport" : {
+                            "id" : "_eFCvHzleBI",
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\">[[PERMALINK_FULL_LINK]]</p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"right\",\"padding-bottom\":\"0px\",\"padding\":\"0px 25px 0px 0px\",\"padding-top\":\"0px\",\"font-size\":\"11px\"}"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "content" : "<p style=\"text-align: right; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:16px;text-align:right;color:#949aa2;font-family:Arial;line-height:22px;\">[[PERMALINK_FULL_LINK]]</span></p>",
+                        "id" : "GHTnPHeP4tk"
+                      }
+                    ],
+                    "id" : "XA30Q3zSk0g"
+                  }
+                ],
+                "id" : "9Dbelj0-tzT"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r292.png",
+                          "align" : "center",
+                          "width" : "108px",
+                          "height" : "auto",
+                          "padding-bottom" : "23px",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "X1dqQHv9LE"
+                          },
+                          "border-radius" : "px",
+                          "title" : "",
+                          "padding-top" : "48px"
+                        },
+                        "id" : "r2fdTXal1DE"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\"><span style=\"color:#ffffff;font-size:32px;line-height:22px;\"><b>Disco ver</b></span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "20px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"font-size:32px\"><span style=\"font-family:Arial,sans-serif\"><b><span style=\"color:#ffffff\">Discover Our Entreprise</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:32px\"><span style=\"font-family:Arial,sans-serif\"><b><span style=\"color:#ffffff\">Solutions</span></b></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"20px\",\"padding-top\":\"0px\"}",
+                            "id" : "_KAspOqyCfN"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "ia26bje46YO"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffb73d;font-size:14px;background-color:#ffffff;\"><b>Get a Quote</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#ffffff",
+                          "align" : "center",
+                          "padding-bottom" : "45px",
+                          "href" : "http://www.mailjet.com",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<b><span style=\"font-family:Arial,sans-serif\"><span style=\"font-size:14px\"><span style=\"color:#ffb73d\">Get a Quote</span></span></span></b>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#ffffff\",\"align\":\"center\",\"padding-bottom\":\"45px\",\"href\":\"http://www.mailjet.com\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "cDwvioEUMsF"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "y-LS0aw4LOb"
+                      }
+                    ],
+                    "attributes" : {
+                      "vertical-align" : "top",
+                      "passport" : {
+                        "id" : "p5hDrbhpkF"
+                      }
+                    },
+                    "id" : "IqH7P5eOS__"
+                  }
+                ],
+                "attributes" : {
+                  "background-size" : null,
+                  "background-color" : "#F1F1F1",
+                  "text-align" : "center",
+                  "padding-bottom" : "0px",
+                  "vertical-align" : "top",
+                  "background-url" : "http://191n.mj.am/tplimg/191n/b/040q/r29g.png",
+                  "padding" : "0 0 0 0",
+                  "passport" : {
+                    "hidden" : false,
+                    "name" : "Section-A",
+                    "id" : "ZXnaS6xgR7e"
+                  },
+                  "padding-top" : "0px",
+                  "background-repeat" : "no-repeat"
+                },
+                "id" : "4C8wH_sH5Rv"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "children" : [
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\"><span style=\"color:#5e6977;font-size:26px;line-height:22px;\"><b>Mastaba</b></span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "10px",
+                          "container-background-color" : "#FFFFFF",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:26px\"><b><span style=\"color:#5e6977\"><span style=\"font-family:Arial,sans-serif\">Products</span></span></b></span></p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"center\",\"padding-bottom\":\"10px\",\"container-background-color\":\"#FFFFFF\",\"padding\":\"10px 25px\",\"padding-top\":\"20px\",\"font-size\":\"13px\"}",
+                            "id" : "XAOGkNR3cF1"
+                          },
+                          "padding-top" : "20px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "iDo21KHHDQ5l"
+                      }
+                    ],
+                    "attributes" : {
+                      "vertical-align" : "top",
+                      "passport" : {
+                        "id" : "aloav8Qr0W"
+                      }
+                    },
+                    "id" : "U5vC0-OVK_u_"
+                  }
+                ],
+                "attributes" : {
+                  "background-size" : "auto",
+                  "background-color" : "#F1F1F1",
+                  "text-align" : "center",
+                  "padding-bottom" : "0px",
+                  "vertical-align" : "top",
+                  "padding" : "0 0 0 0",
+                  "passport" : {
+                    "hidden" : false,
+                    "name" : "Section-A",
+                    "id" : "6e-pVzCzJ4p"
+                  },
+                  "padding-top" : "0px",
+                  "background-repeat" : "no-repeat"
+                },
+                "id" : "5GJgHAM8R5MD"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "KSRE94z8h-E"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r29p.png",
+                          "align" : "center",
+                          "width" : "56px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "DBWqsKMDwBi"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "8FaGlB1sviMD"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Planner</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">A comprehensive and easy-to-use project management tool</span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">Planner</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">A comprehensive and easy-to-use project management tool</span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "b-UiJCcuZV19"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "1mlQIDdmmUqV"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "HPWBUMMudd17"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "QFBRdaEVmas4"
+                      }
+                    ],
+                    "id" : "qPBN6FsYAf45"
+                  },
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "3zdn9ja6CdL"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r294.png",
+                          "align" : "center",
+                          "width" : "64px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "Id0LdLvUHBD"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "dj97bFrbjvoN"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>TeamSync</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Team communication made simple and efficient </span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">TeamSync</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">Team communication made simple and efficient </span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "eSr3gtSsJw2b"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "C4JHvW8m6nbS"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "NTpGPIrRYbgH"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "FI9Xt5JpWukP"
+                      }
+                    ],
+                    "id" : "pg0cKv3WWbdh"
+                  },
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "zMgWDe3CDDy"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r294.png",
+                          "align" : "center",
+                          "width" : "64px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "d1dQGhjhCyF"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "AQN1exzH6Q4c"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Vdoc</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Collaborate, maintain and share your internal documentation</span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">Vdoc</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">Collaborate, maintain and share your internal documentation</span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "sGottPJITvET"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "mLNldSTLUl2E"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "ckqCFoRftzIY"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "JaVRnnRCHK2G"
+                      }
+                    ],
+                    "id" : "hWpA5-FhU7Xk"
+                  }
+                ],
+                "attributes" : {
+                  "background-repeat" : "repeat",
+                  "padding" : "20px 0",
+                  "background-size" : "auto",
+                  "background-color" : "#ffffff",
+                  "text-align" : "center",
+                  "vertical-align" : "top",
+                  "passport" : {
+                    "name" : "New section",
+                    "id" : "N5m-jJ5Z_s3Z"
+                  }
+                },
+                "id" : "DrL_cB9j4w52"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "children" : [
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:26px;text-align:center;color:#5e6977;font-family:Arial;line-height:22px;\"><b>Services</b></span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "10px",
+                          "container-background-color" : "#FFFFFF",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:26px\"><b><span style=\"color:#5e6977\"><span style=\"font-family:Arial,sans-serif\">Services</span></span></b></span></p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"center\",\"padding-bottom\":\"10px\",\"container-background-color\":\"#FFFFFF\",\"padding\":\"10px 25px\",\"padding-top\":\"20px\",\"font-size\":\"13px\"}",
+                            "id" : "eOUzJ6cz5XPM"
+                          },
+                          "padding-top" : "20px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "WltPCiJJc4df"
+                      }
+                    ],
+                    "attributes" : {
+                      "vertical-align" : "top",
+                      "passport" : {
+                        "id" : "ArCDA1lzmy6"
+                      }
+                    },
+                    "id" : "QxwP6Y6l-e33"
+                  }
+                ],
+                "attributes" : {
+                  "background-size" : "auto",
+                  "background-color" : "#F1F1F1",
+                  "text-align" : "center",
+                  "padding-bottom" : "0px",
+                  "vertical-align" : "top",
+                  "padding" : "0 0 0 0",
+                  "passport" : {
+                    "hidden" : false,
+                    "name" : "Section-A",
+                    "id" : "g85pQ5-_EvHg"
+                  },
+                  "padding-top" : "0px",
+                  "background-repeat" : "no-repeat"
+                },
+                "id" : "ct9wi2wD8Zf2"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "iWBZ_Zqvqzs"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r295.png",
+                          "align" : "center",
+                          "width" : "64px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "7jEFhad0bLC"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "T4l4AU6ChIil"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Planner</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">A comprehensive and easy-to-use project management tool</span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">Planner</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">A comprehensive and easy-to-use project management tool</span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "uTtMD2cqAn7X"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "5VNv3rqi4LRA"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "N8ck2_l8r7w5"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "iNaVM4X_WnL7"
+                      }
+                    ],
+                    "id" : "iASaCd6FT38p"
+                  },
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "wuXBXmAj-1y"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r29u.png",
+                          "align" : "center",
+                          "width" : "64px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "wCXsIDiP2d5"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "WBkCy47C9Zbx"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0;; margin-top: 10px\"><span style=\"color:#5e6977;font-size:18px;line-height:22px;\"><b>Balamba</b></span></p><p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0;; margin-bottom: 10px\"><span style=\"color:#5e6977;font-size:14px;line-height:22px;\">Team communication made simple and efficient</span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">TeamSync</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">Team communication made simple and efficient </span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "pfwPwjAF-el-"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "SLyzS7-Kze4_"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "c6HbbPLimwO7"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "Xjq96BggjqJU"
+                      }
+                    ],
+                    "id" : "6qk193m6lCuh"
+                  },
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "4dyFaCLDhLl"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "http://191n.mj.am/tplimg/191n/b/040q/r29z.png",
+                          "align" : "center",
+                          "width" : "64px",
+                          "height" : "auto",
+                          "alt" : "",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "JYe9TjcjatQ"
+                          },
+                          "border-radius" : "px",
+                          "title" : ""
+                        },
+                        "id" : "NU3xaWpjnHCn"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Vdoc</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Collaborate, maintain and share your internal documentation</span></p>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<p style=\"margin: 10px 0; margin-top: 10px;; margin-top: 10px\"><span style=\"color:#5e6977\"><span style=\"font-size:18px\"><b><span style=\"font-family:Arial,sans-serif\">Vdoc</span></b></span></span></p><p style=\"margin: 10px 0; margin-bottom: 10px;; margin-bottom: 10px\"><span style=\"font-size:14px\"><span style=\"font-family:Arial,sans-serif\"><span style=\"color:#5e6977\">Collaborate, maintain and share your internal documentation</span></span></span></p>",
+                            "oldMjAttributes" : "{\"align\":\"center\",\"color\":\"#949aa2\",\"font-family\":\"Arial, sans-serif\",\"font-size\":\"13px\",\"line-height\":\"22px\",\"padding\":\"10px 25px\",\"padding-bottom\":\"0px\",\"padding-top\":\"0px\"}",
+                            "id" : "SI7JFLyBn9gr"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "id" : "aq2l4luGrR8u"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#fead0d",
+                          "align" : "center",
+                          "href" : "http://www.mailjet.com/blog",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<span style=\"font-size:14px\"><b><span style=\"font-family:Arial,sans-serif\">Learn More</span></b></span>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#fead0d\",\"align\":\"center\",\"href\":\"http://www.mailjet.com/blog\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "wlr-0BjcXWLN"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "2yqmOkjX2cAD"
+                      }
+                    ],
+                    "id" : "1llSQocVuA0T"
+                  }
+                ],
+                "attributes" : {
+                  "background-repeat" : "repeat",
+                  "padding" : "20px 0",
+                  "background-size" : "auto",
+                  "background-color" : "#ffffff",
+                  "padding-bottom" : "40px",
+                  "text-align" : "center",
+                  "vertical-align" : "top",
+                  "passport" : {
+                    "name" : "New section",
+                    "id" : "IPWqiiI-270p"
+                  }
+                },
+                "id" : "a7wXm24NvmQ-"
+              },
+              {
+                "tagName" : "mj-section",
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "children" : [
+                      {
+                        "tagName" : "mj-image",
+                        "attributes" : {
+                          "src" : "https://xv49w.mjt.lu/tplimg/xv49w/b/xj6mo/0u571.png",
+                          "align" : "center",
+                          "width" : "1193px",
+                          "height" : "auto",
+                          "alt" : "Peejnting",
+                          "href" : "",
+                          "border" : "none",
+                          "padding" : "10px 25px",
+                          "target" : "_blank",
+                          "passport" : {
+                            "id" : "LnyRyPiJw",
+                            "mode" : "image",
+                            "image-id" : 1982584
+                          },
+                          "title" : ""
+                        },
+                        "id" : "aTuucYUmisJJ"
+                      },
+                      {
+                        "tagName" : "mj-button",
+                        "content" : "<span style=\"color:#ffb73d;font-size:14px;background-color:#ffffff;\"><b>&nbsp; &nbsp; Get a Quote &nbsp; &nbsp;</b></span>",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#ffffff",
+                          "background-color" : "#ffffff",
+                          "align" : "center",
+                          "padding-bottom" : "60px",
+                          "href" : "http://www.mailjet.com",
+                          "border" : "none",
+                          "text-transform" : "none",
+                          "vertical-align" : "middle",
+                          "text-decoration" : "none",
+                          "padding" : "10px 25px",
+                          "passport" : {
+                            "oldContentEditor" : "<b><span style=\"font-family:Arial,sans-serif\"><span style=\"font-size:14px\"><span style=\"color:#ffb73d\">&nbsp; &nbsp; Get a Quote &nbsp; &nbsp;</span></span></span></b>",
+                            "oldMjAttributes" : "{\"font-family\":\"Arial, sans-serif\",\"color\":\"#ffffff\",\"background-color\":\"#ffffff\",\"align\":\"center\",\"padding-bottom\":\"60px\",\"href\":\"http://www.mailjet.com\",\"border\":\"none\",\"text-transform\":\"none\",\"vertical-align\":\"middle\",\"text-decoration\":\"none\",\"padding\":\"10px 25px\",\"border-radius\":\"20px\",\"font-weight\":\"normal\",\"padding-top\":\"60px\",\"inner-padding\":\"10px 25px\",\"font-size\":\"13px\"}",
+                            "id" : "FX8-0-YzU5jY"
+                          },
+                          "border-radius" : "20px",
+                          "font-weight" : "normal",
+                          "padding-top" : "60px",
+                          "inner-padding" : "10px 25px",
+                          "font-size" : "13px"
+                        },
+                        "id" : "I3p17sEt1H__"
+                      }
+                    ],
+                    "attributes" : {
+                      "vertical-align" : "top",
+                      "passport" : {
+                        "id" : "nn2ktD6DJTQ"
+                      }
+                    },
+                    "id" : "v4-PTYewhmku"
+                  }
+                ],
+                "attributes" : {
+                  "background-size" : null,
+                  "background-color" : "#F1F1F1",
+                  "text-align" : "center",
+                  "padding-bottom" : "0px",
+                  "vertical-align" : "top",
+                  "background-url" : "http://191n.mj.am/tplimg/191n/b/040q/r29g.png",
+                  "padding" : "0 0 0 0",
+                  "passport" : {
+                    "hidden" : false,
+                    "name" : "Section-A",
+                    "id" : "zjYXHN1mBqlQ"
+                  },
+                  "padding-top" : "0px",
+                  "background-repeat" : "no-repeat"
+                },
+                "id" : "Dq7v0KNXcFHf"
+              },
+              {
+                "tagName" : "mj-section",
+                "attributes" : {
+                  "padding" : "20px 0px 20px 0px",
+                  "background-repeat" : "repeat",
+                  "background-size" : "auto",
+                  "text-align" : "center",
+                  "vertical-align" : "top",
+                  "passport" : {
+                    "id" : "e4Ex5nUQ-TWM",
+                    "footer" : true
+                  }
+                },
+                "children" : [
+                  {
+                    "tagName" : "mj-column",
+                    "attributes" : {
+                      "passport" : {
+                        "id" : "yEsOlzMCG9M"
+                      }
+                    },
+                    "children" : [
+                      {
+                        "tagName" : "mj-text",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "0px 20px 0px 20px",
+                          "passport" : {
+                            "id" : "6idtSZkR5Ml4",
+                            "oldContentEditor" : "<p style=\"margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\">[[DELIVERY_INFO]]</p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"center\",\"padding-bottom\":\"0px\",\"padding\":\"0px 20px 0px 20px\",\"padding-top\":\"0px\",\"font-size\":\"11px\"}"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:16px;text-align:center;color:#949aa2;font-family:Arial;line-height:22px;\">[[DELIVERY_INFO]]</span></p>",
+                        "id" : "n6YizhfH_8F7"
+                      },
+                      {
+                        "tagName" : "mj-text",
+                        "attributes" : {
+                          "font-family" : "Arial, sans-serif",
+                          "color" : "#000000",
+                          "align" : "left",
+                          "padding-bottom" : "0px",
+                          "padding" : "0px 20px 0px 20px",
+                          "passport" : {
+                            "id" : "i2meeIZ2bio7",
+                            "oldContentEditor" : "<p style=\"margin: 10px 0;; margin-top: 10px; margin-bottom: 10px\">[[POSTAL_ADDRESS]]</p>",
+                            "oldMjAttributes" : "{\"line-height\":\"22px\",\"font-family\":\"Arial, sans-serif\",\"color\":\"#949aa2\",\"align\":\"center\",\"padding-bottom\":\"0px\",\"padding\":\"0px 20px 0px 20px\",\"padding-top\":\"0px\",\"font-size\":\"11px\"}"
+                          },
+                          "padding-top" : "0px",
+                          "letter-spacing" : "normal",
+                          "font-size" : "13px"
+                        },
+                        "content" : "<p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;; margin-top: 10px; margin-bottom: 10px\"><span style=\"font-size:16px;text-align:center;color:#949aa2;font-family:Arial;line-height:22px;\">[[POSTAL_ADDRESS]]</span></p>",
+                        "id" : "ENy_UyCYrMJc"
+                      }
+                    ],
+                    "id" : "t0-F55ZVhFwE"
+                  }
+                ],
+                "id" : "RwS1WPdqKif7"
+              }
+            ],
+            "attributes" : {
+              "background-color" : "#fff9ef",
+              "font-family" : "Arial, sans-serif",
+              "color" : "#949aa2",
+              "passport" : {
+                "id" : "eSZVg1xLJ-"
+              }
+            },
+            "id" : "ogwSoPW-vJE"
+          }
+        ],
+        "attributes" : {
+          "version" : "4.5.1",
+          "owa" : "desktop",
+          "passport" : {
+            "revertLostLink" : true,
+            "id" : "RTvwLCQMYkD",
+            "ck-version" : "5"
+          }
+        },
+        "id" : "KSVFwlroyoz"
+      },
+      "Html-part" : "<!doctype html><html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\"><head><title>Disco Ver</title><!--[if !mso]><!-- --><meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\"><!--<![endif]--><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><style type=\"text/css\">#outlook a { padding:0; }\n          body { margin:0;padding:0;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; }\n          table, td { border-collapse:collapse;mso-table-lspace:0pt;mso-table-rspace:0pt; }\n          img { border:0;height:auto;line-height:100%; outline:none;text-decoration:none;-ms-interpolation-mode:bicubic; }\n          p { display:block;margin:13px 0; }</style><!--[if mso]>\n        <xml>\n        <o:OfficeDocumentSettings>\n          <o:AllowPNG/>\n          <o:PixelsPerInch>96</o:PixelsPerInch>\n        </o:OfficeDocumentSettings>\n        </xml>\n        <![endif]--><!--[if lte mso 11]>\n        <style type=\"text/css\">\n          .mj-outlook-group-fix { width:100% !important; }\n        </style>\n        <![endif]--><style type=\"text/css\">@media only screen and (min-width:480px) {\n        .mj-column-per-67 { width:67% !important; max-width: 67%; }\n.mj-column-per-33 { width:33% !important; max-width: 33%; }\n.mj-column-per-100 { width:100% !important; max-width: 100%; }\n.mj-column-per-33-333333333333336 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }\n      }</style><style type=\"text/css\">[owa] .mj-column-per-67 { width:67% !important; max-width: 67%; }\n[owa] .mj-column-per-33 { width:33% !important; max-width: 33%; }\n[owa] .mj-column-per-100 { width:100% !important; max-width: 100%; }\n[owa] .mj-column-per-33-333333333333336 { width:33.333333333333336% !important; max-width: 33.333333333333336%; }</style><style type=\"text/css\">@media only screen and (max-width:480px) {\n      table.mj-full-width-mobile { width: 100% !important; }\n      td.mj-full-width-mobile { width: auto !important; }\n    }</style></head><body style=\"background-color:#fff9ef;\"><div style=\"background-color:#fff9ef;\"><!--[if mso | IE]><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:20px 0px 20px 0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:402px;\" ><![endif]--><div class=\"mj-column-per-67 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"left\" style=\"font-size:0px;padding:0px 0px 0px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"margin: 10px 0;\"></p></div></td></tr></table></div><!--[if mso | IE]></td><td class=\"\" style=\"vertical-align:top;width:198px;\" ><![endif]--><div class=\"mj-column-per-33 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"left\" style=\"font-size:0px;padding:0px 25px 0px 0px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: right; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"font-size:16px;text-align:right;color:#949aa2;font-family:Arial;line-height:22px;\"><a href=\"[[PERMALINK]]\" style=\"color:inherit;text-decoration:none;\" target=\"_blank\">View online version</a></span></p></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><v:rect style=\"width:600px;\" xmlns:v=\"urn:schemas-microsoft-com:vml\" fill=\"true\" stroke=\"false\"><v:fill origin=\"0.5, 0\" position=\"0.5, 0\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r29g.png\" color=\"#F1F1F1\" type=\"tile\" /><v:textbox style=\"mso-fit-shape-to-text:true\" inset=\"0,0,0,0\"><![endif]--><div style=\"background:#F1F1F1 url(http://191n.mj.am/tplimg/191n/b/040q/r29g.png) top center / null no-repeat;margin:0px auto;max-width:600px;\"><div style=\"line-height:0;font-size:0;\"><table align=\"center\" background=\"http://191n.mj.am/tplimg/191n/b/040q/r29g.png\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#F1F1F1 url(http://191n.mj.am/tplimg/191n/b/040q/r29g.png) top center / null no-repeat;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:0 0 0 0;padding-bottom:0px;padding-top:0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:600px;\" ><![endif]--><div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;padding-top:48px;padding-bottom:23px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:108px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r292.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"108\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:20px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"color:#ffffff;font-size:32px;line-height:22px;\"><b>Disco ver</b></span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;padding-bottom:45px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#ffffff\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#ffffff;\" valign=\"middle\"><a href=\"http://www.mailjet.com\" style=\"display:inline-block;background:#ffffff;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffb73d;font-size:14px;background-color:#ffffff;\"><b>Get a Quote</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]></v:textbox></v:rect></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"background:#F1F1F1;background-color:#F1F1F1;margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#F1F1F1;background-color:#F1F1F1;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:0 0 0 0;padding-bottom:0px;padding-top:0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:600px;\" ><![endif]--><div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"left\" style=\"background:#FFFFFF;font-size:0px;padding:10px 25px;padding-top:20px;padding-bottom:10px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"color:#5e6977;font-size:26px;line-height:22px;\"><b>Mastaba</b></span></p></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#ffffff;background-color:#ffffff;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:20px 0;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:56px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r29p.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"56\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Planner</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">A comprehensive and easy-to-use project management tool</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:64px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r294.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"64\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>TeamSync</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Team communication made simple and efficient</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:64px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r294.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"64\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Vdoc</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Collaborate, maintain and share your internal documentation</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"background:#F1F1F1;background-color:#F1F1F1;margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#F1F1F1;background-color:#F1F1F1;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:0 0 0 0;padding-bottom:0px;padding-top:0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:600px;\" ><![endif]--><div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"left\" style=\"background:#FFFFFF;font-size:0px;padding:10px 25px;padding-top:20px;padding-bottom:10px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"font-size:26px;text-align:center;color:#5e6977;font-family:Arial;line-height:22px;\"><b>Services</b></span></p></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"background:#ffffff;background-color:#ffffff;margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#ffffff;background-color:#ffffff;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:20px 0;padding-bottom:40px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:64px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r295.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"64\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Planner</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">A comprehensive and easy-to-use project management tool</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:64px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r29u.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"64\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"color:#5e6977;font-size:18px;line-height:22px;\"><b>Balamba</b></span></p><p class=\"text-build-content\" style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"color:#5e6977;font-size:14px;line-height:22px;\">Team communication made simple and efficient</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td><td class=\"\" style=\"vertical-align:top;width:200px;\" ><![endif]--><div class=\"mj-column-per-33-333333333333336 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:64px;\"><img alt=\"\" height=\"auto\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r29z.png\" style=\"border:none;border-radius:px;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"64\"></td></tr></tbody></table></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:10px 25px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px;\"><span style=\"line-height:22px;font-size:18px;font-family:Arial;color:#5e6977;text-align:center;\"><b>Vdoc</b></span></p><p style=\"text-align: center; margin: 10px 0; margin-bottom: 10px;\"><span style=\"line-height:22px;font-size:14px;font-family:Arial;color:#5e6977;text-align:center;\">Collaborate, maintain and share your internal documentation</span></p></div></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#fead0d\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#fead0d;\" valign=\"middle\"><a href=\"http://www.mailjet.com/blog\" style=\"display:inline-block;background:#fead0d;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffffff;font-size:14px;background-color:#fead0d;\"><b>Learn More</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><v:rect style=\"width:600px;\" xmlns:v=\"urn:schemas-microsoft-com:vml\" fill=\"true\" stroke=\"false\"><v:fill origin=\"0.5, 0\" position=\"0.5, 0\" src=\"http://191n.mj.am/tplimg/191n/b/040q/r29g.png\" color=\"#F1F1F1\" type=\"tile\" /><v:textbox style=\"mso-fit-shape-to-text:true\" inset=\"0,0,0,0\"><![endif]--><div style=\"background:#F1F1F1 url(http://191n.mj.am/tplimg/191n/b/040q/r29g.png) top center / null no-repeat;margin:0px auto;max-width:600px;\"><div style=\"line-height:0;font-size:0;\"><table align=\"center\" background=\"http://191n.mj.am/tplimg/191n/b/040q/r29g.png\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"background:#F1F1F1 url(http://191n.mj.am/tplimg/191n/b/040q/r29g.png) top center / null no-repeat;width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:0 0 0 0;padding-bottom:0px;padding-top:0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:600px;\" ><![endif]--><div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"center\" style=\"font-size:0px;padding:10px 25px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:collapse;border-spacing:0px;\"><tbody><tr><td style=\"width:550px;\"><img alt=\"Peejnting\" height=\"auto\" src=\"https://xv49w.mjt.lu/tplimg/xv49w/b/xj6mo/0u571.png\" style=\"border:none;display:block;outline:none;text-decoration:none;height:auto;width:100%;font-size:13px;\" width=\"550\"></td></tr></tbody></table></td></tr><tr><td align=\"center\" vertical-align=\"middle\" style=\"font-size:0px;padding:10px 25px;padding-top:60px;padding-bottom:60px;word-break:break-word;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"border-collapse:separate;line-height:100%;\"><tr><td align=\"center\" bgcolor=\"#ffffff\" role=\"presentation\" style=\"border:none;border-radius:20px;cursor:auto;mso-padding-alt:10px 25px;background:#ffffff;\" valign=\"middle\"><a href=\"http://www.mailjet.com\" style=\"display:inline-block;background:#ffffff;color:#ffffff;font-family:Arial, sans-serif;font-size:13px;font-weight:normal;line-height:120%;margin:0;text-decoration:none;text-transform:none;padding:10px 25px;mso-padding-alt:0px;border-radius:20px;\" target=\"_blank\"><span style=\"color:#ffb73d;font-size:14px;background-color:#ffffff;\"><b>&nbsp; &nbsp; Get a Quote &nbsp; &nbsp;</b></span></a></td></tr></table></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div></div><!--[if mso | IE]></v:textbox></v:rect></td></tr></table><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" class=\"\" style=\"width:600px;\" width=\"600\" ><tr><td style=\"line-height:0px;font-size:0px;mso-line-height-rule:exactly;\"><![endif]--><div style=\"margin:0px auto;max-width:600px;\"><table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"width:100%;\"><tbody><tr><td style=\"direction:ltr;font-size:0px;padding:20px 0px 20px 0px;text-align:center;\"><!--[if mso | IE]><table role=\"presentation\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td class=\"\" style=\"vertical-align:top;width:600px;\" ><![endif]--><div class=\"mj-column-per-100 mj-outlook-group-fix\" style=\"font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" role=\"presentation\" style=\"vertical-align:top;\" width=\"100%\"><tr><td align=\"left\" style=\"font-size:0px;padding:0px 20px 0px 20px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"font-size:16px;text-align:center;color:#949aa2;font-family:Arial;line-height:22px;\">This e-mail has been sent to [[EMAIL_TO]], <a href=\"[[UNSUB_LINK_EN]]\" style=\"color:inherit;text-decoration:none;\" target=\"_blank\">click here to unsubscribe</a>.</span></p></div></td></tr><tr><td align=\"left\" style=\"font-size:0px;padding:0px 20px 0px 20px;padding-top:0px;padding-bottom:0px;word-break:break-word;\"><div style=\"font-family:Arial, sans-serif;font-size:13px;letter-spacing:normal;line-height:1;text-align:left;color:#000000;\"><p style=\"text-align: center; margin: 10px 0; margin-top: 10px; margin-bottom: 10px;\"><span style=\"font-size:16px;text-align:center;color:#949aa2;font-family:Arial;line-height:22px;\">   </span></p></div></td></tr></table></div><!--[if mso | IE]></td></tr></table><![endif]--></td></tr></tbody></table></div><!--[if mso | IE]></td></tr></table><![endif]--></div></body></html>",
+      "Text-part" : "Give a summary of your email to your recipients\n\nView online version [[[PERMALINK]]]\n\n\n\n\nDisco ver\n<<Get a Quote>> [http://www.mailjet.com]\n\n\n\n\nMastaba\n\n\n\n\nPlanner\n\nA comprehensive and easy-to-use project management tool\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\nTeamSync\n\nTeam communication made simple and efficient\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\nVdoc\n\nCollaborate, maintain and share your internal documentation\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\n\nServices\n\n\n\n\nPlanner\n\nA comprehensive and easy-to-use project management tool\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\nBalamba\n\nTeam communication made simple and efficient\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\nVdoc\n\nCollaborate, maintain and share your internal documentation\n<<Learn More>> [http://www.mailjet.com/blog]\n\n\n\n\n<<Peejnting>> []\n<<Get a Quote>> [http://www.mailjet.com]\n\n\n\n\nThis e-mail has been sent to [[EMAIL_TO]], click here to unsubscribe [[[UNSUB_LINK_EN]]].",
+      "Headers" : {
+        "Subject" : "Disco Ver",
+        "SenderName" : "Disco Ver",
+        "SenderEmail" : "some@one.com",
+        "ReplyEmail" : "",
+        "From" : "Disco Ver <some@one.com>",
+        "Reply-To" : ""
+      }
+    }
+  ],
+  "Total" : 1
+}
