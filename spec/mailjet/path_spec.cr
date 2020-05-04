@@ -7,6 +7,12 @@ describe Mailjet::Path do
         path = Mailjet::TestPath.new
         path.to_s.should eq("/v3/test/path")
       end
+
+      it "inserts the globally configured api version" do
+        Mailjet::Config.api_version = "v3.1"
+        path = Mailjet::TestPath.new
+        path.to_s.should eq("/v3.1/test/path")
+      end
     end
 
     context "with params" do
@@ -25,11 +31,11 @@ describe Mailjet::Path do
           }).to_s
         end
       end
-    end
 
-    context "with version" do
-      it "it does not add the api version" do
-        path = Mailjet::TestPathWithVersion.new
+      it "it adds the given api version" do
+        path = Mailjet::TestPath.new({
+          version: "v3.1",
+        })
         path.to_s.should eq("/v3.1/test/path")
       end
     end
@@ -52,11 +58,7 @@ struct Mailjet
     getter pattern = "/test/path/:test/:params"
   end
 
-  struct TestPathWithVersion < Mailjet::Path
-    getter pattern = "/v3.1/test/path"
-  end
-
   struct TestPathWithoutLeadingSlash < Mailjet::Path
-    getter pattern = "v3/test/path"
+    getter pattern = "test/path"
   end
 end

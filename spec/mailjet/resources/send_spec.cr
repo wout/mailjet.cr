@@ -8,11 +8,11 @@ describe Mailjet::Send do
   describe "#messages" do
     it "delivers one or more messages" do
       WebMock.stub(:post, "https://api.mailjet.com/v3.1/send")
-        .to_return(status: 200, body: read_fixture("send/create"))
+        .to_return(status: 200, body: read_fixture("send/create-v3.1"))
 
       response = Mailjet::Send.messages([
-        valid_send_message_payload,
-        valid_send_message_payload,
+        valid_send_message_payload_v3_1,
+        valid_send_message_payload_v3_1,
       ])
       response.messages.should be_a(Array(Mailjet::Send::ResponseMessage))
     end
@@ -22,7 +22,7 @@ end
 describe Mailjet::Send::CreateResponse do
   it "parses success messages" do
     response = Mailjet::Send::CreateResponse.from_json(
-      read_fixture("send/create"))
+      read_fixture("send/create-v3.1"))
     message = response.messages.first
     message.status.should eq("success")
     message.custom_id.should eq("")
@@ -43,13 +43,14 @@ end
 describe Mailjet::Send::DeliveryReceipt do
   it "parses a delivery receipt" do
     response = Mailjet::Send::CreateResponse.from_json(
-      read_fixture("send/create"))
+      read_fixture("send/create-v3.1"))
     message = response.messages.first
     receipt = message.to.as(Array(Mailjet::Send::DeliveryReceipt)).first
     receipt.email.should eq("some@one.com")
     receipt.message_id.should eq(576464555653964483)
     receipt.message_uuid.should eq("60fe9f5e-d7a1-460b-b0dc-53b0d021f1c8")
-    receipt.message_href.should eq("https://api.mailjet.com/v3/REST/message/576464555653964483")
+    receipt.message_href
+      .should eq("https://api.mailjet.com/v3/REST/message/576464555653964483")
   end
 end
 
@@ -67,7 +68,7 @@ describe Mailjet::Send::DeliveryReceipt do
   end
 end
 
-private def valid_send_message_payload
+private def valid_send_message_payload_v3_1
   {
     "From": {
       "Email": "from@email.com",

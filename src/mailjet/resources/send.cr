@@ -6,25 +6,34 @@ struct Mailjet
   # https://dev.mailjet.com/email/reference/send-emails/
   #
   struct Send < Resource
-    # Explicitly using version 3.1 of the send api
-    can_create("v3.1/send", {
+    # :nodoc:
+    can_create("send", {
       "Messages": Array(ResponseMessage),
     })
 
     # Deliver an array of messages
     #
     # ```crystal
-    # Mailjet::Send.messages([
+    # messages = [
     #   {...},
     #   {...},
-    # ])
+    # ]
+    # Mailjet::Send.messages(messages)
+    # ```
+    #
+    # By default, the v3.1 send api is used. If you need to use the v3 api,
+    # simply pass in the version number as the second parameter:
+    #
+    # ```crystal
+    # Mailjet::Send.messages(messages, "v3")
     # ```
     #
     def self.messages(
       messages : Array(Hash) | Array(NamedTuple),
+      version : String = "v3.1",
       client : Client = Client.new
     )
-      create({"Messages" => messages}, client: client)
+      create({"Messages": messages}, params: {version: version}, client: client)
     end
 
     struct ResponseMessage
