@@ -1,0 +1,34 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "ID" : 1393391,
+      "Name" : "Dumos",
+      "Author" : "Walt Fireus",
+      "OwnerId" : 1248676,
+      "OwnerType" : "user",
+      "Presets" : "{}",
+      "Categories" : [
+        "newsletter"
+      ],
+      "Copyright" : "Mailjet",
+      "Description" : "",
+      "EditMode" : 1,
+      "IsStarred" : false,
+      "IsTextPartGenerationEnabled" : true,
+      "Locale" : "en_US",
+      "LocaleList" : [
+        "en_US"
+      ],
+      "Previews" : [
+        123463745
+      ],
+      "Purposes" : [
+        "marketing"
+      ],
+      "CreatedAt" : "2020-05-04T13:30:24Z",
+      "LastUpdatedAt" : "2020-05-04T13:30:24Z"
+    }
+  ],
+  "Total" : 1
+}
