@@ -1,0 +1,32 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "IsDeleted" : false,
+      "IsStarred" : false,
+      "CampaignType" : 2,
+      "ClickTracked" : 1,
+      "CreatedAt" : "2018-01-01T00:00:00Z",
+      "CustomValue" : "CustomTag",
+      "FirstMessageID" : 1234567890987654400,
+      "FromEmail" : "pilot@mailjet.com",
+      "FromID" : 123456,
+      "FromName" : "Your Mailjet Pilot",
+      "HasHtmlCount" : 1,
+      "HasTxtCount" : 1,
+      "ID" : 987654321234568000,
+      "ListID" : 567890,
+      "NewsLetterID" : 3456789,
+      "OpenTracked" : 1,
+      "SegmentationID" : 123,
+      "SendEndAt" : "2018-01-01T00:00:00Z",
+      "SendStartAt" : "2018-01-01T00:00:00Z",
+      "SpamassScore" : "0",
+      "Status" : 0,
+      "Subject" : "Your email flight plan!",
+      "UnsubscribeTrackedCount" : 0,
+      "WorkflowID" : 1234
+    }
+  ],
+  "Total" : 1
+}

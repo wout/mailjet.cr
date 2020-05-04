@@ -10,7 +10,7 @@ struct Mailjet
   struct Contactfilter < Resource
     alias ResponseData = Array(Filter)
 
-    # Find all contact lists
+    # Find all contactfilters
     #
     # ```crystal
     # response = Mailjet::Contactfilter.all
