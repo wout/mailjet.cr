@@ -1,17 +1,17 @@
 language: crystal
 
-# crystal:
-#   - latest
-#   - nightly
+crystal:
+  - latest
+  - nightly
 
-# matrix:
-#   allow_failures:
-#     - crystal: nightly
+matrix:
+  allow_failures:
+    - crystal: nightly
 
-# install:
-#   - shards install
+install:
+  - shards install
 
-# script:
-#   - crystal spec
-#   - crystal tool format --check src spec
-#   - bin/ameba src
+script:
+  - crystal spec
+  - crystal tool format --check src spec
+  - bin/ameba src
