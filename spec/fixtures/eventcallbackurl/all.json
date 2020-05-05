@@ -1,0 +1,24 @@
+{
+  "Count" : 2,
+  "Data" : [
+    {
+      "APIKeyID" : 1234567,
+      "EventType" : "open",
+      "ID" : 987654,
+      "IsBackup" : false,
+      "Status" : "alive",
+      "Url" : "https://somesite.com/123/",
+      "Version" : 1
+    },
+    {
+      "APIKeyID" : 9876543,
+      "EventType" : "open",
+      "ID" : 123456,
+      "IsBackup" : false,
+      "Status" : "alive",
+      "Url" : "https://somesite.com/456/",
+      "Version" : 1
+    }
+  ],
+  "Total" : 2
+}

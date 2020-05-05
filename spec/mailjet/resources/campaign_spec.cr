@@ -19,7 +19,8 @@ describe Mailjet::Campaign do
 
   describe ".find" do
     it "fetches a single campaign" do
-      WebMock.stub(:get, "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
+      WebMock.stub(:get,
+        "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
         .to_return(status: 200, body: read_fixture("campaign/one"))
 
       response = Mailjet::Campaign.find(1234567890987654400)
@@ -29,7 +30,8 @@ describe Mailjet::Campaign do
 
   describe ".update" do
     it "updates an existing campaign" do
-      WebMock.stub(:put, "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
+      WebMock.stub(:put,
+        "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
         .to_return(status: 200, body: read_fixture("campaign/one"))
 
       response = Mailjet::Campaign.update(1234567890987654400, {
@@ -40,7 +42,8 @@ describe Mailjet::Campaign do
     end
 
     it "performs an update request without changes" do
-      WebMock.stub(:put, "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
+      WebMock.stub(:put,
+        "https://api.mailjet.com/v3/REST/campaign/1234567890987654400")
         .to_return(status: 304, body: "")
 
       response = Mailjet::Campaign.update(1234567890987654400)
