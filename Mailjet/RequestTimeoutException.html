@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Crystal Docs 0.33.0">
+
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/doc.js"></script>
+
+<svg class="hidden">
+  <symbol id="octicon-link" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+  </symbol>
+</svg>
+
+  <meta id="repository-name" content="github.com/tilishop/mailjet.cr">
+  <title>Mailjet::RequestTimeoutException - github.com/tilishop/mailjet.cr</title>
+  <script type="text/javascript">
+    CrystalDoc.base_path = "../";
+  </script>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">
+    <div class="search-box">
+      <input type="search" class="search-input" placeholder="Search..." spellcheck="false" aria-label="Search">
+    </div>
+
+    <div class="repository-links">
+      <a href="../index.html">README</a>
+    </div>
+  </div>
+
+  <div class="search-results" class="hidden">
+    <ul class="search-list"></ul>
+  </div>
+
+  <div class="types-list">
+    <ul>
+  
+  <li class="parent open current" data-id="github.com/tilishop/mailjet.cr/Mailjet" data-name="mailjet">
+      <a href="../Mailjet.html">Mailjet</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Address" data-name="mailjet::address">
+      <a href="../Mailjet/Address.html">Address</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/AddressList" data-name="mailjet::addresslist">
+      <a href="../Mailjet/AddressList.html">AddressList</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign" data-name="mailjet::campaign">
+      <a href="../Mailjet/Campaign.html">Campaign</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/Details" data-name="mailjet::campaign::details">
+      <a href="../Mailjet/Campaign/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/FindPath" data-name="mailjet::campaign::findpath">
+      <a href="../Mailjet/Campaign/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/FindResponse" data-name="mailjet::campaign::findresponse">
+      <a href="../Mailjet/Campaign/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/ListPath" data-name="mailjet::campaign::listpath">
+      <a href="../Mailjet/Campaign/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/ListResponse" data-name="mailjet::campaign::listresponse">
+      <a href="../Mailjet/Campaign/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/ResponseData" data-name="mailjet::campaign::responsedata">
+      <a href="../Mailjet/Campaign/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/UpdatePath" data-name="mailjet::campaign::updatepath">
+      <a href="../Mailjet/Campaign/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaign/UpdateResponse" data-name="mailjet::campaign::updateresponse">
+      <a href="../Mailjet/Campaign/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft" data-name="mailjet::campaigndraft">
+      <a href="../Mailjet/Campaigndraft.html">Campaigndraft</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/CreatePath" data-name="mailjet::campaigndraft::createpath">
+      <a href="../Mailjet/Campaigndraft/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/CreateResponse" data-name="mailjet::campaigndraft::createresponse">
+      <a href="../Mailjet/Campaigndraft/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/Detailcontent" data-name="mailjet::campaigndraft::detailcontent">
+      <a href="../Mailjet/Campaigndraft/Detailcontent.html">Detailcontent</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/Detailcontent/FindPath" data-name="mailjet::campaigndraft::detailcontent::findpath">
+      <a href="../Mailjet/Campaigndraft/Detailcontent/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/Detailcontent/FindResponse" data-name="mailjet::campaigndraft::detailcontent::findresponse">
+      <a href="../Mailjet/Campaigndraft/Detailcontent/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/Detailcontent/ResponseData" data-name="mailjet::campaigndraft::detailcontent::responsedata">
+      <a href="../Mailjet/Campaigndraft/Detailcontent/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/Draft" data-name="mailjet::campaigndraft::draft">
+      <a href="../Mailjet/Campaigndraft/Draft.html">Draft</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/FindPath" data-name="mailjet::campaigndraft::findpath">
+      <a href="../Mailjet/Campaigndraft/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/FindResponse" data-name="mailjet::campaigndraft::findresponse">
+      <a href="../Mailjet/Campaigndraft/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/ListPath" data-name="mailjet::campaigndraft::listpath">
+      <a href="../Mailjet/Campaigndraft/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/ListResponse" data-name="mailjet::campaigndraft::listresponse">
+      <a href="../Mailjet/Campaigndraft/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/ResponseData" data-name="mailjet::campaigndraft::responsedata">
+      <a href="../Mailjet/Campaigndraft/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/UpdatePath" data-name="mailjet::campaigndraft::updatepath">
+      <a href="../Mailjet/Campaigndraft/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Campaigndraft/UpdateResponse" data-name="mailjet::campaigndraft::updateresponse">
+      <a href="../Mailjet/Campaigndraft/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Client" data-name="mailjet::client">
+      <a href="../Mailjet/Client.html">Client</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Config" data-name="mailjet::config">
+      <a href="../Mailjet/Config.html">Config</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact" data-name="mailjet::contact">
+      <a href="../Mailjet/Contact.html">Contact</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/CreatePath" data-name="mailjet::contact::createpath">
+      <a href="../Mailjet/Contact/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/CreateResponse" data-name="mailjet::contact::createresponse">
+      <a href="../Mailjet/Contact/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/Details" data-name="mailjet::contact::details">
+      <a href="../Mailjet/Contact/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/FindPath" data-name="mailjet::contact::findpath">
+      <a href="../Mailjet/Contact/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/FindResponse" data-name="mailjet::contact::findresponse">
+      <a href="../Mailjet/Contact/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/List" data-name="mailjet::contact::list">
+      <a href="../Mailjet/Contact/List.html">List</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/List/Details" data-name="mailjet::contact::list::details">
+      <a href="../Mailjet/Contact/List/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/List/ListPath" data-name="mailjet::contact::list::listpath">
+      <a href="../Mailjet/Contact/List/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/List/ListResponse" data-name="mailjet::contact::list::listresponse">
+      <a href="../Mailjet/Contact/List/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/List/ResponseData" data-name="mailjet::contact::list::responsedata">
+      <a href="../Mailjet/Contact/List/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/ListPath" data-name="mailjet::contact::listpath">
+      <a href="../Mailjet/Contact/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/ListResponse" data-name="mailjet::contact::listresponse">
+      <a href="../Mailjet/Contact/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/Managecontactlists" data-name="mailjet::contact::managecontactlists">
+      <a href="../Mailjet/Contact/Managecontactlists.html">Managecontactlists</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/Managecontactlists/ContactList" data-name="mailjet::contact::managecontactlists::contactlist">
+      <a href="../Mailjet/Contact/Managecontactlists/ContactList.html">ContactList</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/Managecontactlists/ContactLists" data-name="mailjet::contact::managecontactlists::contactlists">
+      <a href="../Mailjet/Contact/Managecontactlists/ContactLists.html">ContactLists</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/ResponseData" data-name="mailjet::contact::responsedata">
+      <a href="../Mailjet/Contact/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/UpdatePath" data-name="mailjet::contact::updatepath">
+      <a href="../Mailjet/Contact/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contact/UpdateResponse" data-name="mailjet::contact::updateresponse">
+      <a href="../Mailjet/Contact/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter" data-name="mailjet::contactfilter">
+      <a href="../Mailjet/Contactfilter.html">Contactfilter</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/CreatePath" data-name="mailjet::contactfilter::createpath">
+      <a href="../Mailjet/Contactfilter/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/CreateResponse" data-name="mailjet::contactfilter::createresponse">
+      <a href="../Mailjet/Contactfilter/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/DeletePath" data-name="mailjet::contactfilter::deletepath">
+      <a href="../Mailjet/Contactfilter/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/Filter" data-name="mailjet::contactfilter::filter">
+      <a href="../Mailjet/Contactfilter/Filter.html">Filter</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/FindPath" data-name="mailjet::contactfilter::findpath">
+      <a href="../Mailjet/Contactfilter/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/FindResponse" data-name="mailjet::contactfilter::findresponse">
+      <a href="../Mailjet/Contactfilter/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/ListPath" data-name="mailjet::contactfilter::listpath">
+      <a href="../Mailjet/Contactfilter/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/ListResponse" data-name="mailjet::contactfilter::listresponse">
+      <a href="../Mailjet/Contactfilter/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/ResponseData" data-name="mailjet::contactfilter::responsedata">
+      <a href="../Mailjet/Contactfilter/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/UpdatePath" data-name="mailjet::contactfilter::updatepath">
+      <a href="../Mailjet/Contactfilter/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactfilter/UpdateResponse" data-name="mailjet::contactfilter::updateresponse">
+      <a href="../Mailjet/Contactfilter/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist" data-name="mailjet::contactlist">
+      <a href="../Mailjet/Contactlist.html">Contactlist</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/CreatePath" data-name="mailjet::contactlist::createpath">
+      <a href="../Mailjet/Contactlist/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/CreateResponse" data-name="mailjet::contactlist::createresponse">
+      <a href="../Mailjet/Contactlist/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/DeletePath" data-name="mailjet::contactlist::deletepath">
+      <a href="../Mailjet/Contactlist/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/Details" data-name="mailjet::contactlist::details">
+      <a href="../Mailjet/Contactlist/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/FindPath" data-name="mailjet::contactlist::findpath">
+      <a href="../Mailjet/Contactlist/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/FindResponse" data-name="mailjet::contactlist::findresponse">
+      <a href="../Mailjet/Contactlist/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/ListPath" data-name="mailjet::contactlist::listpath">
+      <a href="../Mailjet/Contactlist/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/ListResponse" data-name="mailjet::contactlist::listresponse">
+      <a href="../Mailjet/Contactlist/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/ResponseData" data-name="mailjet::contactlist::responsedata">
+      <a href="../Mailjet/Contactlist/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/UpdatePath" data-name="mailjet::contactlist::updatepath">
+      <a href="../Mailjet/Contactlist/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Contactlist/UpdateResponse" data-name="mailjet::contactlist::updateresponse">
+      <a href="../Mailjet/Contactlist/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS" data-name="mailjet::dns">
+      <a href="../Mailjet/DNS.html">DNS</a>
+      
+        <ul>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/Check" data-name="mailjet::dns::check">
+      <a href="../Mailjet/DNS/Check.html">Check</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/Check/Details" data-name="mailjet::dns::check::details">
+      <a href="../Mailjet/DNS/Check/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/Check/ResponseData" data-name="mailjet::dns::check::responsedata">
+      <a href="../Mailjet/DNS/Check/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/FindPath" data-name="mailjet::dns::findpath">
+      <a href="../Mailjet/DNS/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/FindResponse" data-name="mailjet::dns::findresponse">
+      <a href="../Mailjet/DNS/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/ListPath" data-name="mailjet::dns::listpath">
+      <a href="../Mailjet/DNS/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/ListResponse" data-name="mailjet::dns::listresponse">
+      <a href="../Mailjet/DNS/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/ResponseData" data-name="mailjet::dns::responsedata">
+      <a href="../Mailjet/DNS/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/DNS/Settings" data-name="mailjet::dns::settings">
+      <a href="../Mailjet/DNS/Settings.html">Settings</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl" data-name="mailjet::eventcallbackurl">
+      <a href="../Mailjet/Eventcallbackurl.html">Eventcallbackurl</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/CreatePath" data-name="mailjet::eventcallbackurl::createpath">
+      <a href="../Mailjet/Eventcallbackurl/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/CreateResponse" data-name="mailjet::eventcallbackurl::createresponse">
+      <a href="../Mailjet/Eventcallbackurl/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/DeletePath" data-name="mailjet::eventcallbackurl::deletepath">
+      <a href="../Mailjet/Eventcallbackurl/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/FindPath" data-name="mailjet::eventcallbackurl::findpath">
+      <a href="../Mailjet/Eventcallbackurl/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/FindResponse" data-name="mailjet::eventcallbackurl::findresponse">
+      <a href="../Mailjet/Eventcallbackurl/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/ListPath" data-name="mailjet::eventcallbackurl::listpath">
+      <a href="../Mailjet/Eventcallbackurl/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/ListResponse" data-name="mailjet::eventcallbackurl::listresponse">
+      <a href="../Mailjet/Eventcallbackurl/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/ResponseData" data-name="mailjet::eventcallbackurl::responsedata">
+      <a href="../Mailjet/Eventcallbackurl/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/UpdatePath" data-name="mailjet::eventcallbackurl::updatepath">
+      <a href="../Mailjet/Eventcallbackurl/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/UpdateResponse" data-name="mailjet::eventcallbackurl::updateresponse">
+      <a href="../Mailjet/Eventcallbackurl/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Eventcallbackurl/Webhook" data-name="mailjet::eventcallbackurl::webhook">
+      <a href="../Mailjet/Eventcallbackurl/Webhook.html">Webhook</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Exception" data-name="mailjet::exception">
+      <a href="../Mailjet/Exception.html">Exception</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Exception/ErrorInfo" data-name="mailjet::exception::errorinfo">
+      <a href="../Mailjet/Exception/ErrorInfo.html">ErrorInfo</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Exception/ErrorInfoArray" data-name="mailjet::exception::errorinfoarray">
+      <a href="../Mailjet/Exception/ErrorInfoArray.html">ErrorInfoArray</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/InvalidEmailAddressException" data-name="mailjet::invalidemailaddressexception">
+      <a href="../Mailjet/InvalidEmailAddressException.html">InvalidEmailAddressException</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Json" data-name="mailjet::json">
+      <a href="../Mailjet/Json.html">Json</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Json/Fields" data-name="mailjet::json::fields">
+      <a href="../Mailjet/Json/Fields.html">Fields</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Json/NilableTime" data-name="mailjet::json::nilabletime">
+      <a href="../Mailjet/Json/NilableTime.html">NilableTime</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient" data-name="mailjet::listrecipient">
+      <a href="../Mailjet/Listrecipient.html">Listrecipient</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/CreatePath" data-name="mailjet::listrecipient::createpath">
+      <a href="../Mailjet/Listrecipient/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/CreateResponse" data-name="mailjet::listrecipient::createresponse">
+      <a href="../Mailjet/Listrecipient/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/DeletePath" data-name="mailjet::listrecipient::deletepath">
+      <a href="../Mailjet/Listrecipient/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/FindPath" data-name="mailjet::listrecipient::findpath">
+      <a href="../Mailjet/Listrecipient/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/FindResponse" data-name="mailjet::listrecipient::findresponse">
+      <a href="../Mailjet/Listrecipient/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/Join" data-name="mailjet::listrecipient::join">
+      <a href="../Mailjet/Listrecipient/Join.html">Join</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/ListPath" data-name="mailjet::listrecipient::listpath">
+      <a href="../Mailjet/Listrecipient/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/ListResponse" data-name="mailjet::listrecipient::listresponse">
+      <a href="../Mailjet/Listrecipient/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/ResponseData" data-name="mailjet::listrecipient::responsedata">
+      <a href="../Mailjet/Listrecipient/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/UpdatePath" data-name="mailjet::listrecipient::updatepath">
+      <a href="../Mailjet/Listrecipient/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Listrecipient/UpdateResponse" data-name="mailjet::listrecipient::updateresponse">
+      <a href="../Mailjet/Listrecipient/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message" data-name="mailjet::message">
+      <a href="../Mailjet/Message.html">Message</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/Details" data-name="mailjet::message::details">
+      <a href="../Mailjet/Message/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/FindPath" data-name="mailjet::message::findpath">
+      <a href="../Mailjet/Message/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/FindResponse" data-name="mailjet::message::findresponse">
+      <a href="../Mailjet/Message/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/ListPath" data-name="mailjet::message::listpath">
+      <a href="../Mailjet/Message/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/ListResponse" data-name="mailjet::message::listresponse">
+      <a href="../Mailjet/Message/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Message/ResponseData" data-name="mailjet::message::responsedata">
+      <a href="../Mailjet/Message/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messagehistory" data-name="mailjet::messagehistory">
+      <a href="../Mailjet/Messagehistory.html">Messagehistory</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messagehistory/Event" data-name="mailjet::messagehistory::event">
+      <a href="../Mailjet/Messagehistory/Event.html">Event</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messagehistory/ListPath" data-name="mailjet::messagehistory::listpath">
+      <a href="../Mailjet/Messagehistory/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messagehistory/ListResponse" data-name="mailjet::messagehistory::listresponse">
+      <a href="../Mailjet/Messagehistory/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messagehistory/ResponseData" data-name="mailjet::messagehistory::responsedata">
+      <a href="../Mailjet/Messagehistory/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation" data-name="mailjet::messageinformation">
+      <a href="../Mailjet/Messageinformation.html">Messageinformation</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/FindPath" data-name="mailjet::messageinformation::findpath">
+      <a href="../Mailjet/Messageinformation/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/FindResponse" data-name="mailjet::messageinformation::findresponse">
+      <a href="../Mailjet/Messageinformation/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/Info" data-name="mailjet::messageinformation::info">
+      <a href="../Mailjet/Messageinformation/Info.html">Info</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/ListPath" data-name="mailjet::messageinformation::listpath">
+      <a href="../Mailjet/Messageinformation/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/ListResponse" data-name="mailjet::messageinformation::listresponse">
+      <a href="../Mailjet/Messageinformation/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Messageinformation/ResponseData" data-name="mailjet::messageinformation::responsedata">
+      <a href="../Mailjet/Messageinformation/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender" data-name="mailjet::metasender">
+      <a href="../Mailjet/Metasender.html">Metasender</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/CreatePath" data-name="mailjet::metasender::createpath">
+      <a href="../Mailjet/Metasender/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/CreateResponse" data-name="mailjet::metasender::createresponse">
+      <a href="../Mailjet/Metasender/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/Details" data-name="mailjet::metasender::details">
+      <a href="../Mailjet/Metasender/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/FindPath" data-name="mailjet::metasender::findpath">
+      <a href="../Mailjet/Metasender/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/FindResponse" data-name="mailjet::metasender::findresponse">
+      <a href="../Mailjet/Metasender/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/ListPath" data-name="mailjet::metasender::listpath">
+      <a href="../Mailjet/Metasender/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/ListResponse" data-name="mailjet::metasender::listresponse">
+      <a href="../Mailjet/Metasender/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/ResponseData" data-name="mailjet::metasender::responsedata">
+      <a href="../Mailjet/Metasender/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/UpdatePath" data-name="mailjet::metasender::updatepath">
+      <a href="../Mailjet/Metasender/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Metasender/UpdateResponse" data-name="mailjet::metasender::updateresponse">
+      <a href="../Mailjet/Metasender/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/MethodNotAllowedException" data-name="mailjet::methodnotallowedexception">
+      <a href="../Mailjet/MethodNotAllowedException.html">MethodNotAllowedException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/MissingApiCredentialsException" data-name="mailjet::missingapicredentialsexception">
+      <a href="../Mailjet/MissingApiCredentialsException.html">MissingApiCredentialsException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/ParamsMissingException" data-name="mailjet::paramsmissingexception">
+      <a href="../Mailjet/ParamsMissingException.html">ParamsMissingException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Path" data-name="mailjet::path">
+      <a href="../Mailjet/Path.html">Path</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/RequestException" data-name="mailjet::requestexception">
+      <a href="../Mailjet/RequestException.html">RequestException</a>
+      
+    </li>
+  
+  <li class=" current" data-id="github.com/tilishop/mailjet.cr/Mailjet/RequestTimeoutException" data-name="mailjet::requesttimeoutexception">
+      <a href="../Mailjet/RequestTimeoutException.html">RequestTimeoutException</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Resource" data-name="mailjet::resource">
+      <a href="../Mailjet/Resource.html">Resource</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/ResourceId" data-name="mailjet::resourceid">
+      <a href="../Mailjet/ResourceId.html">ResourceId</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/ResourceNotFoundException" data-name="mailjet::resourcenotfoundexception">
+      <a href="../Mailjet/ResourceNotFoundException.html">ResourceNotFoundException</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Send" data-name="mailjet::send">
+      <a href="../Mailjet/Send.html">Send</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Send/DeliveryError" data-name="mailjet::send::deliveryerror">
+      <a href="../Mailjet/Send/DeliveryError.html">DeliveryError</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Send/DeliveryReceipt" data-name="mailjet::send::deliveryreceipt">
+      <a href="../Mailjet/Send/DeliveryReceipt.html">DeliveryReceipt</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Send/ResponseMessage" data-name="mailjet::send::responsemessage">
+      <a href="../Mailjet/Send/ResponseMessage.html">ResponseMessage</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Send/SentMessage" data-name="mailjet::send::sentmessage">
+      <a href="../Mailjet/Send/SentMessage.html">SentMessage</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender" data-name="mailjet::sender">
+      <a href="../Mailjet/Sender.html">Sender</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/Address" data-name="mailjet::sender::address">
+      <a href="../Mailjet/Sender/Address.html">Address</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/CreatePath" data-name="mailjet::sender::createpath">
+      <a href="../Mailjet/Sender/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/CreateResponse" data-name="mailjet::sender::createresponse">
+      <a href="../Mailjet/Sender/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/DeletePath" data-name="mailjet::sender::deletepath">
+      <a href="../Mailjet/Sender/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/FindPath" data-name="mailjet::sender::findpath">
+      <a href="../Mailjet/Sender/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/FindResponse" data-name="mailjet::sender::findresponse">
+      <a href="../Mailjet/Sender/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/ListPath" data-name="mailjet::sender::listpath">
+      <a href="../Mailjet/Sender/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/ListResponse" data-name="mailjet::sender::listresponse">
+      <a href="../Mailjet/Sender/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/ResponseData" data-name="mailjet::sender::responsedata">
+      <a href="../Mailjet/Sender/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/UpdatePath" data-name="mailjet::sender::updatepath">
+      <a href="../Mailjet/Sender/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/UpdateResponse" data-name="mailjet::sender::updateresponse">
+      <a href="../Mailjet/Sender/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Sender/Validate" data-name="mailjet::sender::validate">
+      <a href="../Mailjet/Sender/Validate.html">Validate</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Statcounters" data-name="mailjet::statcounters">
+      <a href="../Mailjet/Statcounters.html">Statcounters</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Statcounters/Counters" data-name="mailjet::statcounters::counters">
+      <a href="../Mailjet/Statcounters/Counters.html">Counters</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Statcounters/ListPath" data-name="mailjet::statcounters::listpath">
+      <a href="../Mailjet/Statcounters/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Statcounters/ListResponse" data-name="mailjet::statcounters::listresponse">
+      <a href="../Mailjet/Statcounters/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Statcounters/ResponseData" data-name="mailjet::statcounters::responsedata">
+      <a href="../Mailjet/Statcounters/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template" data-name="mailjet::template">
+      <a href="../Mailjet/Template.html">Template</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/CreatePath" data-name="mailjet::template::createpath">
+      <a href="../Mailjet/Template/CreatePath.html">CreatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/CreateResponse" data-name="mailjet::template::createresponse">
+      <a href="../Mailjet/Template/CreateResponse.html">CreateResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/DeletePath" data-name="mailjet::template::deletepath">
+      <a href="../Mailjet/Template/DeletePath.html">DeletePath</a>
+      
+    </li>
+  
+  <li class="parent " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent" data-name="mailjet::template::detailcontent">
+      <a href="../Mailjet/Template/Detailcontent.html">Detailcontent</a>
+      
+        <ul>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent/FindPath" data-name="mailjet::template::detailcontent::findpath">
+      <a href="../Mailjet/Template/Detailcontent/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent/FindResponse" data-name="mailjet::template::detailcontent::findresponse">
+      <a href="../Mailjet/Template/Detailcontent/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent/ResponseData" data-name="mailjet::template::detailcontent::responsedata">
+      <a href="../Mailjet/Template/Detailcontent/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent/UpdatePath" data-name="mailjet::template::detailcontent::updatepath">
+      <a href="../Mailjet/Template/Detailcontent/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Detailcontent/UpdateResponse" data-name="mailjet::template::detailcontent::updateresponse">
+      <a href="../Mailjet/Template/Detailcontent/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/Details" data-name="mailjet::template::details">
+      <a href="../Mailjet/Template/Details.html">Details</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/FindPath" data-name="mailjet::template::findpath">
+      <a href="../Mailjet/Template/FindPath.html">FindPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/FindResponse" data-name="mailjet::template::findresponse">
+      <a href="../Mailjet/Template/FindResponse.html">FindResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/ListPath" data-name="mailjet::template::listpath">
+      <a href="../Mailjet/Template/ListPath.html">ListPath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/ListResponse" data-name="mailjet::template::listresponse">
+      <a href="../Mailjet/Template/ListResponse.html">ListResponse</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/ResponseData" data-name="mailjet::template::responsedata">
+      <a href="../Mailjet/Template/ResponseData.html">ResponseData</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/UpdatePath" data-name="mailjet::template::updatepath">
+      <a href="../Mailjet/Template/UpdatePath.html">UpdatePath</a>
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Template/UpdateResponse" data-name="mailjet::template::updateresponse">
+      <a href="../Mailjet/Template/UpdateResponse.html">UpdateResponse</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+  <li class=" " data-id="github.com/tilishop/mailjet.cr/Mailjet/Utilities" data-name="mailjet::utilities">
+      <a href="../Mailjet/Utilities.html">Utilities</a>
+      
+    </li>
+  
+</ul>
+
+      
+    </li>
+  
+</ul>
+
+  </div>
+</div>
+
+
+<div class="main-content">
+<h1 class="type-name">
+
+  <span class="kind">class</span> Mailjet::RequestTimeoutException
+
+</h1>
+
+
+  <ul class="superclass-hierarchy"><li class="superclass"><a href="../Mailjet/RequestTimeoutException.html">Mailjet::RequestTimeoutException</a></li><li class="superclass"><a href="../Mailjet/Exception.html">Mailjet::Exception</a></li><li class="superclass">Exception</li><li class="superclass">Reference</li><li class="superclass">Object</li></ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2>
+    <a id="defined-in" class="anchor" href="#defined-in">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Defined in:
+  </h2>
+  
+    
+      <a href="https://github.com/tilishop/mailjet.cr/blob/e8b6d10b2113a2d7cdb46d0b4300e4cad874c9c8/src/mailjet/exception.cr#L40" target="_blank">
+        mailjet/exception.cr
+      </a>
+    
+    <br/>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="methods-inherited">
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
