@@ -3,9 +3,12 @@
 Mailjet is an email platform for teams to send transactional & marketing emails.
 It is a GDPR compliant and ISO 27001 certified Email Service Provider.
 
+[![Build Status](https://travis-ci.org/tilishop/mailjet.cr.svg?branch=master)](https://travis-ci.org/tilishop/mailjet.cr)
+[![GitHub version](https://badge.fury.io/gh/tilishop%2Fmailjet.cr.svg)](https://badge.fury.io/gh/tilishop%2Fmailjet.cr)
+
 ## Disclaimer
 This is the unofficial [Crystal](https://crystal-lang.org/) shard for Mailjet.
-
+The majority of the API is covered, but some parts still need to be added.
 
 ## Requirements
 To use the Mailjet API client, you will need a free
