@@ -6,6 +6,7 @@ It is a GDPR compliant and ISO 27001 certified Email Service Provider.
 ## Disclaimer
 This is the unofficial [Crystal](https://crystal-lang.org/) shard for Mailjet.
 
+
 ## Requirements
 To use the Mailjet API client, you will need a free
 [Mailjet account](https://app.mailjet.com/signup).

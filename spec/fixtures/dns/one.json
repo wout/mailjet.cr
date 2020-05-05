@@ -1,0 +1,19 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "DKIMRecordName" : "mailjet._domainkey.somesite.com.",
+      "DKIMRecordValue" : "k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqyO0029jeZ7a6pGH90XKJ3shAIT7VsXC+3tM3iHPszRITs6gkO6n2joYuAxSAUsiyc40yxmDioyK81ByJddMXPJYf89j2V3yfirRqLNvmKzaTcMXNxTavyuhc4qAvvB70WWNuMz1ipftlqpQmeCbhOArL9c19xrsydXKn8mAtlQIDAQAB",
+      "DKIMStatus" : "OK",
+      "Domain" : "somesite.com",
+      "ID" : 4758666239,
+      "IsCheckInProgress" : false,
+      "LastCheckAt" : "2020-04-29T16:20:27Z",
+      "OwnerShipToken" : "403b0fa55b336c35a5dd3c791706d259",
+      "OwnerShipTokenRecordName" : "mailjet._403b0fa5.somesite.com.",
+      "SPFRecordValue" : "v=spf1 include:spf.mailjet.com ?all",
+      "SPFStatus" : "OK"
+    }
+  ],
+  "Total" : 1
+}
