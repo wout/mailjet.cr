@@ -1,0 +1,8 @@
+{
+  "ValidationMethod" : "ActivationEmail",
+  "Errors" : {
+    "FileValidationError" : "",
+    "DNSValidationError" : ""
+  },
+  "GlobalError" : ""
+}

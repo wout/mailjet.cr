@@ -1,0 +1,17 @@
+{
+  "Count" : 1,
+  "Data" : [
+    {
+      "CreatedAt" : "2020-04-19T07:32:09Z",
+      "DNSID" : 4758266369,
+      "Email" : "some@one.com",
+      "EmailType" : "unknown",
+      "Filename" : "",
+      "ID" : 26888,
+      "IsDefaultSender" : false,
+      "Name" : "Default",
+      "Status" : "Active"
+    }
+  ],
+  "Total" : 1
+}
