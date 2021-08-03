@@ -13,7 +13,7 @@ struct Mailjet
 
       # Check validit of a DNS record
       #
-      # ```crystal
+      # ```
       # contact = Mailjet::DNS::Check.create(123456789)
       # ```
       #

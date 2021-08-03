@@ -10,13 +10,13 @@ struct Mailjet
     end
 
     private def parse(address_list)
-      address_list.split(",").map do |address|
+      address_list.split(",").compact_map do |address|
         if match = address.match(/(([^<]+)<)?([^>]+)>?/)
           display_name = (match[2]? || "").strip
           address = match[3].strip
           Address.new(address, display_name)
         end
-      end.compact
+      end
     end
   end
 end

@@ -9,7 +9,7 @@ struct Mailjet
 
     # Fetches the history of a message
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Messagehistory.all(params: {id: 576460754655154659})
     # response.data.first.event_type
     # # => "opened"
@@ -20,7 +20,7 @@ struct Mailjet
     # Convenience method allowing to pass the message id and returning the array
     # of events directly
     #
-    # ```crystal
+    # ```
     # events = Mailjet::Messagehistory.all(576460754655154659)
     # events.first.event_type
     # # => "opened"

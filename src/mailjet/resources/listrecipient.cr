@@ -15,7 +15,7 @@ struct Mailjet
 
     # Find all contact lists
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Listrecipient.all
     # listrecipients = response.data
     # # or
@@ -28,7 +28,7 @@ struct Mailjet
 
     # Find a listrecipient
     #
-    # ```crystal
+    # ```
     # listrecipient = Mailjet::Listrecipient.find(12345)
     # ```
     #
@@ -36,7 +36,7 @@ struct Mailjet
 
     # Create a listrecipient
     #
-    # ```crystal
+    # ```
     # listrecipient = Mailjet::Listrecipient.create({
     #   is_unsubscribed: false,
     #   contact_alt:     "some@one.com",
@@ -48,7 +48,7 @@ struct Mailjet
 
     # Update a listrecipient
     #
-    # ```crystal
+    # ```
     # listrecipient = Mailjet::Listrecipient.update(12345, {
     #   is_unsubscribed: true,
     # })
@@ -58,7 +58,7 @@ struct Mailjet
 
     # Delete a listrecipient
     #
-    # ```crystal
+    # ```
     # Mailjet::Listrecipient.delete(12345)
     # ```
     #

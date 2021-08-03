@@ -3,8 +3,9 @@
 Mailjet is an email platform for teams to send transactional & marketing emails.
 It is a GDPR compliant and ISO 27001 certified Email Service Provider.
 
-[![Build Status](https://travis-ci.org/tilishop/mailjet.cr.svg?branch=master)](https://travis-ci.org/tilishop/mailjet.cr)
-[![GitHub version](https://badge.fury.io/gh/tilishop%2Fmailjet.cr.svg)](https://badge.fury.io/gh/tilishop%2Fmailjet.cr)
+![GitHub](https://img.shields.io/github/license/wout/mollie.cr)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/wout/mailjet.cr)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wout/mailjet.cr/Mailjet%20CI)
 
 ## Disclaimer
 This is the unofficial [Crystal](https://crystal-lang.org/) shard for Mailjet.
@@ -21,7 +22,7 @@ To use the Mailjet API client, you will need a free
 ```yaml
 dependencies:
   mailjet:
-    github: tilishop/mailjet.cr
+    github: wout/mailjet.cr
 ```
 
 2. Run `shards install`
@@ -106,7 +107,7 @@ puts counters.first.event_opened_count
 
 ## Documentation
 
-- [Shard API Docs](https://tilishop.github.io/mailjet.cr/)
+- [Shard API Docs](https://wout.github.io/mailjet.cr/)
 
 ## To-do
 Most of the API is covered, but the following endpoints are not:
@@ -120,7 +121,7 @@ Most of the API is covered, but the following endpoints are not:
 
 ## Contributing
 
-1. Fork it (<https://github.com/tilishop/mailjet/fork>)
+1. Fork it (<https://github.com/wout/mailjet/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -129,4 +130,3 @@ Most of the API is covered, but the following endpoints are not:
 ## Contributors
 
 - [wout](https://github.com/wout) - creator and maintainer
-- [tilishop](https://github.com/tilishop) - owner and maintainer

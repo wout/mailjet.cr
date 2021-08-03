@@ -11,7 +11,7 @@ struct Mailjet
 
     # Find all contact lists
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Campaigndraft.all
     # campaigndrafts = response.data
     # ```
@@ -20,7 +20,7 @@ struct Mailjet
 
     # Find a campaigndraft
     #
-    # ```crystal
+    # ```
     # campaigndraft = Mailjet::Campaigndraft.find(112334)
     # ```
     #
@@ -28,7 +28,7 @@ struct Mailjet
 
     # Create a campaigndraft
     #
-    # ```crystal
+    # ```
     # campaigndraft = Mailjet::Campaigndraft.create({
     #   locale:  "en_US",
     #   subject: "It's going to be fabulous!",
@@ -39,7 +39,7 @@ struct Mailjet
 
     # Update a campaigndraft
     #
-    # ```crystal
+    # ```
     # campaigndraft = Mailjet::Campaigndraft.update(112334, {
     #   subject: "It's going to be gorgeous!",
     # })

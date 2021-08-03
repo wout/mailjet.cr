@@ -9,7 +9,7 @@ struct Mailjet
 
     # Fetches the history of all messages between two dates
     #
-    # ```crystal
+    # ```
     # information = Mailjet::Messageinformation.all({
     #   from_ts: Time.local.at_beginning_of_week.to_rfc3339,
     #   to_ts:   Time.local.to_rfc3339,
@@ -22,7 +22,7 @@ struct Mailjet
 
     # Fetches the history for a given message id
     #
-    # ```crystal
+    # ```
     # information = Mailjet::Messageinformation.find(576460754655154659)
     # information.data.first.spam_assassin_score
     # => 0

@@ -8,7 +8,7 @@ struct Mailjet
   # hashes, so some juggling is needed to drill down to the actual errors. Here
   # is an example:
   #
-  # ```crystal
+  # ```
   # case exception.error_info
   # when String
   #   puts exception.error_info

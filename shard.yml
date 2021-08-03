@@ -1,20 +1,24 @@
 name: mailjet
-version: 0.1.0
+version: 0.2.0
 
 authors:
-  - wout <wout@mick-wout.com>
+  - wout <hi@wout.codes>
 
-crystal: 0.34.0
+crystal: ">= 1.0.0"
+
+dependencies:
+  json_mapping:
+    github: crystal-lang/json_mapping.cr
 
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
-    version: ~> 0.11.0
+    version: ~> 0.14.3
   webmock:
     github: manastech/webmock.cr
     branch: master
   spec_mirror:
-    github: tilishop/spec_mirror.cr
+    github: wout/spec_mirror.cr
     branch: master
 
 license: MIT

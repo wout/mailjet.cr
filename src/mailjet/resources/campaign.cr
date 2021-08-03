@@ -10,7 +10,7 @@ struct Mailjet
 
     # Find all campaigns
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Campaign.all
     # campaigns = response.data
     # ```
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a campaign
     #
-    # ```crystal
+    # ```
     # campaign = Mailjet::Campaign.find(1234567890987654400)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Update a campaign
     #
-    # ```crystal
+    # ```
     # campaign = Mailjet::Campaign.update(1234567890987654400, {
     #   is_deleted: true,
     #   is_starred: false,

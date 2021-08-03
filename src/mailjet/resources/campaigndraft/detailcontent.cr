@@ -13,7 +13,7 @@ struct Mailjet
 
       # Find content for a campaigndraft
       #
-      # ```crystal
+      # ```
       # campaigndraft = Mailjet::Campaigndraft::Detailcontent.find(12345)
       # ```
       #
@@ -24,7 +24,7 @@ struct Mailjet
 
       # Create content for a campaigndraft
       #
-      # ```crystal
+      # ```
       # campaigndraft = Mailjet::Campaigndraft::Detailcontent.create(12345, {
       #   "Headers": {
       #     "Subject":  "Hello There!",

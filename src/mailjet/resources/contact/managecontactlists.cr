@@ -16,7 +16,7 @@ struct Mailjet
       # Manage the presence and subscription status of a contact for multiple
       # contact lists.
       #
-      # ```crystal
+      # ```
       # contact_lists = Mailjet::Contact::Managecontactlists.create(54321987, [
       #   {list_id: 23847, action: "addnoforce"},
       #   {list_id: 26484, action: "addforce"},

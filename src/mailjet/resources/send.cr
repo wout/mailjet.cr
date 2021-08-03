@@ -14,7 +14,7 @@ struct Mailjet
 
     # Deliver an array of messages
     #
-    # ```crystal
+    # ```
     # messages = [
     #   {...},
     #   {...},
@@ -26,7 +26,7 @@ struct Mailjet
     # informative. If you need to use the v3 api instead, simply pass in the
     # version number as the second parameter:
     #
-    # ```crystal
+    # ```
     # Mailjet::Send.messages(messages, "v3")
     # ```
     #

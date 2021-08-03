@@ -10,7 +10,7 @@ struct Mailjet
 
     # Find all contact lists
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Template.all
     # templates = response.data
     # ```
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a template
     #
-    # ```crystal
+    # ```
     # template = Mailjet::Template.find(123456789)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Create a template
     #
-    # ```crystal
+    # ```
     # template = Mailjet::Template.create({
     #   author:     "John Doe",
     #   categories: [
@@ -43,7 +43,7 @@ struct Mailjet
 
     # Update a template
     #
-    # ```crystal
+    # ```
     # template = Mailjet::Template.update(123456789, {
     #   author:     "John Doe",
     #   categories: [
@@ -59,7 +59,7 @@ struct Mailjet
 
     # Delete a template
     #
-    # ```crystal
+    # ```
     # Mailjet::Template.delete(123456789)
     # ```
     #

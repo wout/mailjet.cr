@@ -10,7 +10,7 @@ struct Mailjet
 
     # Find all contact lists
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Contactlist.all
     # contactlists = response.data
     # ```
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a contactlist
     #
-    # ```crystal
+    # ```
     # contactlist = Mailjet::Contactlist.find(123456789)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Create a contactlist
     #
-    # ```crystal
+    # ```
     # contactlist = Mailjet::Contactlist.create({
     #   name: "New name",
     # })
@@ -37,7 +37,7 @@ struct Mailjet
 
     # Update a contactlist
     #
-    # ```crystal
+    # ```
     # contactlist = Mailjet::Contactlist.update(123456789, {
     #   name: "New name",
     # })
@@ -47,7 +47,7 @@ struct Mailjet
 
     # Delete a contactlist
     #
-    # ```crystal
+    # ```
     # Mailjet::Contactlist.delete(123456789)
     # ```
     #

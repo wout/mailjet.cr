@@ -12,7 +12,7 @@ struct Mailjet
 
       # Find all contact lists for a given contact id
       #
-      # ```crystal
+      # ```
       # response = Mailjet::Contact::List.all(params: {contact_id: 52856551})
       # contactlists = response.data
       # ```
@@ -22,7 +22,7 @@ struct Mailjet
       # Convenience method allowing to pass the contact id and returning the
       # array of lists directly
       #
-      # ```crystal
+      # ```
       # contactlists = Mailjet::Contact::List.all(52856551)
       # ```
       #

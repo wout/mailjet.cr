@@ -5,13 +5,13 @@ struct Mailjet
 
     # Initialize with credentials
     #
-    # ```crystal
+    # ```
     # client = Mailjet::Client.new("my_key", "my_secret")
     # ```
     #
     # Or without, if credentials are configured globally:
     #
-    # ```crystal
+    # ```
     # client = Mailjet::Client.new
     # ```
     def initialize(
@@ -43,7 +43,7 @@ struct Mailjet
           response = client.exec(method, path,
             headers: request_headers)
         else
-          payload = payload.to_h.delete_if { |_, v| v.nil? }.to_json
+          payload = payload.to_h.reject! { |_, v| v.nil? }.to_json
           response = client.exec(method, path,
             headers: request_headers,
             body: payload)

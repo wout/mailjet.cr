@@ -9,7 +9,7 @@ struct Mailjet
 
     # Raw statcounter endpoint, requiring a series of parameters
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Statcounters.all({
     #   counter_source:     "apikey",
     #   counter_timing:     "message",
@@ -22,7 +22,7 @@ struct Mailjet
 
     # Convenience method to retrieve statistics at current API key level
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Statcounters.by_api_key({
     #   counter_timing:     "event",
     #   counter_resolution: "hour",
@@ -43,7 +43,7 @@ struct Mailjet
 
     # Convenience method to retrieve statistics at campaign level
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Statcounters.by_campaign(123456, {
     #   counter_timing:     "event",
     #   counter_resolution: "day",
@@ -66,7 +66,7 @@ struct Mailjet
 
     # Convenience method to retrieve statistics at list level
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Statcounters.by_list(123456)
     # stats = response.data.first
     # ```
@@ -85,7 +85,7 @@ struct Mailjet
 
     # Convenience method to retrieve statistics at sender level
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Statcounters.by_sender(123456, {
     #   counter_resolution: "lifetime",
     # })

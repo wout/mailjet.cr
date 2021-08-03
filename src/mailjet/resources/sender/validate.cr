@@ -17,7 +17,7 @@ struct Mailjet
 
       # Check if sender is validated
       #
-      # ```crystal
+      # ```
       # validation = Mailjet::Sender::Validate.create(12345)
       # puts validation.validation_method
       # # => "ActivationEmail"

@@ -11,7 +11,7 @@ struct Mailjet
 
     # Find all dns settings
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Contactfilter.all
     # settings = response.data
     # ```
@@ -20,7 +20,7 @@ struct Mailjet
 
     # Find dns settings for one record
     #
-    # ```crystal
+    # ```
     # settings = Mailjet::Contactfilter.find(112334)
     # ```
     #

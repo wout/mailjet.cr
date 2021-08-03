@@ -11,7 +11,7 @@ struct Mailjet
 
     # Find all eventcallbackurls
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Eventcallbackurl.all
     # eventcallbackurls = response.data
     # ```
@@ -20,7 +20,7 @@ struct Mailjet
 
     # Find a eventcallbackurl
     #
-    # ```crystal
+    # ```
     # eventcallbackurl = Mailjet::Eventcallbackurl.find(112334)
     # ```
     #
@@ -28,7 +28,7 @@ struct Mailjet
 
     # Create a eventcallbackurl
     #
-    # ```crystal
+    # ```
     # eventcallbackurl = Mailjet::Eventcallbackurl.create({
     #   event_type: "open",
     #   is_backup:  false,
@@ -42,7 +42,7 @@ struct Mailjet
 
     # Update a eventcallbackurl
     #
-    # ```crystal
+    # ```
     # eventcallbackurl = Mailjet::Eventcallbackurl.update(112334, {
     #   event_type: "open",
     #   is_backup:  false,
@@ -56,7 +56,7 @@ struct Mailjet
 
     # Delete a eventcallbackurl
     #
-    # ```crystal
+    # ```
     # Mailjet::Eventcallbackurl.delete(112334)
     # ```
     #

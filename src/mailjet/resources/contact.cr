@@ -9,7 +9,7 @@ struct Mailjet
 
     # Create a contact
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Contact.all
     # contacts = response.data
     # email_addresses = response.map(&.email)
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a contact
     #
-    # ```crystal
+    # ```
     # contact = Mailjet::Contact.find(123456789)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Create a contact
     #
-    # ```crystal
+    # ```
     # contact = Mailjet::Contact.create({
     #   name:                       "Contact name",
     #   email:                      "contact@email.com",
@@ -39,7 +39,7 @@ struct Mailjet
 
     # Update a contact
     #
-    # ```crystal
+    # ```
     # contact = Mailjet::Contact.update(123456789, {
     #   name:                       "Another name",
     #   is_excluded_from_campaigns: true,

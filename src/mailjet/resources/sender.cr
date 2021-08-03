@@ -9,7 +9,7 @@ struct Mailjet
 
     # Find all senders
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Sender.all
     # senders = response.data
     # addresses = response.map(&.email)
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a sender
     #
-    # ```crystal
+    # ```
     # sender = Mailjet::Sender.find(1324)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Create a sender
     #
-    # ```crystal
+    # ```
     # sender = Mailjet::Sender.create({
     #   email_type:        "transactional",
     #   is_default_sender: true,
@@ -40,7 +40,7 @@ struct Mailjet
 
     # Update a sender
     #
-    # ```crystal
+    # ```
     # sender = Mailjet::Sender.update(1324, {
     #   email_type:        "transactional",
     #   is_default_sender: true,
@@ -53,7 +53,7 @@ struct Mailjet
 
     # Delete a sender
     #
-    # ```crystal
+    # ```
     # Mailjet::Sender.delete(1324)
     # ```
     #

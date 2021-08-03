@@ -12,7 +12,7 @@ struct Mailjet
 
       # Find content details for a template
       #
-      # ```crystal
+      # ```
       # template = Mailjet::Template::Detailcontent.find(12345)
       # ```
       #
@@ -23,7 +23,7 @@ struct Mailjet
 
       # Create content details for a template
       #
-      # ```crystal
+      # ```
       # template = Mailjet::Template::Detailcontent.create(12345, {
       #   author:     "John Doe",
       #   categories: [
@@ -45,7 +45,7 @@ struct Mailjet
 
       # Update content details for a template
       #
-      # ```crystal
+      # ```
       # template = Mailjet::Template::Detailcontent.update(12345, {
       #   author:     "John Doe",
       #   categories: [

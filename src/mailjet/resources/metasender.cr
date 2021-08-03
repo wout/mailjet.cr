@@ -10,7 +10,7 @@ struct Mailjet
 
     # Find all metasenders
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Metasender.all
     # metasenders = response.data
     # ```
@@ -19,7 +19,7 @@ struct Mailjet
 
     # Find a metasender
     #
-    # ```crystal
+    # ```
     # metasender = Mailjet::Metasender.find(112334)
     # ```
     #
@@ -27,7 +27,7 @@ struct Mailjet
 
     # Create a metasender
     #
-    # ```crystal
+    # ```
     # metasender = Mailjet::Metasender.create({
     #   description: "Metasender 2 - used for Promo emails",
     #   email:       "info@some.one",
@@ -38,7 +38,7 @@ struct Mailjet
 
     # Update a metasender
     #
-    # ```crystal
+    # ```
     # metasender = Mailjet::Metasender.update(112334, {
     #   email: "info@someone.com",
     # })

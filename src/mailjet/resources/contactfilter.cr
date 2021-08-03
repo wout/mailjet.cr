@@ -12,7 +12,7 @@ struct Mailjet
 
     # Find all contactfilters
     #
-    # ```crystal
+    # ```
     # response = Mailjet::Contactfilter.all
     # contactfilters = response.data
     # ```
@@ -21,7 +21,7 @@ struct Mailjet
 
     # Find a contactfilter
     #
-    # ```crystal
+    # ```
     # contactfilter = Mailjet::Contactfilter.find(112334)
     # ```
     #
@@ -29,7 +29,7 @@ struct Mailjet
 
     # Create a contactfilter
     #
-    # ```crystal
+    # ```
     # contactfilter = Mailjet::Contactfilter.create({
     #   description: "Users that have not clicked on an email link in the last 14 days",
     #   expression:  "((not hasclickedsince(14)))",
@@ -41,7 +41,7 @@ struct Mailjet
 
     # Update a contactfilter
     #
-    # ```crystal
+    # ```
     # contactfilter = Mailjet::Contactfilter.update(112334, {
     #   description: "Users that have not clicked on an email link in the last 7 days",
     #   expression:  "((not hasclickedsince(7)))",
@@ -53,7 +53,7 @@ struct Mailjet
 
     # Delete a contactfilter
     #
-    # ```crystal
+    # ```
     # Mailjet::Contactfilter.delete(112334)
     # ```
     #

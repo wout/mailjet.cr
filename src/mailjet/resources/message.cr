@@ -10,13 +10,13 @@ struct Mailjet
 
     # Fetch all messages
     #
-    # ```crystal
+    # ```
     # messages = Mailjet::Message.all
     # ```
     #
     # Optionally with query params
     #
-    # ```crystal
+    # ```
     # messages = Mailjet::Message.all({contact_alt: "some@one.com"})
     # ```
     #
@@ -24,7 +24,7 @@ struct Mailjet
 
     # Fetch a message for the given id
     #
-    # ```crystal
+    # ```
     # message = Mailjet::Message.find(123456789)
     # ```
     #
