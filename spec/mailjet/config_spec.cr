@@ -60,13 +60,13 @@ describe Mailjet::Config do
 
   describe ".open_timeout" do
     it "has a default value" do
-      Mailjet::Config.open_timeout.should eq(60)
+      Mailjet::Config.open_timeout.should eq(60.seconds)
     end
   end
 
   describe ".read_timeout" do
     it "has a default value" do
-      Mailjet::Config.read_timeout.should eq(60)
+      Mailjet::Config.read_timeout.should eq(60.seconds)
     end
   end
 end

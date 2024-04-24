@@ -9,7 +9,7 @@ require "./mailjet/json/**"
 require "./mailjet/**"
 
 struct Mailjet
-  def self.configure
+  def self.configure(&)
     yield(Mailjet::Config)
   end
 end
