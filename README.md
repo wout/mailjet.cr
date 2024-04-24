@@ -38,7 +38,7 @@ require "mailjet"
 ### Send your first email
 
 ```crystal
-response = Mailjet::Send.messages([
+response = Mailjet::SendV3_1.messages([
   {
     "From": {
       "Email": "from@email.com",
