@@ -7,6 +7,21 @@ struct Mailjet
   # https://dev.mailjet.com/email/reference/send-emails/
   #
   abstract struct Send < Resource
+    # Deliver a single message
+    #
+    # ```
+    # Mailjet::SendV3.message({...})
+    # # or
+    # Mailjet::SendV3_1.message({...})
+    # ```
+    #
+    def self.message(
+      message : Hash | NamedTuple,
+      client : Client = Client.new
+    )
+      self.messages([message], client).first
+    end
+
     struct ResponseMessage
       include Json::Fields
 

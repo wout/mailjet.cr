@@ -5,6 +5,24 @@ describe Mailjet::Send do
     configure_global_api_credentials
   end
 
+  describe "#message" do
+    it "delivers a message using the v3.1 api" do
+      WebMock.stub(:post, "https://api.mailjet.com/v3.1/send")
+        .to_return(status: 200, body: read_fixture("send/create-v3.1"))
+
+      messages = Mailjet::SendV3_1.message(valid_send_message_payload_v3_1)
+      messages.should be_a(Mailjet::Send::ResponseMessage)
+    end
+
+    it "delivers a message using the v3 api" do
+      WebMock.stub(:post, "https://api.mailjet.com/v3/send")
+        .to_return(status: 200, body: read_fixture("send/create-v3"))
+
+      sent = Mailjet::SendV3.message(valid_send_message_payload_v3)
+      sent.should be_a(Mailjet::Send::SentMessage)
+    end
+  end
+
   describe "#messages" do
     it "delivers one or more messages using the v3.1 api" do
       WebMock.stub(:post, "https://api.mailjet.com/v3.1/send")
