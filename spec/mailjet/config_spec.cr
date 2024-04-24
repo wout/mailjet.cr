@@ -15,7 +15,7 @@ describe Mailjet::Config do
 
   describe ".sandbox_mode" do
     it "has a default value" do
-      Mailjet::Config.sandbox_mode.should be_false
+      Mailjet::Config.sandbox_mode?.should be_false
     end
   end
 
