@@ -5,13 +5,15 @@ It is a GDPR compliant and ISO 27001 certified Email Service Provider.
 
 ![GitHub](https://img.shields.io/github/license/wout/mollie.cr)
 ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/wout/mailjet.cr)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wout/mailjet.cr/Mailjet%20CI)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wout/mailjet.cr/ci.yml?branch=master)
 
 ## Disclaimer
+
 This is the unofficial [Crystal](https://crystal-lang.org/) shard for Mailjet.
 The majority of the API is covered, but some parts still need to be added.
 
 ## Requirements
+
 To use the Mailjet API client, you will need a free
 [Mailjet account](https://app.mailjet.com/signup).
 
@@ -67,6 +69,7 @@ puts message.status
 ```
 
 ### Retrieve sent messages
+
 Now, let’s view the status of the sent message and its configuration specifics.
 
 ```crystal
@@ -76,7 +79,8 @@ puts message.status
 ```
 
 ### View message history
-You can track important events linked to the sent emails, for example whether 
+
+You can track important events linked to the sent emails, for example whether
 the recipient opened the message, or clicked on a link within.
 
 ```crystal
@@ -88,10 +92,11 @@ puts events.last.event_type
 ```
 
 ### Retrieve Statistics
-The Mailjet API also has a variety of resources that help retrieve aggregated 
+
+The Mailjet API also has a variety of resources that help retrieve aggregated
 statistics for key performance indicators like opens, clicks, unsubscribes, etc.
 
-Let's take a look at just one of those resources to give you a sample of the 
+Let's take a look at just one of those resources to give you a sample of the
 data you can read - we’ll retrieve total aggregated statistics for your API key.
 
 ```crystal
@@ -110,7 +115,9 @@ puts counters.first.event_opened_count
 - [Shard API Docs](https://wout.github.io/mailjet.cr/)
 
 ## To-do
+
 Most of the API is covered, but the following endpoints are not:
+
 - [ ] All Message Events
 - [ ] Bulk contact management and CSV import
 - [ ] Parse
