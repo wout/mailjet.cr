@@ -4,7 +4,7 @@ version: 0.2.0
 authors:
   - wout <hi@wout.codes>
 
-crystal: ">= 1.0.0"
+crystal: ">= 1.6.0"
 
 dependencies:
   json_mapping:
@@ -13,7 +13,6 @@ dependencies:
 development_dependencies:
   ameba:
     github: crystal-ameba/ameba
-    version: ~> 0.14.3
   webmock:
     github: manastech/webmock.cr
     branch: master
