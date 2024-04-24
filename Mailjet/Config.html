@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">module</span> Mailjet::Config
+  <span class="kind">module</span> Mailjet::<wbr>Config
 
 </h1>
 
@@ -1181,7 +1187,7 @@
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L2" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L2" target="_blank">
         mailjet/config.cr
       </a>
     
@@ -1205,87 +1211,87 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#api_key:String?-class-method" class="signature"><strong>.api_key</strong> : String?</a>
+        <a href="#api_key%3AString%7CNil-class-method" class="signature"><strong>.api_key</strong> : String | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#api_key=(api_key:String?)-class-method" class="signature"><strong>.api_key=</strong>(api_key : String?)</a>
+        <a href="#api_key%3D%28api_key%3AString%7CNil%29-class-method" class="signature"><strong>.api_key=</strong>(api_key : String | Nil)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#api_version:String-class-method" class="signature"><strong>.api_version</strong> : String</a>
+        <a href="#api_version%3AString-class-method" class="signature"><strong>.api_version</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#api_version=(api_version:String)-class-method" class="signature"><strong>.api_version=</strong>(api_version : String)</a>
+        <a href="#api_version%3D%28api_version%3AString%29-class-method" class="signature"><strong>.api_version=</strong>(api_version : String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#default_from:String?-class-method" class="signature"><strong>.default_from</strong> : String?</a>
+        <a href="#default_from%3AString%7CNil-class-method" class="signature"><strong>.default_from</strong> : String | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#default_from=(email:String)-class-method" class="signature"><strong>.default_from=</strong>(email : String)</a>
+        <a href="#default_from%3D%28email%3AString%29-class-method" class="signature"><strong>.default_from=</strong>(email : String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#default_from=(default_from:String?)-class-method" class="signature"><strong>.default_from=</strong>(default_from : String?)</a>
+        <a href="#default_from%3D%28default_from%3AString%7CNil%29-class-method" class="signature"><strong>.default_from=</strong>(default_from : String | Nil)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#end_point:String-class-method" class="signature"><strong>.end_point</strong> : String</a>
+        <a href="#end_point%3AString-class-method" class="signature"><strong>.end_point</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#end_point=(end_point:String)-class-method" class="signature"><strong>.end_point=</strong>(end_point : String)</a>
+        <a href="#end_point%3D%28end_point%3AString%29-class-method" class="signature"><strong>.end_point=</strong>(end_point : String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#open_timeout:Int32%7CFloat64-class-method" class="signature"><strong>.open_timeout</strong> : Int32 | Float64</a>
+        <a href="#open_timeout%3ATime%3A%3ASpan-class-method" class="signature"><strong>.open_timeout</strong> : Time::Span</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#open_timeout=(open_timeout:Int32%7CFloat64)-class-method" class="signature"><strong>.open_timeout=</strong>(open_timeout : Int32 | Float64)</a>
+        <a href="#open_timeout%3D%28open_timeout%3ATime%3A%3ASpan%29-class-method" class="signature"><strong>.open_timeout=</strong>(open_timeout : Time::Span)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#read_timeout:Int32%7CFloat64-class-method" class="signature"><strong>.read_timeout</strong> : Int32 | Float64</a>
+        <a href="#read_timeout%3ATime%3A%3ASpan-class-method" class="signature"><strong>.read_timeout</strong> : Time::Span</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#read_timeout=(read_timeout:Int32%7CFloat64)-class-method" class="signature"><strong>.read_timeout=</strong>(read_timeout : Int32 | Float64)</a>
+        <a href="#read_timeout%3D%28read_timeout%3ATime%3A%3ASpan%29-class-method" class="signature"><strong>.read_timeout=</strong>(read_timeout : Time::Span)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#sandbox_mode:Bool-class-method" class="signature"><strong>.sandbox_mode</strong> : Bool</a>
+        <a href="#sandbox_mode%3D%28sandbox_mode%3ABool%29-class-method" class="signature"><strong>.sandbox_mode=</strong>(sandbox_mode : Bool)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#sandbox_mode=(sandbox_mode:Bool)-class-method" class="signature"><strong>.sandbox_mode=</strong>(sandbox_mode : Bool)</a>
+        <a href="#sandbox_mode%3F%3ABool-class-method" class="signature"><strong>.sandbox_mode?</strong> : Bool</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#secret_key:String?-class-method" class="signature"><strong>.secret_key</strong> : String?</a>
+        <a href="#secret_key%3AString%7CNil-class-method" class="signature"><strong>.secret_key</strong> : String | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#secret_key=(secret_key:String?)-class-method" class="signature"><strong>.secret_key=</strong>(secret_key : String?)</a>
+        <a href="#secret_key%3D%28secret_key%3AString%7CNil%29-class-method" class="signature"><strong>.secret_key=</strong>(secret_key : String | Nil)</a>
         
       </li>
     
@@ -1313,34 +1319,34 @@
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="api_key:String?-class-method">
+    <div class="entry-detail" id="api_key:String|Nil-class-method">
       <div class="signature">
         
-        def self.<strong>api_key</strong> : String?
+        def self.<strong>api_key</strong> : String | Nil
 
-        <a class="method-permalink" href="#api_key:String?-class-method">#</a>
+        <a class="method-permalink" href="#api_key%3AString%7CNil-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L5" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="api_key=(api_key:String?)-class-method">
+    <div class="entry-detail" id="api_key=(api_key:String|Nil)-class-method">
       <div class="signature">
         
-        def self.<strong>api_key=</strong>(api_key : String?)
+        def self.<strong>api_key=</strong>(api_key : String | Nil)
 
-        <a class="method-permalink" href="#api_key=(api_key:String?)-class-method">#</a>
+        <a class="method-permalink" href="#api_key%3D%28api_key%3AString%7CNil%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L5" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1350,13 +1356,13 @@
         
         def self.<strong>api_version</strong> : String
 
-        <a class="method-permalink" href="#api_version:String-class-method">#</a>
+        <a class="method-permalink" href="#api_version%3AString-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1366,29 +1372,29 @@
         
         def self.<strong>api_version=</strong>(api_version : String)
 
-        <a class="method-permalink" href="#api_version=(api_version:String)-class-method">#</a>
+        <a class="method-permalink" href="#api_version%3D%28api_version%3AString%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="default_from:String?-class-method">
+    <div class="entry-detail" id="default_from:String|Nil-class-method">
       <div class="signature">
         
-        def self.<strong>default_from</strong> : String?
+        def self.<strong>default_from</strong> : String | Nil
 
-        <a class="method-permalink" href="#default_from:String?-class-method">#</a>
+        <a class="method-permalink" href="#default_from%3AString%7CNil-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L5" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1398,29 +1404,29 @@
         
         def self.<strong>default_from=</strong>(email : String)
 
-        <a class="method-permalink" href="#default_from=(email:String)-class-method">#</a>
+        <a class="method-permalink" href="#default_from%3D%28email%3AString%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L12" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L12" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="default_from=(default_from:String?)-class-method">
+    <div class="entry-detail" id="default_from=(default_from:String|Nil)-class-method">
       <div class="signature">
         
-        def self.<strong>default_from=</strong>(default_from : String?)
+        def self.<strong>default_from=</strong>(default_from : String | Nil)
 
-        <a class="method-permalink" href="#default_from=(default_from:String?)-class-method">#</a>
+        <a class="method-permalink" href="#default_from%3D%28default_from%3AString%7CNil%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L7" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L5" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1430,13 +1436,13 @@
         
         def self.<strong>end_point</strong> : String
 
-        <a class="method-permalink" href="#end_point:String-class-method">#</a>
+        <a class="method-permalink" href="#end_point%3AString-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L6" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1446,93 +1452,77 @@
         
         def self.<strong>end_point=</strong>(end_point : String)
 
-        <a class="method-permalink" href="#end_point=(end_point:String)-class-method">#</a>
+        <a class="method-permalink" href="#end_point%3D%28end_point%3AString%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L6" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="open_timeout:Int32|Float64-class-method">
+    <div class="entry-detail" id="open_timeout:Time::Span-class-method">
       <div class="signature">
         
-        def self.<strong>open_timeout</strong> : Int32 | Float64
+        def self.<strong>open_timeout</strong> : Time::Span
 
-        <a class="method-permalink" href="#open_timeout:Int32%7CFloat64-class-method">#</a>
+        <a class="method-permalink" href="#open_timeout%3ATime%3A%3ASpan-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L9" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="open_timeout=(open_timeout:Int32|Float64)-class-method">
+    <div class="entry-detail" id="open_timeout=(open_timeout:Time::Span)-class-method">
       <div class="signature">
         
-        def self.<strong>open_timeout=</strong>(open_timeout : Int32 | Float64)
+        def self.<strong>open_timeout=</strong>(open_timeout : Time::Span)
 
-        <a class="method-permalink" href="#open_timeout=(open_timeout:Int32%7CFloat64)-class-method">#</a>
+        <a class="method-permalink" href="#open_timeout%3D%28open_timeout%3ATime%3A%3ASpan%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L9" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L7" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="read_timeout:Int32|Float64-class-method">
+    <div class="entry-detail" id="read_timeout:Time::Span-class-method">
       <div class="signature">
         
-        def self.<strong>read_timeout</strong> : Int32 | Float64
+        def self.<strong>read_timeout</strong> : Time::Span
 
-        <a class="method-permalink" href="#read_timeout:Int32%7CFloat64-class-method">#</a>
+        <a class="method-permalink" href="#read_timeout%3ATime%3A%3ASpan-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L10" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="read_timeout=(read_timeout:Int32|Float64)-class-method">
+    <div class="entry-detail" id="read_timeout=(read_timeout:Time::Span)-class-method">
       <div class="signature">
         
-        def self.<strong>read_timeout=</strong>(read_timeout : Int32 | Float64)
+        def self.<strong>read_timeout=</strong>(read_timeout : Time::Span)
 
-        <a class="method-permalink" href="#read_timeout=(read_timeout:Int32%7CFloat64)-class-method">#</a>
+        <a class="method-permalink" href="#read_timeout%3D%28read_timeout%3ATime%3A%3ASpan%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L10" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
-    <div class="entry-detail" id="sandbox_mode:Bool-class-method">
-      <div class="signature">
-        
-        def self.<strong>sandbox_mode</strong> : Bool
-
-        <a class="method-permalink" href="#sandbox_mode:Bool-class-method">#</a>
-      </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L8" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1542,45 +1532,61 @@
         
         def self.<strong>sandbox_mode=</strong>(sandbox_mode : Bool)
 
-        <a class="method-permalink" href="#sandbox_mode=(sandbox_mode:Bool)-class-method">#</a>
+        <a class="method-permalink" href="#sandbox_mode%3D%28sandbox_mode%3ABool%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L8" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="secret_key:String?-class-method">
+    <div class="entry-detail" id="sandbox_mode?:Bool-class-method">
       <div class="signature">
         
-        def self.<strong>secret_key</strong> : String?
+        def self.<strong>sandbox_mode?</strong> : Bool
 
-        <a class="method-permalink" href="#secret_key:String?-class-method">#</a>
+        <a class="method-permalink" href="#sandbox_mode%3F%3ABool-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L6" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L10" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="secret_key=(secret_key:String?)-class-method">
+    <div class="entry-detail" id="secret_key:String|Nil-class-method">
       <div class="signature">
         
-        def self.<strong>secret_key=</strong>(secret_key : String?)
+        def self.<strong>secret_key</strong> : String | Nil
 
-        <a class="method-permalink" href="#secret_key=(secret_key:String?)-class-method">#</a>
+        <a class="method-permalink" href="#secret_key%3AString%7CNil-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/config.cr#L6" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L9" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
+    <div class="entry-detail" id="secret_key=(secret_key:String|Nil)-class-method">
+      <div class="signature">
+        
+        def self.<strong>secret_key=</strong>(secret_key : String | Nil)
+
+        <a class="method-permalink" href="#secret_key%3D%28secret_key%3AString%7CNil%29-class-method">#</a>
+      </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/config.cr#L9" target="_blank">View source</a>]
         
       </div>
     </div>

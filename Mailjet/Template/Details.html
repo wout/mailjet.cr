@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">struct</span> Mailjet::Template::Details
+  <span class="kind">struct</span> Mailjet::<wbr>Template::<wbr>Details
 
 </h1>
 
@@ -1199,7 +1205,7 @@
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L68" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L68" target="_blank">
         mailjet/resources/template.cr
       </a>
     
@@ -1221,11 +1227,13 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new(pull:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
+        <a href="#new%28pull%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(pull : JSON::PullParser)</a>
         
       </li>
     
   </ul>
+
+
 
 
 
@@ -1242,98 +1250,96 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#author:String-instance-method" class="signature"><strong>#author</strong> : String</a>
+        <a href="#author%3AString-instance-method" class="signature"><strong>#author</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#categories:Array(String)-instance-method" class="signature"><strong>#categories</strong> : Array(String)</a>
+        <a href="#categories%3AArray%28String%29-instance-method" class="signature"><strong>#categories</strong> : Array(String)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#copyright:String-instance-method" class="signature"><strong>#copyright</strong> : String</a>
+        <a href="#copyright%3AString-instance-method" class="signature"><strong>#copyright</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#created_at:Time-instance-method" class="signature"><strong>#created_at</strong> : Time</a>
+        <a href="#created_at%3ATime-instance-method" class="signature"><strong>#created_at</strong> : Time</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#description:String-instance-method" class="signature"><strong>#description</strong> : String</a>
+        <a href="#description%3AString-instance-method" class="signature"><strong>#description</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#edit_mode:Int32-instance-method" class="signature"><strong>#edit_mode</strong> : Int32</a>
+        <a href="#edit_mode%3AInt32-instance-method" class="signature"><strong>#edit_mode</strong> : Int32</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#id:Int32-instance-method" class="signature"><strong>#id</strong> : Int32</a>
+        <a href="#id%3AInt32-instance-method" class="signature"><strong>#id</strong> : Int32</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#is_starred:Bool-instance-method" class="signature"><strong>#is_starred</strong> : Bool</a>
+        <a href="#is_starred%3ABool-instance-method" class="signature"><strong>#is_starred</strong> : Bool</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#is_text_part_generation_enabled:Bool-instance-method" class="signature"><strong>#is_text_part_generation_enabled</strong> : Bool</a>
+        <a href="#is_text_part_generation_enabled%3ABool-instance-method" class="signature"><strong>#is_text_part_generation_enabled</strong> : Bool</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#last_updated_at:Time-instance-method" class="signature"><strong>#last_updated_at</strong> : Time</a>
+        <a href="#last_updated_at%3ATime-instance-method" class="signature"><strong>#last_updated_at</strong> : Time</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#locale:String-instance-method" class="signature"><strong>#locale</strong> : String</a>
+        <a href="#locale%3AString-instance-method" class="signature"><strong>#locale</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#locale_list:Union(Array(String),Nil)-instance-method" class="signature"><strong>#locale_list</strong> : Union(Array(String), Nil)</a>
+        <a href="#locale_list%3AUnion%28Array%28String%29%2CNil%29-instance-method" class="signature"><strong>#locale_list</strong> : Union(Array(String), Nil)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#name:String-instance-method" class="signature"><strong>#name</strong> : String</a>
+        <a href="#name%3AString-instance-method" class="signature"><strong>#name</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#owner_id:Int32-instance-method" class="signature"><strong>#owner_id</strong> : Int32</a>
+        <a href="#owner_id%3AInt32-instance-method" class="signature"><strong>#owner_id</strong> : Int32</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#owner_type:String-instance-method" class="signature"><strong>#owner_type</strong> : String</a>
+        <a href="#owner_type%3AString-instance-method" class="signature"><strong>#owner_type</strong> : String</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#presets:JSON::Any-instance-method" class="signature"><strong>#presets</strong> : JSON::Any</a>
+        <a href="#presets%3AJSON%3A%3AAny-instance-method" class="signature"><strong>#presets</strong> : JSON::Any</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#previews:Array(Int32)-instance-method" class="signature"><strong>#previews</strong> : Array(Int32)</a>
+        <a href="#previews%3AArray%28Int32%29-instance-method" class="signature"><strong>#previews</strong> : Array(Int32)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#purposes:Array(String)-instance-method" class="signature"><strong>#purposes</strong> : Array(String)</a>
+        <a href="#purposes%3AArray%28String%29-instance-method" class="signature"><strong>#purposes</strong> : Array(String)</a>
         
       </li>
     
   </ul>
-
-
 
 
 
@@ -1348,13 +1354,6 @@
     
 
 
-  
-    
-
-
-    
-
-
     
 
 
@@ -1368,6 +1367,18 @@
     
 
 
+    
+
+  <h3>Macros inherited from module <code><a href="../../Mailjet/Json/Fields.html">Mailjet::Json::Fields</a></code></h3>
+  
+  
+    <a href="../../Mailjet/Json/Fields.html#json_fields%28mapping%29-macro" class="tooltip">
+      <span>json_fields(mapping)</span>
+    json_fields</a>
+    
+  
+
+
   
     
 
@@ -1378,7 +1389,26 @@
     
 
 
+    
+
+
   
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
     
 
 
@@ -1406,7 +1436,7 @@
         
         def self.<strong>new</strong>(pull : JSON::PullParser)
 
-        <a class="method-permalink" href="#new(pull:JSON::PullParser)-class-method">#</a>
+        <a class="method-permalink" href="#new%28pull%3AJSON%3A%3APullParser%29-class-method">#</a>
       </div>
       
       <br/>
@@ -1415,6 +1445,8 @@
       </div>
     </div>
   
+
+
 
 
 
@@ -1434,7 +1466,7 @@
         
         def <strong>author</strong> : String
 
-        <a class="method-permalink" href="#author:String-instance-method">#</a>
+        <a class="method-permalink" href="#author%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1448,7 +1480,7 @@
         
         def <strong>categories</strong> : Array(String)
 
-        <a class="method-permalink" href="#categories:Array(String)-instance-method">#</a>
+        <a class="method-permalink" href="#categories%3AArray%28String%29-instance-method">#</a>
       </div>
       
       <br/>
@@ -1462,7 +1494,7 @@
         
         def <strong>copyright</strong> : String
 
-        <a class="method-permalink" href="#copyright:String-instance-method">#</a>
+        <a class="method-permalink" href="#copyright%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1476,7 +1508,7 @@
         
         def <strong>created_at</strong> : Time
 
-        <a class="method-permalink" href="#created_at:Time-instance-method">#</a>
+        <a class="method-permalink" href="#created_at%3ATime-instance-method">#</a>
       </div>
       
       <br/>
@@ -1490,7 +1522,7 @@
         
         def <strong>description</strong> : String
 
-        <a class="method-permalink" href="#description:String-instance-method">#</a>
+        <a class="method-permalink" href="#description%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1504,7 +1536,7 @@
         
         def <strong>edit_mode</strong> : Int32
 
-        <a class="method-permalink" href="#edit_mode:Int32-instance-method">#</a>
+        <a class="method-permalink" href="#edit_mode%3AInt32-instance-method">#</a>
       </div>
       
       <br/>
@@ -1518,7 +1550,7 @@
         
         def <strong>id</strong> : Int32
 
-        <a class="method-permalink" href="#id:Int32-instance-method">#</a>
+        <a class="method-permalink" href="#id%3AInt32-instance-method">#</a>
       </div>
       
       <br/>
@@ -1532,7 +1564,7 @@
         
         def <strong>is_starred</strong> : Bool
 
-        <a class="method-permalink" href="#is_starred:Bool-instance-method">#</a>
+        <a class="method-permalink" href="#is_starred%3ABool-instance-method">#</a>
       </div>
       
       <br/>
@@ -1546,7 +1578,7 @@
         
         def <strong>is_text_part_generation_enabled</strong> : Bool
 
-        <a class="method-permalink" href="#is_text_part_generation_enabled:Bool-instance-method">#</a>
+        <a class="method-permalink" href="#is_text_part_generation_enabled%3ABool-instance-method">#</a>
       </div>
       
       <br/>
@@ -1560,7 +1592,7 @@
         
         def <strong>last_updated_at</strong> : Time
 
-        <a class="method-permalink" href="#last_updated_at:Time-instance-method">#</a>
+        <a class="method-permalink" href="#last_updated_at%3ATime-instance-method">#</a>
       </div>
       
       <br/>
@@ -1574,7 +1606,7 @@
         
         def <strong>locale</strong> : String
 
-        <a class="method-permalink" href="#locale:String-instance-method">#</a>
+        <a class="method-permalink" href="#locale%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1588,7 +1620,7 @@
         
         def <strong>locale_list</strong> : Union(Array(String), Nil)
 
-        <a class="method-permalink" href="#locale_list:Union(Array(String),Nil)-instance-method">#</a>
+        <a class="method-permalink" href="#locale_list%3AUnion%28Array%28String%29%2CNil%29-instance-method">#</a>
       </div>
       
       <br/>
@@ -1602,7 +1634,7 @@
         
         def <strong>name</strong> : String
 
-        <a class="method-permalink" href="#name:String-instance-method">#</a>
+        <a class="method-permalink" href="#name%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1616,7 +1648,7 @@
         
         def <strong>owner_id</strong> : Int32
 
-        <a class="method-permalink" href="#owner_id:Int32-instance-method">#</a>
+        <a class="method-permalink" href="#owner_id%3AInt32-instance-method">#</a>
       </div>
       
       <br/>
@@ -1630,7 +1662,7 @@
         
         def <strong>owner_type</strong> : String
 
-        <a class="method-permalink" href="#owner_type:String-instance-method">#</a>
+        <a class="method-permalink" href="#owner_type%3AString-instance-method">#</a>
       </div>
       
       <br/>
@@ -1644,7 +1676,7 @@
         
         def <strong>presets</strong> : JSON::Any
 
-        <a class="method-permalink" href="#presets:JSON::Any-instance-method">#</a>
+        <a class="method-permalink" href="#presets%3AJSON%3A%3AAny-instance-method">#</a>
       </div>
       
       <br/>
@@ -1658,7 +1690,7 @@
         
         def <strong>previews</strong> : Array(Int32)
 
-        <a class="method-permalink" href="#previews:Array(Int32)-instance-method">#</a>
+        <a class="method-permalink" href="#previews%3AArray%28Int32%29-instance-method">#</a>
       </div>
       
       <br/>
@@ -1672,7 +1704,7 @@
         
         def <strong>purposes</strong> : Array(String)
 
-        <a class="method-permalink" href="#purposes:Array(String)-instance-method">#</a>
+        <a class="method-permalink" href="#purposes%3AArray%28String%29-instance-method">#</a>
       </div>
       
       <br/>
@@ -1681,8 +1713,6 @@
       </div>
     </div>
   
-
-
 
 
 </div>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">class</span> Mailjet::ResourceNotFoundException
+  <span class="kind">class</span> Mailjet::<wbr>ResourceNotFoundException
 
 </h1>
 
@@ -1183,7 +1189,7 @@
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L48" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L48" target="_blank">
         mailjet/exception.cr
       </a>
     
@@ -1209,22 +1215,22 @@
   <h3>Instance methods inherited from class <code><a href="../Mailjet/RequestException.html">Mailjet::RequestException</a></code></h3>
   
   
-    <a href="../Mailjet/RequestException.html#error_info:Exception::ErrorInfo-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#error_info%3AException%3A%3AErrorInfo-instance-method" class="tooltip">
       <span>error_info : Exception::ErrorInfo</span>
     error_info</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#error_info=(_error_info:Exception::ErrorInfo)-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#error_info%3D%28_error_info%3AException%3A%3AErrorInfo%29-instance-method" class="tooltip">
       <span>error_info=(_error_info : Exception::ErrorInfo)</span>
     error_info=</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#error_message:Union(String,Nil)-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#error_message%3AUnion%28String%2CNil%29-instance-method" class="tooltip">
       <span>error_message : Union(String, Nil)</span>
     error_message</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#error_message=(_error_message:Union(String,Nil))-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#error_message%3D%28_error_message%3AUnion%28String%2CNil%29%29-instance-method" class="tooltip">
       <span>error_message=(_error_message : Union(String, Nil))</span>
     error_message=</a>, 
     
@@ -1234,17 +1240,17 @@
     message</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#status_code:Union(Int32,Nil)-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#status_code%3AUnion%28Int32%2CNil%29-instance-method" class="tooltip">
       <span>status_code : Union(Int32, Nil)</span>
     status_code</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#status_code=(_status_code:Union(Int32,Nil))-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#status_code%3D%28_status_code%3AUnion%28Int32%2CNil%29%29-instance-method" class="tooltip">
       <span>status_code=(_status_code : Union(Int32, Nil))</span>
     status_code=</a>, 
     
   
-    <a href="../Mailjet/RequestException.html#to_json(json:JSON::Builder)-instance-method" class="tooltip">
+    <a href="../Mailjet/RequestException.html#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="tooltip">
       <span>to_json(json : JSON::Builder)</span>
     to_json</a>, 
     
@@ -1261,8 +1267,8 @@
   <h3>Constructor methods inherited from class <code><a href="../Mailjet/RequestException.html">Mailjet::RequestException</a></code></h3>
   
   
-    <a href="../Mailjet/RequestException.html#new(__temp_51:JSON::PullParser)-class-method" class="tooltip">
-      <span>new(__temp_51 : JSON::PullParser)</span>
+    <a href="../Mailjet/RequestException.html#new%28__temp_78%3AJSON%3A%3APullParser%29-class-method" class="tooltip">
+      <span>new(__temp_78 : JSON::PullParser)</span>
     new</a>
     
   
@@ -1271,13 +1277,6 @@
     
 
 
-  
-    
-
-
-    
-
-
     
 
 
@@ -1291,6 +1290,22 @@
     
 
 
+    
+
+
+  
+    
+
+
+    
+
+
+    
+
+
+    
+
+
   
     
 
@@ -1301,7 +1316,13 @@
     
 
 
+    
+
+
   
+    
+
+
     
 
 

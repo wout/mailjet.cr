@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">struct</span> Mailjet::Template
+  <span class="kind">struct</span> Mailjet::<wbr>Template
 
 </h1>
 
@@ -1171,7 +1177,6 @@
 
   <p>Retrieve the contents of an email template. It will be split between a Text
 part, HTML part, MJML content and/or additional headers.</p>
-
 <p>https://dev.mailjet.com/email/reference/templates/#v3_get_template_template_ID_detailcontent
 https://dev.mailjet.com/email/reference/templates/#v3_post_template_template_ID_detailcontent
 https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_detailcontent</p>
@@ -1199,14 +1204,14 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L8" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L8" target="_blank">
         mailjet/resources/template.cr
       </a>
     
     <br/>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template/detailcontent.cr#L9" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template/detailcontent.cr#L9" target="_blank">
         mailjet/resources/template/detailcontent.cr
       </a>
     
@@ -1230,49 +1235,49 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#all(query:Hash%7CNamedTuple=Hash(String,String).new,params:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.all</strong>(query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#all%28query%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cparams%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.all</strong>(query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Find all contact lists</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#create(payload:Hash%7CNamedTuple,params:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.create</strong>(payload : Hash | NamedTuple, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#create%28payload%3AHash%7CNamedTuple%2Cparams%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.create</strong>(payload : Hash | NamedTuple, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Create a template</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#delete(id:ResourceId,client:Client=Client.new)-class-method" class="signature"><strong>.delete</strong>(id : ResourceId, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#delete%28id%3AResourceId%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.delete</strong>(id : ResourceId, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Delete a template</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#find(params:Hash%7CNamedTuple=Hash(String,String).new,query:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.find</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#find%28params%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cquery%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.find</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Find a template</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#find(id:ResourceId,query:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.find</strong>(id : ResourceId, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#find%28id%3AResourceId%2Cquery%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.find</strong>(id : ResourceId, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Find a template</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#update(params:Hash%7CNamedTuple=Hash(String,String).new,payload:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.update</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#update%28params%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cpayload%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.update</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Update a template</p></div>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#update(id:ResourceId,payload:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method" class="signature"><strong>.update</strong>(id : ResourceId, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : Client = <span class="t">Client</span>.<span class="k">new</span>)</a>
+        <a href="#update%28id%3AResourceId%2Cpayload%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.update</strong>(id : ResourceId, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : Client = <span class="t">Client</span>.new)</a>
         
           <div class="summary"><p>Update a template</p></div>
         
@@ -1290,6 +1295,15 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
   
     
 
+  <h3>Instance methods inherited from struct <code><a href="../Mailjet/Resource.html">Mailjet::Resource</a></code></h3>
+  
+  
+    <a href="../Mailjet/Resource.html#initialize-instance-method" class="tooltip">
+      <span>initialize</span>
+    initialize</a>
+    
+  
+
 
     
 
@@ -1306,6 +1320,38 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
     
 
 
+    
+
+  <h3>Macros inherited from struct <code><a href="../Mailjet/Resource.html">Mailjet::Resource</a></code></h3>
+  
+  
+    <a href="../Mailjet/Resource.html#can_create%28pattern%2Cmapping%29-macro" class="tooltip">
+      <span>can_create(pattern, mapping)</span>
+    can_create</a>, 
+    
+  
+    <a href="../Mailjet/Resource.html#can_delete%28pattern%29-macro" class="tooltip">
+      <span>can_delete(pattern)</span>
+    can_delete</a>, 
+    
+  
+    <a href="../Mailjet/Resource.html#can_find%28pattern%2Cmapping%29-macro" class="tooltip">
+      <span>can_find(pattern, mapping)</span>
+    can_find</a>, 
+    
+  
+    <a href="../Mailjet/Resource.html#can_list%28pattern%2Cmapping%29-macro" class="tooltip">
+      <span>can_list(pattern, mapping)</span>
+    can_list</a>, 
+    
+  
+    <a href="../Mailjet/Resource.html#can_update%28pattern%2Cmapping%29-macro" class="tooltip">
+      <span>can_update(pattern, mapping)</span>
+    can_update</a>
+    
+  
+
+
   
     
 
@@ -1316,17 +1362,26 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
     
 
 
-  
-    
-
-
-    
-
-
     
 
 
   
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
     
 
 
@@ -1354,15 +1409,14 @@ https://dev.mailjet.com/email/reference/templates/#v3_put_template_template_ID_d
     <div class="entry-detail" id="all(query:Hash|NamedTuple=Hash(String,String).new,params:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>all</strong>(query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>all</strong>(query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#all(query:Hash%7CNamedTuple=Hash(String,String).new,params:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#all%28query%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cparams%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Find all contact lists</p>
-
 <pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.all
 templates <span class="o">=</span> response.data</code></pre>
         </div>
@@ -1370,7 +1424,7 @@ templates <span class="o">=</span> response.data</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L18" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L18" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1378,15 +1432,14 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="create(payload:Hash|NamedTuple,params:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>create</strong>(payload : Hash | NamedTuple, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>create</strong>(payload : Hash | NamedTuple, params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#create(payload:Hash%7CNamedTuple,params:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#create%28payload%3AHash%7CNamedTuple%2Cparams%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Create a template</p>
-
 <pre><code class="language-crystal">template <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.create({
   author:     <span class="s">&quot;John Doe&quot;</span>,
   categories: [
@@ -1401,7 +1454,7 @@ templates <span class="o">=</span> response.data</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L42" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L42" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1409,22 +1462,21 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="delete(id:ResourceId,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>delete</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>delete</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#delete(id:ResourceId,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#delete%28id%3AResourceId%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Delete a template</p>
-
 <pre><code class="language-crystal"><span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.delete(<span class="n">123456789</span>)</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L66" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L66" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1432,22 +1484,21 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="find(params:Hash|NamedTuple=Hash(String,String).new,query:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>find</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>find</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#find(params:Hash%7CNamedTuple=Hash(String,String).new,query:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#find%28params%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cquery%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Find a template</p>
-
 <pre><code class="language-crystal">template <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.find(<span class="n">123456789</span>)</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L26" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L26" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1455,22 +1506,21 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="find(id:ResourceId,query:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>find</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>find</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, query : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#find(id:ResourceId,query:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#find%28id%3AResourceId%2Cquery%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Find a template</p>
-
 <pre><code class="language-crystal">template <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.find(<span class="n">123456789</span>)</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L26" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L26" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1478,15 +1528,14 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="update(params:Hash|NamedTuple=Hash(String,String).new,payload:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>update</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>update</strong>(params : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#update(params:Hash%7CNamedTuple=Hash(String,String).new,payload:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#update%28params%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cpayload%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Update a template</p>
-
 <pre><code class="language-crystal">template <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.update(<span class="n">123456789</span>, {
   author:     <span class="s">&quot;John Doe&quot;</span>,
   categories: [
@@ -1501,7 +1550,7 @@ templates <span class="o">=</span> response.data</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L58" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L58" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1509,15 +1558,14 @@ templates <span class="o">=</span> response.data</code></pre>
     <div class="entry-detail" id="update(id:ResourceId,payload:Hash|NamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">
       <div class="signature">
         
-        def self.<strong>update</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).<span class="k">new</span>, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.<span class="k">new</span>)
+        def self.<strong>update</strong>(id : <a href="../Mailjet/ResourceId.html">ResourceId</a>, payload : Hash | NamedTuple = <span class="t">Hash</span>(<span class="t">String</span>, <span class="t">String</span>).new, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
 
-        <a class="method-permalink" href="#update(id:ResourceId,payload:Hash%7CNamedTuple=Hash(String,String).new,client:Client=Client.new)-class-method">#</a>
+        <a class="method-permalink" href="#update%28id%3AResourceId%2Cpayload%3AHash%7CNamedTuple%3DHash%28String%2CString%29.new%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Update a template</p>
-
 <pre><code class="language-crystal">template <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Template</span>.update(<span class="n">123456789</span>, {
   author:     <span class="s">&quot;John Doe&quot;</span>,
   categories: [
@@ -1532,7 +1580,7 @@ templates <span class="o">=</span> response.data</code></pre>
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/resources/template.cr#L58" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/resources/template.cr#L58" target="_blank">View source</a>]
         
       </div>
     </div>

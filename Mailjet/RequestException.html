@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">class</span> Mailjet::RequestException
+  <span class="kind">class</span> Mailjet::<wbr>RequestException
 
 </h1>
 
@@ -1172,7 +1178,6 @@
   <p>The error info value may return anything from a string to an array of
 hashes, so some juggling is needed to drill down to the actual errors. Here
 is an example:</p>
-
 <pre><code class="language-crystal"><span class="k">case</span> exception.error_info
 <span class="k">when</span> <span class="t">String</span>
   puts exception.error_info
@@ -1219,7 +1224,7 @@ is an example:</p>
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L22" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L22" target="_blank">
         mailjet/exception.cr
       </a>
     
@@ -1241,11 +1246,13 @@ is an example:</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new(__temp_51:JSON::PullParser)-class-method" class="signature"><strong>.new</strong>(__temp_51 : JSON::PullParser)</a>
+        <a href="#new%28__temp_78%3AJSON%3A%3APullParser%29-class-method" class="signature"><strong>.new</strong>(__temp_78 : JSON::PullParser)</a>
         
       </li>
     
   </ul>
+
+
 
 
 
@@ -1262,22 +1269,22 @@ is an example:</p>
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#error_info:Exception::ErrorInfo-instance-method" class="signature"><strong>#error_info</strong> : Exception::ErrorInfo</a>
+        <a href="#error_info%3AException%3A%3AErrorInfo-instance-method" class="signature"><strong>#error_info</strong> : Exception::ErrorInfo</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#error_info=(_error_info:Exception::ErrorInfo)-instance-method" class="signature"><strong>#error_info=</strong>(_error_info : Exception::ErrorInfo)</a>
+        <a href="#error_info%3D%28_error_info%3AException%3A%3AErrorInfo%29-instance-method" class="signature"><strong>#error_info=</strong>(_error_info : Exception::ErrorInfo)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#error_message:Union(String,Nil)-instance-method" class="signature"><strong>#error_message</strong> : Union(String, Nil)</a>
+        <a href="#error_message%3AUnion%28String%2CNil%29-instance-method" class="signature"><strong>#error_message</strong> : Union(String, Nil)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#error_message=(_error_message:Union(String,Nil))-instance-method" class="signature"><strong>#error_message=</strong>(_error_message : Union(String, Nil))</a>
+        <a href="#error_message%3D%28_error_message%3AUnion%28String%2CNil%29%29-instance-method" class="signature"><strong>#error_message=</strong>(_error_message : Union(String, Nil))</a>
         
       </li>
     
@@ -1287,30 +1294,28 @@ is an example:</p>
       </li>
     
       <li class="entry-summary">
-        <a href="#status_code:Union(Int32,Nil)-instance-method" class="signature"><strong>#status_code</strong> : Union(Int32, Nil)</a>
+        <a href="#status_code%3AUnion%28Int32%2CNil%29-instance-method" class="signature"><strong>#status_code</strong> : Union(Int32, Nil)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#status_code=(_status_code:Union(Int32,Nil))-instance-method" class="signature"><strong>#status_code=</strong>(_status_code : Union(Int32, Nil))</a>
+        <a href="#status_code%3D%28_status_code%3AUnion%28Int32%2CNil%29%29-instance-method" class="signature"><strong>#status_code=</strong>(_status_code : Union(Int32, Nil))</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#to_json(json:JSON::Builder)-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
+        <a href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method" class="signature"><strong>#to_json</strong>(json : JSON::Builder)</a>
         
       </li>
     
       <li class="entry-summary">
         <a href="#to_s-instance-method" class="signature"><strong>#to_s</strong></a>
         
-          <div class="summary"><p>Returns a string representation of this object.</p></div>
+          <div class="summary"><p>Returns a nicely readable and concise string representation of this object, typically intended for users.</p></div>
         
       </li>
     
   </ul>
-
-
 
 
 
@@ -1325,13 +1330,6 @@ is an example:</p>
     
 
 
-  
-    
-
-
-    
-
-
     
 
 
@@ -1345,7 +1343,26 @@ is an example:</p>
     
 
 
+    
+
+
   
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
     
 
 
@@ -1368,22 +1385,24 @@ is an example:</p>
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(__temp_51:JSON::PullParser)-class-method">
+    <div class="entry-detail" id="new(__temp_78:JSON::PullParser)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(__temp_51 : JSON::PullParser)
+        def self.<strong>new</strong>(__temp_78 : JSON::PullParser)
 
-        <a class="method-permalink" href="#new(__temp_51:JSON::PullParser)-class-method">#</a>
+        <a class="method-permalink" href="#new%28__temp_78%3AJSON%3A%3APullParser%29-class-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
   
+
+
 
 
 
@@ -1403,13 +1422,13 @@ is an example:</p>
         
         def <strong>error_info</strong> : <a href="../Mailjet/Exception/ErrorInfo.html">Exception::ErrorInfo</a>
 
-        <a class="method-permalink" href="#error_info:Exception::ErrorInfo-instance-method">#</a>
+        <a class="method-permalink" href="#error_info%3AException%3A%3AErrorInfo-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1419,13 +1438,13 @@ is an example:</p>
         
         def <strong>error_info=</strong>(_error_info : <a href="../Mailjet/Exception/ErrorInfo.html">Exception::ErrorInfo</a>)
 
-        <a class="method-permalink" href="#error_info=(_error_info:Exception::ErrorInfo)-instance-method">#</a>
+        <a class="method-permalink" href="#error_info%3D%28_error_info%3AException%3A%3AErrorInfo%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1435,13 +1454,13 @@ is an example:</p>
         
         def <strong>error_message</strong> : Union(String, Nil)
 
-        <a class="method-permalink" href="#error_message:Union(String,Nil)-instance-method">#</a>
+        <a class="method-permalink" href="#error_message%3AUnion%28String%2CNil%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1451,13 +1470,13 @@ is an example:</p>
         
         def <strong>error_message=</strong>(_error_message : Union(String, Nil))
 
-        <a class="method-permalink" href="#error_message=(_error_message:Union(String,Nil))-instance-method">#</a>
+        <a class="method-permalink" href="#error_message%3D%28_error_message%3AUnion%28String%2CNil%29%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1473,7 +1492,7 @@ is an example:</p>
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L29" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L29" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1483,13 +1502,13 @@ is an example:</p>
         
         def <strong>status_code</strong> : Union(Int32, Nil)
 
-        <a class="method-permalink" href="#status_code:Union(Int32,Nil)-instance-method">#</a>
+        <a class="method-permalink" href="#status_code%3AUnion%28Int32%2CNil%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1499,13 +1518,13 @@ is an example:</p>
         
         def <strong>status_code=</strong>(_status_code : Union(Int32, Nil))
 
-        <a class="method-permalink" href="#status_code=(_status_code:Union(Int32,Nil))-instance-method">#</a>
+        <a class="method-permalink" href="#status_code%3D%28_status_code%3AUnion%28Int32%2CNil%29%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1515,13 +1534,13 @@ is an example:</p>
         
         def <strong>to_json</strong>(json : JSON::Builder)
 
-        <a class="method-permalink" href="#to_json(json:JSON::Builder)-instance-method">#</a>
+        <a class="method-permalink" href="#to_json%28json%3AJSON%3A%3ABuilder%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1540,23 +1559,21 @@ is an example:</p>
               Description copied from class Object
             </div>
           
-          <p>Returns a string representation of this object.</p>
-
-<p>Descendants must usually <strong>not</strong> override this method. Instead,
-they must override <code>to_s(io)</code>, which must append to the given
-IO object.</p>
+          <p>Returns a nicely readable and concise string representation of this object,
+typically intended for users.</p>
+<p>This method should usually <strong>not</strong> be overridden. It delegates to
+<code>#to_s(IO)</code> which can be overridden for custom implementations.</p>
+<p>Also see <code>#inspect</code>.</p>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/exception.cr#L33" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/exception.cr#L33" target="_blank">View source</a>]
         
       </div>
     </div>
   
-
-
 
 
 </div>

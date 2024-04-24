@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="generator" content="Crystal Docs 1.0.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Crystal Docs 1.11.2">
 <meta name="crystal_docs.project_version" content="master">
 <meta name="crystal_docs.project_name" content="mailjet">
 
@@ -22,9 +23,14 @@
 
 <svg class="hidden">
   <symbol id="octicon-link" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
+    <path fill="currentColor" fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path>
   </symbol>
 </svg>
+<input type="checkbox" id="sidebar-btn">
+<label for="sidebar-btn" id="sidebar-btn-label">
+  <svg class="open" xmlns="http://www.w3.org/2000/svg" height="2em" width="2em" viewBox="0 0 512 512"><title>Open Sidebar</title><path fill="currentColor" d="M80 96v64h352V96H80zm0 112v64h352v-64H80zm0 112v64h352v-64H80z"></path></svg>
+  <svg class="close" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 512 512"><title>Close Sidebar</title><path fill="currentColor" d="m118.6 73.4-45.2 45.2L210.7 256 73.4 393.4l45.2 45.2L256 301.3l137.4 137.3 45.2-45.2L301.3 256l137.3-137.4-45.2-45.2L256 210.7Z"></path></svg>
+</label>
 <div class="sidebar">
   <div class="sidebar-header">
     <div class="search-box">
@@ -1150,7 +1156,7 @@
 <div class="main-content">
 <h1 class="type-name">
 
-  <span class="kind">struct</span> Mailjet::Client
+  <span class="kind">struct</span> Mailjet::<wbr>Client
 
 </h1>
 
@@ -1183,7 +1189,7 @@
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L2" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L2" target="_blank">
         mailjet/client.cr
       </a>
     
@@ -1205,7 +1211,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new(api_key=Config.api_key,secret_key=Config.secret_key)-class-method" class="signature"><strong>.new</strong>(api_key = <span class="t">Config</span>.api_key, secret_key = <span class="t">Config</span>.secret_key)</a>
+        <a href="#new%28api_key%3ANil%7CString%3DConfig.api_key%2Csecret_key%3ANil%7CString%3DConfig.secret_key%29-class-method" class="signature"><strong>.new</strong>(api_key : Nil | String = <span class="t">Config</span>.api_key, secret_key : Nil | String = <span class="t">Config</span>.secret_key)</a>
         
           <div class="summary"><p>Initialize with credentials</p></div>
         
@@ -1226,13 +1232,15 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#with_credentials(api_key:String?,secret_key:String?)-class-method" class="signature"><strong>.with_credentials</strong>(api_key : String?, secret_key : String?)</a>
+        <a href="#with_credentials%28api_key%3AString%7CNil%2Csecret_key%3AString%7CNil%29-class-method" class="signature"><strong>.with_credentials</strong>(api_key : String | Nil, secret_key : String | Nil)</a>
         
           <div class="summary"><p>Create a new instance with given api credentials</p></div>
         
       </li>
     
   </ul>
+
+
 
 
 
@@ -1247,23 +1255,21 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#api_key:String?-instance-method" class="signature"><strong>#api_key</strong> : String?</a>
+        <a href="#api_key%3AString%7CNil-instance-method" class="signature"><strong>#api_key</strong> : String | Nil</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#handle_api_call(method:String,path:String,query:Hash%7CNamedTuple=%7B%7DofString=%3EString,payload:Hash%7CNamedTuple=%7B%7DofString=%3EString,headers:Hash%7CNamedTuple=%7B%7DofString=%3EString)-instance-method" class="signature"><strong>#handle_api_call</strong>(method : String, path : String, query : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>, payload : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>, headers : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>)</a>
+        <a href="#handle_api_call%28method%3AString%2Cpath%3AString%2Cquery%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%2Cpayload%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%2Cheaders%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%29-instance-method" class="signature"><strong>#handle_api_call</strong>(method : String, path : String, query : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, payload : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, headers : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>)</a>
         
       </li>
     
       <li class="entry-summary">
-        <a href="#secret_key:String?-instance-method" class="signature"><strong>#secret_key</strong> : String?</a>
+        <a href="#secret_key%3AString%7CNil-instance-method" class="signature"><strong>#secret_key</strong> : String | Nil</a>
         
       </li>
     
   </ul>
-
-
 
 
 
@@ -1278,17 +1284,26 @@
     
 
 
-  
-    
-
-
-    
-
-
     
 
 
   
+    
+
+
+    
+
+
+    
+
+
+    
+
+
+  
+    
+
+
     
 
 
@@ -1311,29 +1326,26 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(api_key=Config.api_key,secret_key=Config.secret_key)-class-method">
+    <div class="entry-detail" id="new(api_key:Nil|String=Config.api_key,secret_key:Nil|String=Config.secret_key)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(api_key = <span class="t">Config</span>.api_key, secret_key = <span class="t">Config</span>.secret_key)
+        def self.<strong>new</strong>(api_key : Nil | String = <span class="t">Config</span>.api_key, secret_key : Nil | String = <span class="t">Config</span>.secret_key)
 
-        <a class="method-permalink" href="#new(api_key=Config.api_key,secret_key=Config.secret_key)-class-method">#</a>
+        <a class="method-permalink" href="#new%28api_key%3ANil%7CString%3DConfig.api_key%2Csecret_key%3ANil%7CString%3DConfig.secret_key%29-class-method">#</a>
       </div>
       
         <div class="doc">
           
           <p>Initialize with credentials</p>
-
-<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span>(<span class="s">&quot;my_key&quot;</span>, <span class="s">&quot;my_secret&quot;</span>)</code></pre>
-
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Client</span>.new(<span class="s">&quot;my_key&quot;</span>, <span class="s">&quot;my_secret&quot;</span>)</code></pre>
 <p>Or without, if credentials are configured globally:</p>
-
-<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Client</span>.<span class="k">new</span></code></pre>
+<pre><code class="language-crystal">client <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">Client</span>.new</code></pre>
         </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L17" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1350,12 +1362,12 @@
     Class Method Detail
   </h2>
   
-    <div class="entry-detail" id="with_credentials(api_key:String?,secret_key:String?)-class-method">
+    <div class="entry-detail" id="with_credentials(api_key:String|Nil,secret_key:String|Nil)-class-method">
       <div class="signature">
         
-        def self.<strong>with_credentials</strong>(api_key : String?, secret_key : String?)
+        def self.<strong>with_credentials</strong>(api_key : String | Nil, secret_key : String | Nil)
 
-        <a class="method-permalink" href="#with_credentials(api_key:String?,secret_key:String?)-class-method">#</a>
+        <a class="method-permalink" href="#with_credentials%28api_key%3AString%7CNil%2Csecret_key%3AString%7CNil%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -1366,11 +1378,13 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L98" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L98" target="_blank">View source</a>]
         
       </div>
     </div>
   
+
+
 
 
 
@@ -1383,18 +1397,18 @@
     Instance Method Detail
   </h2>
   
-    <div class="entry-detail" id="api_key:String?-instance-method">
+    <div class="entry-detail" id="api_key:String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>api_key</strong> : String?
+        def <strong>api_key</strong> : String | Nil
 
-        <a class="method-permalink" href="#api_key:String?-instance-method">#</a>
+        <a class="method-permalink" href="#api_key%3AString%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1402,37 +1416,35 @@
     <div class="entry-detail" id="handle_api_call(method:String,path:String,query:Hash|NamedTuple={}ofString=&gt;String,payload:Hash|NamedTuple={}ofString=&gt;String,headers:Hash|NamedTuple={}ofString=&gt;String)-instance-method">
       <div class="signature">
         
-        def <strong>handle_api_call</strong>(method : String, path : String, query : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>, payload : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>, headers : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> => <span class="t">String</span>)
+        def <strong>handle_api_call</strong>(method : String, path : String, query : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, payload : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>, headers : Hash | NamedTuple = {} <span class="k">of</span> <span class="t">String</span> <span class="o">=&gt;</span> <span class="t">String</span>)
 
-        <a class="method-permalink" href="#handle_api_call(method:String,path:String,query:Hash%7CNamedTuple=%7B%7DofString=%3EString,payload:Hash%7CNamedTuple=%7B%7DofString=%3EString,headers:Hash%7CNamedTuple=%7B%7DofString=%3EString)-instance-method">#</a>
+        <a class="method-permalink" href="#handle_api_call%28method%3AString%2Cpath%3AString%2Cquery%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%2Cpayload%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%2Cheaders%3AHash%7CNamedTuple%3D%7B%7DofString%3D%3EString%29-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L27" target="_blank">View source</a>]
         
       </div>
     </div>
   
-    <div class="entry-detail" id="secret_key:String?-instance-method">
+    <div class="entry-detail" id="secret_key:String|Nil-instance-method">
       <div class="signature">
         
-        def <strong>secret_key</strong> : String?
+        def <strong>secret_key</strong> : String | Nil
 
-        <a class="method-permalink" href="#secret_key:String?-instance-method">#</a>
+        <a class="method-permalink" href="#secret_key%3AString%7CNil-instance-method">#</a>
       </div>
       
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/9fbb067eb2b5e8ec4c066e8714606d55c92b48a6/src/mailjet/client.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/dff0bb80690708caf3c94e1d07d67de61cb18cb1/src/mailjet/client.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>
   
-
-
 
 
 </div>
