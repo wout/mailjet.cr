@@ -1212,33 +1212,42 @@ The majority of the API is covered, but some parts still need to be added.</p>
     <use href="#octicon-link"/>
   </svg>
 </a>Send your first email</h3>
-<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3_1</span>.messages([
-  {
-    <span class="s">&quot;From&quot;</span>: {
-      <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;from@email.com&quot;</span>,
-      <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;Me&quot;</span>,
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3_1</span>.message({
+  <span class="s">&quot;From&quot;</span>: {
+    <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;from@email.com&quot;</span>,
+    <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;Me&quot;</span>,
+  },
+  <span class="s">&quot;To&quot;</span>: [
+    {
+      <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;to@email.com&quot;</span>,
+      <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;You&quot;</span>,
     },
-    <span class="s">&quot;To&quot;</span>: [
-      {
-        <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;to@email.com&quot;</span>,
-        <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;You&quot;</span>,
-      },
-    ],
-    <span class="s">&quot;Subject&quot;</span>:  <span class="s">&quot;My first Mailjet Email!&quot;</span>,
-    <span class="s">&quot;TextPart&quot;</span>: <span class="s">&quot;Greetings from Mailjet!&quot;</span>,
-    <span class="s">&quot;HTMLPart&quot;</span>: <span class="s">&lt;&lt;-HTML</span>
-<span class="s">      &lt;h3&gt;
-        Dear passenger 1, welcome to
-        &lt;a href=&#39;https://www.mailjet.com/&#39;&gt;Mailjet&lt;/a&gt;!
-      &lt;/h3&gt;
-      &lt;br /&gt;
-      May the delivery force be with you!
-    HTML</span>
-  }
+  ],
+  <span class="s">&quot;Subject&quot;</span>:  <span class="s">&quot;My first Mailjet Email!&quot;</span>,
+  <span class="s">&quot;TextPart&quot;</span>: <span class="s">&quot;Greetings from Mailjet!&quot;</span>,
+  <span class="s">&quot;HTMLPart&quot;</span>: <span class="s">&lt;&lt;-HTML</span>
+<span class="s">    &lt;h3&gt;
+      Dear passenger 1, welcome to
+      &lt;a href=&#39;https://www.mailjet.com/&#39;&gt;Mailjet&lt;/a&gt;!
+    &lt;/h3&gt;
+    &lt;br /&gt;
+    May the delivery force be with you!
+  HTML</span>
+})
+
+puts response.status
+<span class="c"># =&gt; &quot;success&quot;</span></code></pre>
+<h3><a id="send-multiple-messages" class="anchor" href="#send-multiple-messages">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Send multiple messages</h3>
+<pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3_1</span>.messages([
+  {...},
+  {...}
 ])
 
-message <span class="o">=</span> response.first
-puts message.status
+puts response.first.status
 <span class="c"># =&gt; &quot;success&quot;</span></code></pre>
 <h3><a id="retrieve-sent-messages" class="anchor" href="#retrieve-sent-messages">
   <svg class="octicon-link" aria-hidden="true">

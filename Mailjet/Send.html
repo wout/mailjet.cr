@@ -1230,7 +1230,7 @@ sending limit per single API call.</p>
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/aa22271273945043ce8b7f8dadaed458ca4add7f/src/mailjet/resources/send.cr#L9" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/ff7c996b3897a37bb2d520a91dabaa007acd65c3/src/mailjet/resources/send.cr#L9" target="_blank">
         mailjet/resources/send.cr
       </a>
     
@@ -1242,6 +1242,25 @@ sending limit per single API call.</p>
 
 
 
+
+  <h2>
+    <a id="class-method-summary" class="anchor" href="#class-method-summary">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Summary
+  </h2>
+  <ul class="list-summary">
+    
+      <li class="entry-summary">
+        <a href="#message%28message%3AHash%7CNamedTuple%2Cclient%3AClient%3DClient.new%29-class-method" class="signature"><strong>.message</strong>(message : Hash | NamedTuple, client : Client = <span class="t">Client</span>.new)</a>
+        
+          <div class="summary"><p>Deliver a single message</p></div>
+        
+      </li>
+    
+  </ul>
 
 
 
@@ -1354,6 +1373,40 @@ sending limit per single API call.</p>
 
 
 
+
+  <h2>
+    <a id="class-method-detail" class="anchor" href="#class-method-detail">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>
+    Class Method Detail
+  </h2>
+  
+    <div class="entry-detail" id="message(message:Hash|NamedTuple,client:Client=Client.new)-class-method">
+      <div class="signature">
+        
+        def self.<strong>message</strong>(message : Hash | NamedTuple, client : <a href="../Mailjet/Client.html">Client</a> = <span class="t">Client</span>.new)
+
+        <a class="method-permalink" href="#message%28message%3AHash%7CNamedTuple%2Cclient%3AClient%3DClient.new%29-class-method">#</a>
+      </div>
+      
+        <div class="doc">
+          
+          <p>Deliver a single message</p>
+<pre><code class="language-crystal"><span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3</span>.message({...})
+<span class="c"># or</span>
+<span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3_1</span>.message({...})</code></pre>
+        </div>
+      
+      <br/>
+      <div>
+        
+          [<a href="https://github.com/wout/mailjet.cr/blob/ff7c996b3897a37bb2d520a91dabaa007acd65c3/src/mailjet/resources/send.cr#L18" target="_blank">View source</a>]
+        
+      </div>
+    </div>
+  
 
 
 
