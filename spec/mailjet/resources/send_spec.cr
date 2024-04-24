@@ -10,7 +10,7 @@ describe Mailjet::Send do
       WebMock.stub(:post, "https://api.mailjet.com/v3.1/send")
         .to_return(status: 200, body: read_fixture("send/create-v3.1"))
 
-      messages = Mailjet::Send.messages([
+      messages = Mailjet::SendV3_1.messages([
         valid_send_message_payload_v3_1,
         valid_send_message_payload_v3_1,
       ])
@@ -21,18 +21,18 @@ describe Mailjet::Send do
       WebMock.stub(:post, "https://api.mailjet.com/v3/send")
         .to_return(status: 200, body: read_fixture("send/create-v3"))
 
-      sent = Mailjet::Send.messages([
+      sent = Mailjet::SendV3.messages([
         valid_send_message_payload_v3,
         valid_send_message_payload_v3,
-      ], "v3")
+      ])
       sent.should be_a(Array(Mailjet::Send::SentMessage))
     end
   end
 end
 
-describe Mailjet::Send::CreateResponse do
+describe Mailjet::SendV3_1::CreateResponse do
   it "parses success messages" do
-    response = Mailjet::Send::CreateResponse.from_json(
+    response = Mailjet::SendV3_1::CreateResponse.from_json(
       read_fixture("send/create-v3.1"))
     message = response.messages.as(Array(Mailjet::Send::ResponseMessage)).first
     message.status.should eq("success")
@@ -43,7 +43,7 @@ describe Mailjet::Send::CreateResponse do
   end
 
   it "parses error messages" do
-    response = Mailjet::Send::CreateResponse.from_json(
+    response = Mailjet::SendV3_1::CreateResponse.from_json(
       read_fixture("send/create-all-errors"))
     message = response.messages.as(Array(Mailjet::Send::ResponseMessage)).first
     message.status.should eq("error")
@@ -53,7 +53,7 @@ end
 
 describe Mailjet::Send::DeliveryReceipt do
   it "parses a delivery receipt" do
-    response = Mailjet::Send::CreateResponse.from_json(
+    response = Mailjet::SendV3_1::CreateResponse.from_json(
       read_fixture("send/create-v3.1"))
     message = response.messages.as(Array(Mailjet::Send::ResponseMessage)).first
     receipt = message.to.as(Array(Mailjet::Send::DeliveryReceipt)).first
@@ -67,7 +67,7 @@ end
 
 describe Mailjet::Send::DeliveryReceipt do
   it "parses a delivery error" do
-    response = Mailjet::Send::CreateResponse.from_json(
+    response = Mailjet::SendV3_1::CreateResponse.from_json(
       read_fixture("send/create-all-errors"))
     message = response.messages.as(Array(Mailjet::Send::ResponseMessage)).last
     error = message.errors.as(Array(Mailjet::Send::DeliveryError)).first
