@@ -38,33 +38,42 @@ require "mailjet"
 ### Send your first email
 
 ```crystal
-response = Mailjet::SendV3_1.messages([
-  {
-    "From": {
-      "Email": "from@email.com",
-      "Name":  "Me",
+response = Mailjet::SendV3_1.message({
+  "From": {
+    "Email": "from@email.com",
+    "Name":  "Me",
+  },
+  "To": [
+    {
+      "Email": "to@email.com",
+      "Name":  "You",
     },
-    "To": [
-      {
-        "Email": "to@email.com",
-        "Name":  "You",
-      },
-    ],
-    "Subject":  "My first Mailjet Email!",
-    "TextPart": "Greetings from Mailjet!",
-    "HTMLPart": <<-HTML
-      <h3>
-        Dear passenger 1, welcome to
-        <a href='https://www.mailjet.com/'>Mailjet</a>!
-      </h3>
-      <br />
-      May the delivery force be with you!
-    HTML
-  }
+  ],
+  "Subject":  "My first Mailjet Email!",
+  "TextPart": "Greetings from Mailjet!",
+  "HTMLPart": <<-HTML
+    <h3>
+      Dear passenger 1, welcome to
+      <a href='https://www.mailjet.com/'>Mailjet</a>!
+    </h3>
+    <br />
+    May the delivery force be with you!
+  HTML
+})
+
+puts response.status
+# => "success"
+```
+
+### Send multiple messages
+
+```crystal
+response = Mailjet::SendV3_1.messages([
+  {...},
+  {...}
 ])
 
-message = response.first
-puts message.status
+puts response.first.status
 # => "success"
 ```
 
