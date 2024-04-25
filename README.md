@@ -31,8 +31,20 @@ dependencies:
 
 ## Usage
 
+### Include the shard
+
 ```crystal
 require "mailjet"
+```
+
+### Configure your crendentials
+
+```crystal
+Mailjet.configure do |settings|
+  settings.api_key = "your-api-key"
+  settings.secret_key = "your-secret-key"
+  settings.default_from = "noreply@email.com"
+end
 ```
 
 ### Send your first email
@@ -117,6 +129,14 @@ counters = Mailjet::Statcounters.by_api_key({
 })
 puts counters.first.event_opened_count
 # => 28
+```
+
+### Temporarily use other settings
+
+```crystal
+Mailjet.temp_config(api_version: Mailjet::Api::V3_1) do
+  # ... do something ...
+end
 ```
 
 ## Documentation
