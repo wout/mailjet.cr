@@ -15,13 +15,9 @@ struct Mailjet
     # client = Mailjet::Client.new
     # ```
     def initialize(
-      @api_key = Config.api_key,
-      @secret_key = Config.secret_key
+      @api_key = Mailjet.settings.api_key,
+      @secret_key = Mailjet.settings.secret_key
     )
-      unless api_key && secret_key
-        raise MissingApiCredentialsException.new(
-          "Both an API key and secret key are required")
-      end
     end
 
     def handle_api_call(
@@ -31,7 +27,7 @@ struct Mailjet
       payload : Hash | NamedTuple = {} of String => String,
       headers : Hash | NamedTuple = {} of String => String
     )
-      client = http_client(URI.parse(Config.end_point))
+      client = http_client(URI.parse(Mailjet.settings.endpoint))
 
       request_headers = http_headers
       headers.each { |key, value| request_headers[key.to_s] = value }
@@ -67,9 +63,9 @@ struct Mailjet
 
     private def http_client(uri : URI)
       client = HTTP::Client.new(uri)
-      client.read_timeout = Config.read_timeout
-      client.connect_timeout = Config.open_timeout
-      client.basic_auth(@api_key, @secret_key)
+      client.read_timeout = Mailjet.settings.read_timeout
+      client.connect_timeout = Mailjet.settings.open_timeout
+      client.basic_auth(Mailjet.settings.api_key, Mailjet.settings.secret_key)
       client
     end
 
@@ -93,18 +89,5 @@ struct Mailjet
         "StatusCode": #{response.status_code}
       })
     end
-
-    # Create a new instance with given api credentials
-    def self.with_credentials(
-      api_key : String?,
-      secret_key : String?
-    )
-      new(api_key, secret_key)
-    end
-
-    # Create a new instance with given api credentials and a block
-    # def self.with_credentials(api_key : String?)
-    #   yield(Mailjet::Proxy.new(with_credentials(api_key)))
-    # end
   end
 end

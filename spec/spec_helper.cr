@@ -17,12 +17,12 @@ Spec.after_each do
 
   # Reset to defaults
   Mailjet.configure do |config|
-    config.api_key = nil
-    config.api_version = "v3"
-    config.default_from = nil
-    config.end_point = "https://api.mailjet.com"
+    config.api_key = "abc"
+    config.api_version = Mailjet::Api::V3
+    config.default_from = "a@b.c"
+    config.endpoint = "https://api.mailjet.com"
     config.sandbox_mode = false
-    config.secret_key = nil
+    config.secret_key = "123"
   end
 end
 

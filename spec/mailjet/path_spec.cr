@@ -9,9 +9,10 @@ describe Mailjet::Path do
       end
 
       it "inserts the globally configured api version" do
-        Mailjet::Config.api_version = "v3.1"
-        path = Mailjet::TestPath.new
-        path.to_s.should eq("/v3.1/test/path")
+        Mailjet.temp_config(api_version: Mailjet::Api::V3_1) do
+          path = Mailjet::TestPath.new
+          path.to_s.should eq("/v3.1/test/path")
+        end
       end
     end
 
@@ -34,7 +35,7 @@ describe Mailjet::Path do
 
       it "it adds the given api version" do
         path = Mailjet::TestPath.new({
-          version: "v3.1",
+          version: Mailjet::Api::V3_1,
         })
         path.to_s.should eq("/v3.1/test/path")
       end

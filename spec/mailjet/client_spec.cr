@@ -16,14 +16,6 @@ describe Mailjet::Client do
       test_client.api_key.should eq("global_key")
       test_client.secret_key.should eq("global_secret")
     end
-
-    it "fails without api credentials" do
-      Mailjet::Config.api_key = nil
-      Mailjet::Config.secret_key = nil
-      expect_raises(Mailjet::MissingApiCredentialsException) do
-        test_client
-      end
-    end
   end
 
   describe "#handle_api_call" do
@@ -66,14 +58,6 @@ describe Mailjet::Client do
         response = test_client.handle_api_call("GET", "/non-existant")
         response.should eq("{}")
       end
-    end
-  end
-
-  describe ".with_credentials" do
-    it "creates a new instance with given credentials" do
-      client = Mailjet::Client.with_credentials("my_key", "my_secret")
-      client.api_key.should eq("my_key")
-      client.secret_key.should eq("my_secret")
     end
   end
 end

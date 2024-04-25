@@ -21,7 +21,7 @@ struct Mailjet
     end
 
     private def ensure_stringified_with_version(params)
-      {"version" => Config.api_version}
+      {"version" => Mailjet.settings.api_version.to_s}
         .merge(Utilities.to_stringified_hash(params))
     end
   end
