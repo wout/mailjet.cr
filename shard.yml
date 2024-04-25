@@ -9,6 +9,8 @@ crystal: ">= 1.6.0"
 dependencies:
   json_mapping:
     github: crystal-lang/json_mapping.cr
+  habitat:
+    github: luckyframework/habitat
 
 development_dependencies:
   ameba:
