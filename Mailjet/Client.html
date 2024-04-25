@@ -72,6 +72,11 @@
       
     </li>
   
+  <li class=" " data-id="mailjet/Mailjet/Api" data-name="mailjet::api">
+      <a href="../Mailjet/Api.html">Api</a>
+      
+    </li>
+  
   <li class="parent " data-id="mailjet/Mailjet/Campaign" data-name="mailjet::campaign">
       <a href="../Mailjet/Campaign.html">Campaign</a>
       
@@ -209,11 +214,6 @@
   
   <li class=" current" data-id="mailjet/Mailjet/Client" data-name="mailjet::client">
       <a href="../Mailjet/Client.html">Client</a>
-      
-    </li>
-  
-  <li class=" " data-id="mailjet/Mailjet/Config" data-name="mailjet::config">
-      <a href="../Mailjet/Config.html">Config</a>
       
     </li>
   
@@ -599,6 +599,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="mailjet/Mailjet/HabitatSettings" data-name="mailjet::habitatsettings">
+      <a href="../Mailjet/HabitatSettings.html">HabitatSettings</a>
       
     </li>
   
@@ -1199,7 +1204,7 @@
   </h2>
   
     
-      <a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L2" target="_blank">
+      <a href="https://github.com/wout/mailjet.cr/blob/f233f7b52b080d96c59b8c93c255e869224c52a0/src/mailjet/client.cr#L2" target="_blank">
         mailjet/client.cr
       </a>
     
@@ -1221,7 +1226,7 @@
   <ul class="list-summary">
     
       <li class="entry-summary">
-        <a href="#new%28api_key%3ANil%7CString%3DConfig.api_key%2Csecret_key%3ANil%7CString%3DConfig.secret_key%29-class-method" class="signature"><strong>.new</strong>(api_key : Nil | String = <span class="t">Config</span>.api_key, secret_key : Nil | String = <span class="t">Config</span>.secret_key)</a>
+        <a href="#new%28api_key%3ANil%7CString%3DMailjet.settings.api_key%2Csecret_key%3ANil%7CString%3DMailjet.settings.secret_key%29-class-method" class="signature"><strong>.new</strong>(api_key : Nil | String = <span class="t">Mailjet</span>.settings.api_key, secret_key : Nil | String = <span class="t">Mailjet</span>.settings.secret_key)</a>
         
           <div class="summary"><p>Initialize with credentials</p></div>
         
@@ -1230,25 +1235,6 @@
   </ul>
 
 
-
-  <h2>
-    <a id="class-method-summary" class="anchor" href="#class-method-summary">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Class Method Summary
-  </h2>
-  <ul class="list-summary">
-    
-      <li class="entry-summary">
-        <a href="#with_credentials%28api_key%3AString%7CNil%2Csecret_key%3AString%7CNil%29-class-method" class="signature"><strong>.with_credentials</strong>(api_key : String | Nil, secret_key : String | Nil)</a>
-        
-          <div class="summary"><p>Create a new instance with given api credentials</p></div>
-        
-      </li>
-    
-  </ul>
 
 
 
@@ -1336,12 +1322,12 @@
     Constructor Detail
   </h2>
   
-    <div class="entry-detail" id="new(api_key:Nil|String=Config.api_key,secret_key:Nil|String=Config.secret_key)-class-method">
+    <div class="entry-detail" id="new(api_key:Nil|String=Mailjet.settings.api_key,secret_key:Nil|String=Mailjet.settings.secret_key)-class-method">
       <div class="signature">
         
-        def self.<strong>new</strong>(api_key : Nil | String = <span class="t">Config</span>.api_key, secret_key : Nil | String = <span class="t">Config</span>.secret_key)
+        def self.<strong>new</strong>(api_key : Nil | String = <span class="t">Mailjet</span>.settings.api_key, secret_key : Nil | String = <span class="t">Mailjet</span>.settings.secret_key)
 
-        <a class="method-permalink" href="#new%28api_key%3ANil%7CString%3DConfig.api_key%2Csecret_key%3ANil%7CString%3DConfig.secret_key%29-class-method">#</a>
+        <a class="method-permalink" href="#new%28api_key%3ANil%7CString%3DMailjet.settings.api_key%2Csecret_key%3ANil%7CString%3DMailjet.settings.secret_key%29-class-method">#</a>
       </div>
       
         <div class="doc">
@@ -1355,44 +1341,13 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L17" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/f233f7b52b080d96c59b8c93c255e869224c52a0/src/mailjet/client.cr#L17" target="_blank">View source</a>]
         
       </div>
     </div>
   
 
 
-
-  <h2>
-    <a id="class-method-detail" class="anchor" href="#class-method-detail">
-  <svg class="octicon-link" aria-hidden="true">
-    <use href="#octicon-link"/>
-  </svg>
-</a>
-    Class Method Detail
-  </h2>
-  
-    <div class="entry-detail" id="with_credentials(api_key:String|Nil,secret_key:String|Nil)-class-method">
-      <div class="signature">
-        
-        def self.<strong>with_credentials</strong>(api_key : String | Nil, secret_key : String | Nil)
-
-        <a class="method-permalink" href="#with_credentials%28api_key%3AString%7CNil%2Csecret_key%3AString%7CNil%29-class-method">#</a>
-      </div>
-      
-        <div class="doc">
-          
-          <p>Create a new instance with given api credentials</p>
-        </div>
-      
-      <br/>
-      <div>
-        
-          [<a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L98" target="_blank">View source</a>]
-        
-      </div>
-    </div>
-  
 
 
 
@@ -1418,7 +1373,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L3" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/f233f7b52b080d96c59b8c93c255e869224c52a0/src/mailjet/client.cr#L3" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1434,7 +1389,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L27" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/f233f7b52b080d96c59b8c93c255e869224c52a0/src/mailjet/client.cr#L23" target="_blank">View source</a>]
         
       </div>
     </div>
@@ -1450,7 +1405,7 @@
       <br/>
       <div>
         
-          [<a href="https://github.com/wout/mailjet.cr/blob/44239c31623aedd328417f7e4e265c8f7874f408/src/mailjet/client.cr#L4" target="_blank">View source</a>]
+          [<a href="https://github.com/wout/mailjet.cr/blob/f233f7b52b080d96c59b8c93c255e869224c52a0/src/mailjet/client.cr#L4" target="_blank">View source</a>]
         
       </div>
     </div>

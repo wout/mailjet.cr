@@ -72,6 +72,11 @@
       
     </li>
   
+  <li class=" " data-id="mailjet/Mailjet/Api" data-name="mailjet::api">
+      <a href="Mailjet/Api.html">Api</a>
+      
+    </li>
+  
   <li class="parent " data-id="mailjet/Mailjet/Campaign" data-name="mailjet::campaign">
       <a href="Mailjet/Campaign.html">Campaign</a>
       
@@ -209,11 +214,6 @@
   
   <li class=" " data-id="mailjet/Mailjet/Client" data-name="mailjet::client">
       <a href="Mailjet/Client.html">Client</a>
-      
-    </li>
-  
-  <li class=" " data-id="mailjet/Mailjet/Config" data-name="mailjet::config">
-      <a href="Mailjet/Config.html">Config</a>
       
     </li>
   
@@ -599,6 +599,11 @@
   
 </ul>
 
+      
+    </li>
+  
+  <li class=" " data-id="mailjet/Mailjet/HabitatSettings" data-name="mailjet::habitatsettings">
+      <a href="Mailjet/HabitatSettings.html">HabitatSettings</a>
       
     </li>
   
@@ -1206,7 +1211,22 @@ The majority of the API is covered, but some parts still need to be added.</p>
     <use href="#octicon-link"/>
   </svg>
 </a>Usage</h2>
+<h3><a id="include-the-shard" class="anchor" href="#include-the-shard">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Include the shard</h3>
 <pre><code class="language-crystal"><span class="k">require</span> <span class="s">&quot;mailjet&quot;</span></code></pre>
+<h3><a id="configure-your-crendentials" class="anchor" href="#configure-your-crendentials">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Configure your crendentials</h3>
+<pre><code class="language-crystal"><span class="t">Mailjet</span>.configure <span class="k">do</span> <span class="o">|</span>settings<span class="o">|</span>
+  settings.api_key <span class="o">=</span> <span class="s">&quot;your-api-key&quot;</span>
+  settings.secret_key <span class="o">=</span> <span class="s">&quot;your-secret-key&quot;</span>
+  settings.default_from <span class="o">=</span> <span class="s">&quot;noreply@email.com&quot;</span>
+<span class="k">end</span></code></pre>
 <h3><a id="send-your-first-email" class="anchor" href="#send-your-first-email">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
@@ -1287,6 +1307,14 @@ data you can read - we’ll retrieve total aggregated statistics for your API ke
 })
 puts counters.first.event_opened_count
 <span class="c"># =&gt; 28</span></code></pre>
+<h3><a id="temporarily-use-other-settings" class="anchor" href="#temporarily-use-other-settings">
+  <svg class="octicon-link" aria-hidden="true">
+    <use href="#octicon-link"/>
+  </svg>
+</a>Temporarily use other settings</h3>
+<pre><code class="language-crystal"><span class="t">Mailjet</span>.temp_config(api_version: <span class="t">Mailjet</span><span class="t">::</span><span class="t">Api</span><span class="t">::</span><span class="t">V3_1</span>) <span class="k">do</span>
+  <span class="c"># ... do something ...</span>
+<span class="k">end</span></code></pre>
 <h2><a id="documentation" class="anchor" href="#documentation">
   <svg class="octicon-link" aria-hidden="true">
     <use href="#octicon-link"/>
