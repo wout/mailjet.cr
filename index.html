@@ -1233,19 +1233,19 @@ The majority of the API is covered, but some parts still need to be added.</p>
   </svg>
 </a>Send your first email</h3>
 <pre><code class="language-crystal">response <span class="o">=</span> <span class="t">Mailjet</span><span class="t">::</span><span class="t">SendV3_1</span>.message({
-  <span class="s">&quot;From&quot;</span>: {
-    <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;from@email.com&quot;</span>,
-    <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;Me&quot;</span>,
+  <span class="t">From</span>: {
+    <span class="t">Email</span>: <span class="s">&quot;from@email.com&quot;</span>,
+    <span class="t">Name</span>:  <span class="s">&quot;Me&quot;</span>,
   },
-  <span class="s">&quot;To&quot;</span>: [
+  <span class="t">To</span>: [
     {
-      <span class="s">&quot;Email&quot;</span>: <span class="s">&quot;to@email.com&quot;</span>,
-      <span class="s">&quot;Name&quot;</span>:  <span class="s">&quot;You&quot;</span>,
+      <span class="t">Email</span>: <span class="s">&quot;to@email.com&quot;</span>,
+      <span class="t">Name</span>:  <span class="s">&quot;You&quot;</span>,
     },
   ],
-  <span class="s">&quot;Subject&quot;</span>:  <span class="s">&quot;My first Mailjet Email!&quot;</span>,
-  <span class="s">&quot;TextPart&quot;</span>: <span class="s">&quot;Greetings from Mailjet!&quot;</span>,
-  <span class="s">&quot;HTMLPart&quot;</span>: <span class="s">&lt;&lt;-HTML</span>
+  <span class="t">Subject</span>:  <span class="s">&quot;My first Mailjet Email!&quot;</span>,
+  <span class="t">TextPart</span>: <span class="s">&quot;Greetings from Mailjet!&quot;</span>,
+  <span class="t">HTMLPart</span>: <span class="s">&lt;&lt;-HTML</span>
 <span class="s">    &lt;h3&gt;
       Dear passenger 1, welcome to
       &lt;a href=&#39;https://www.mailjet.com/&#39;&gt;Mailjet&lt;/a&gt;!
