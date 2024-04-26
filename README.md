@@ -51,19 +51,19 @@ end
 
 ```crystal
 response = Mailjet::SendV3_1.message({
-  "From": {
-    "Email": "from@email.com",
-    "Name":  "Me",
+  From: {
+    Email: "from@email.com",
+    Name:  "Me",
   },
-  "To": [
+  To: [
     {
-      "Email": "to@email.com",
-      "Name":  "You",
+      Email: "to@email.com",
+      Name:  "You",
     },
   ],
-  "Subject":  "My first Mailjet Email!",
-  "TextPart": "Greetings from Mailjet!",
-  "HTMLPart": <<-HTML
+  Subject:  "My first Mailjet Email!",
+  TextPart: "Greetings from Mailjet!",
+  HTMLPart: <<-HTML
     <h3>
       Dear passenger 1, welcome to
       <a href='https://www.mailjet.com/'>Mailjet</a>!
