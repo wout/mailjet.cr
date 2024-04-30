@@ -99,19 +99,19 @@ end
 
 private def valid_send_message_payload_v3_1
   {
-    "From": {
-      "Email": "from@email.com",
-      "Name":  "Me",
+    From: {
+      Email: "from@email.com",
+      Name:  "Me",
     },
-    "To": [
+    To: [
       {
-        "Email": "to@email.com",
-        "Name":  "You",
+        Email: "to@email.com",
+        Name:  "You",
       },
     ],
-    "Subject":  "My first Mailjet Email!",
-    "TextPart": "Greetings from Mailjet!",
-    "HTMLPart": <<-HTML
+    Subject:  "My first Mailjet Email!",
+    TextPart: "Greetings from Mailjet!",
+    HTMLPart: <<-HTML
       <h3>Dear passenger 1, welcome to
       <a href='https://www.mailjet.com/'>Mailjet</a>!
       </h3><br />May the delivery force be with you!
@@ -121,15 +121,15 @@ end
 
 private def valid_send_message_payload_v3
   {
-    "FromEmail":  "pilot@mailjet.com",
-    "FromName":   "Your Mailjet Pilot",
-    "Recipients": [
+    FromEmail:  "pilot@mailjet.com",
+    FromName:   "Your Mailjet Pilot",
+    Recipients: [
       {
-        "Email": "passenger@mailjet.com",
-        "Name":  "Passenger 1",
+        Email: "passenger@mailjet.com",
+        Name:  "Passenger 1",
       },
     ],
-    "Subject":   "Your email flight plan!",
+    Subject:     "Your email flight plan!",
     "Text-part": "Dear passenger, welcome to Mailjet!",
     "Html-part": <<-HTML
       <h3>Dear passenger, welcome to Mailjet!</h3>

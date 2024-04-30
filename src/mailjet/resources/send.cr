@@ -26,12 +26,12 @@ struct Mailjet
       include Json::Fields
 
       json_fields({
-        "Bcc":      Array(DeliveryReceipt)?,
-        "Cc":       Array(DeliveryReceipt)?,
-        "CustomID": String?,
-        "Errors":   Array(DeliveryError)?,
-        "Status":   String,
-        "To":       Array(DeliveryReceipt)?,
+        Bcc:      Array(DeliveryReceipt)?,
+        Cc:       Array(DeliveryReceipt)?,
+        CustomID: String?,
+        Errors:   Array(DeliveryError)?,
+        Status:   String,
+        To:       Array(DeliveryReceipt)?,
       })
     end
 
@@ -39,9 +39,9 @@ struct Mailjet
       include Json::Fields
 
       json_fields({
-        "Email":       String,
-        "MessageID":   Int64,
-        "MessageUUID": String,
+        Email:       String,
+        MessageID:   Int64,
+        MessageUUID: String,
       })
     end
 
@@ -49,10 +49,10 @@ struct Mailjet
       include Json::Fields
 
       json_fields({
-        "Email":       String,
-        "MessageHref": String,
-        "MessageID":   Int64,
-        "MessageUUID": String,
+        Email:       String,
+        MessageHref: String,
+        MessageID:   Int64,
+        MessageUUID: String,
       })
     end
 
@@ -60,18 +60,18 @@ struct Mailjet
       include Json::Fields
 
       json_fields({
-        "ErrorCode":       String,
-        "ErrorIdentifier": String,
-        "ErrorMessage":    String,
-        "ErrorRelatedTo":  Array(String),
-        "StatusCode":      Int32,
+        ErrorCode:       String,
+        ErrorIdentifier: String,
+        ErrorMessage:    String,
+        ErrorRelatedTo:  Array(String),
+        StatusCode:      Int32,
       })
     end
   end
 
   struct SendV3 < Send
     # :nodoc:
-    can_create("send", {"Sent": Array(SentMessage)})
+    can_create("send", {Sent: Array(SentMessage)})
 
     # Deliver an array of messages
     #
@@ -88,7 +88,7 @@ struct Mailjet
       client : Client = Client.new
     )
       create(
-        {"Messages": messages},
+        {Messages: messages},
         params: {version: "v3"},
         client: client
       ).sent
@@ -97,7 +97,7 @@ struct Mailjet
 
   struct SendV3_1 < Send
     # :nodoc:
-    can_create("send", {"Messages": Array(ResponseMessage)})
+    can_create("send", {Messages: Array(ResponseMessage)})
 
     # Deliver an array of messages
     #
@@ -114,7 +114,7 @@ struct Mailjet
       client : Client = Client.new
     )
       create(
-        {"Messages": messages},
+        {Messages: messages},
         params: {version: "v3.1"},
         client: client
       ).messages
