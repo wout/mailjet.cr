@@ -139,6 +139,10 @@ Mailjet.temp_config(api_version: Mailjet::Api::V3_1) do
 end
 ```
 
+### Using this shard in a Lucky app
+
+If you want to use this shard in a [Lucky](https://luckyframework.org/) app, you can use the [carbon_mailjet_adapter](https://github.com/wout/carbon_mailjet_adapter).
+
 ## Documentation
 
 - [Shard API Docs](https://wout.github.io/mailjet.cr/)
